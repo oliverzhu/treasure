@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="loading">"正在加载..."</string>
+    <string name="no_data">"无数据"</string>
+    <string name="menu_status_refresh">刷新</string>
+</resources>
