@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="300dp"
+    android:background="#e6e6e6"
+    >
+    
+     <EditText
+         android:id="@+id/inputPhoneNumber"
+         android:layout_width="180dip"
+         android:layout_height="50dip"
+         android:layout_centerVertical="true"
+         android:layout_toLeftOf="@+id/save"
+         android:layout_marginRight="20dp"
+         android:hint="接受短信的号码"
+          >
+     </EditText>
+
+     <Button
+         android:id="@+id/save"
+         android:layout_width="100dip"
+         android:layout_height="50dip"
+         android:layout_alignParentRight="true"
+         android:layout_centerVertical="true" 
+         android:textColor="#333333"
+         android:text="保存"/>
+     
+     <TextView 
+        android:id="@+id/currentPhoneNumber"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@+id/inputPhoneNumber"
+    	android:layout_marginBottom="20dp"
+    	android:layout_marginTop="20dp"
+    	android:layout_alignLeft="@+id/inputPhoneNumber"
+    	android:textColor="#333333"
+    	android:text="当前号码："
+    	/>
+
+</RelativeLayout>

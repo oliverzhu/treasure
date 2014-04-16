@@ -1,0 +1,10 @@
+<resources>
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+    
+    <style name="MyAttrsViewStyle">
+        <item name="textColor">#00ff00</item>
+        <item name="textSize">20px</item>
+    </style>
+
+</resources>

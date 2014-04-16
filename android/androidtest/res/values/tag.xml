@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+	<item type="id" name="paperId"></item>
+	<item type="id" name="paperName"></item>
+   
+</resources>

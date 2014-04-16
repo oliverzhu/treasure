@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>     
+<resources xmlns:android="http://schemas.android.com/apk/res/android"> 
+    <style name="Light">
+        <item name="textColor">#ff0000</item>
+    </style>
+    <style name="Dark">
+        <item name="textColor">#00ff00</item>
+    </style>
+</resources>

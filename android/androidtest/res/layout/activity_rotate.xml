@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:background="@drawable/system_upgrade_bg"
+    >
+    
+    <ImageView
+       android:id="@+id/imageViewAndroid"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentTop="true"
+       android:layout_marginTop="48dp"
+       android:gravity="center"
+       android:src="@drawable/android" />
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+       	android:layout_height="wrap_content"
+       	android:layout_above="@+id/versionState"
+       	android:layout_marginBottom="36dip"
+       	>
+        <ImageView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/imageview1"
+	        android:src="@drawable/rotate_active"
+	        android:layout_centerInParent="true"
+	        android:gravity="center"
+        />
+
+    	<ImageView
+	        android:id="@+id/imageview2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:gravity="center"
+	        android:src="@drawable/arrow_active" />
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/versionState"
+   	    android:layout_width="wrap_content"
+   		android:layout_height="wrap_content" 
+   		android:text="当前版本为最新版本"
+   		android:textSize="15sp"
+   		android:textColor="#696969"
+   		android:layout_above="@+id/versionContainer"
+   		android:layout_centerHorizontal="true"
+   		android:layout_marginBottom="48dip"
+	  />
+    
+    <RelativeLayout 
+        android:id="@+id/versionContainer"
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_marginBottom="42dip">
+    	<LinearLayout 
+    	    android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_centerInParent="true">
+	    	<TextView
+	    	    android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content" 
+	    		android:text="当前版本："
+	    		android:textSize="15sp"
+	    		android:textColor="#c75a90"
+	    	    />
+	    	<TextView
+	    	    android:id="@+id/version"
+	    	    android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content" 
+	    		android:text="Version SS129_V02"
+	    		android:textSize="15sp"
+	    		android:textColor="#c75a90"
+	    	    />
+    	</LinearLayout>
+    </RelativeLayout>
+    
+    
+    <Button 
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"/>
+    
+    <Button 
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="结束"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

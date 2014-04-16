@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- The PullToRefreshScrollView replaces a standard PullToRefreshScrollView widget. -->
+
+    <com.home.pulltorefresh.widget.PullToRefreshScrollView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pull_refresh_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        ptr:ptrAnimationStyle="rotate"
+        ptr:ptrMode="pullFromStart" >
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <ImageView 
+                android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/icon"/>
+            <TextView
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:padding="8dp"
+	            android:text="@string/filler_text"
+	            android:textSize="16sp" />
+        </LinearLayout>
+        
+    </com.home.pulltorefresh.widget.PullToRefreshScrollView>
+
+</LinearLayout>
