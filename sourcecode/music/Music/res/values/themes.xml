@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MusicPlayback" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    
+    <style name="Theme.Music" parent="@android:style/Theme.Holo.Light">
+         <item name="android:actionBarStyle">@style/Theme.Holo.Light</item>
+    </style>
+</resources>

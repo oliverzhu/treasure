@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+  	android:id="@+id/custom_title_root"
+  	android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/music_title_bg">
+    
+    <LinearLayout
+	        android:id="@+id/track_back"
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent" 
+	        android:orientation="horizontal"
+	        android:layout_centerVertical="true"
+	        android:paddingRight="4dip"
+	        android:background="@drawable/view_press_selector"
+        >
+        <ImageView
+	         android:id="@+id/up"
+	         android:layout_width="24dip"
+	         android:layout_height="24dip"
+	         android:layout_marginLeft="2dp"
+	         android:scaleType="fitCenter"
+	         android:src="@drawable/ic_ab_back_holo_dark"
+	         android:visibility="visible"
+	         android:layout_gravity="center_vertical"/>
+    	<ImageView
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_marginLeft="4dp"
+	         android:src="@drawable/track_music_title"
+	         android:visibility="visible"
+	         android:scaleType="fitCenter"
+	         android:layout_gravity="center_vertical"/>
+    	
+    	<TextView android:id="@+id/track_name" 
+	        android:maxLines="1" 
+	        android:maxWidth="200dip"
+	        android:singleLine="true"
+	        android:textAppearance="@style/TextAppearance.primary_title_dark"
+	        android:layout_marginLeft="4dp"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:ellipsize="marquee"
+	        android:gravity="center"
+	        android:layout_gravity="center_vertical"
+	        android:textSize="18dip"
+        	android:visibility="visible"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:splitMotionEvents="false" >
+
+    <LinearLayout
+        android:id="@+id/sd_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:splitMotionEvents="false"
+        android:visibility="gone" >
+
+        <include layout="@layout/sd_error" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/normal_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:splitMotionEvents="false" >
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:splitMotionEvents="false" >
+        </TabWidget>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:splitMotionEvents="false" >
+            
+            <RelativeLayout
+                android:id="@+id/title_bar"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentTop="true"
+	            android:background="@drawable/music_title_bg"
+	            >
+        	<TextView
+		        android:id="@+id/musiclibtab"
+		        android:focusable="true"
+		        android:text="@string/media_lib"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:textColor="@color/white" 
+		        android:paddingTop="12dip"
+		        android:paddingBottom="12dip"
+		        android:paddingLeft="20dip"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:singleLine="true"
+		        android:ellipsize="marquee" />
+        	
+        	<ImageView
+        	    android:layout_toLeftOf="@+id/categorisetab"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="2dip"
+	            android:layout_marginBottom="2dip"
+	            android:layout_centerVertical="true"
+	            android:src="@drawable/title_gap_line" />
+
+        	<TextView
+		        android:id="@+id/categorisetab"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/buttonbarbackground"
+		        android:focusable="true"
+		        android:text="@string/media_category"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:textColor="@color/white" 
+		        android:paddingTop="12dip"
+		        android:paddingBottom="12dip"
+		        android:paddingLeft="28dip"
+		        android:paddingRight="28dip"
+		        android:gravity="center"
+		        android:singleLine="true"
+		        android:ellipsize="marquee"
+		        android:layout_alignParentRight="true" />
+	        </RelativeLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/nowplaying_parent"
+                android:layout_below="@+id/title_bar"
+                android:splitMotionEvents="false" />
+
+            <!-- android:layout_height="380dip" -->
+
+            <include layout="@layout/nowplaying" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" >
+        </FrameLayout>
+    </LinearLayout>
+
+</TabHost>
