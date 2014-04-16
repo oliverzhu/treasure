@@ -1,0 +1,48 @@
+1:http://www.micode.net/portal.php
+https://github.com/MiCode/patchrom_miui/tree/jellybean42-mtk
+http://www.sourceforge.net/
+
+2:Vitamio 是一款Android 与iOS平台上的全能多媒体开发框架
+  Vitamio的项目托管在Github上面：https://github.com/yixia
+  
+3：http://code.taobao.org
+
+4：请推荐有关网络的书： http://linux.vbird.org/linux_basic/0120howtolinux/0120howtolinux_1.php
+
+5：计算机基础 (http://www.study-area.org/compu/compu.htm)
+
+6：网绚基础 (http://www.study-area.org/network/network.htm)
+
+7：Study-Area http://www.study-area.org
+8：鸟哥癿私房菜馆 http://linux.vbird.org
+
+9：卧龙大师癿网绚技术文件 http://linux.tnc.edu.tw/techdoc/
+
+10：台湾 Linux 社群 http://www.linux.org.tw/
+
+11：狼主的网绚实验室 http://netlab.kh.edu.tw/index.htm
+
+12：大南国小（林兊敏主仸文件集）http://freebsd.lab.mlc.edu.tw/
+
+13：吴仁智的文件集 http://www.cses.tcc.edu.tw/~chihwu/
+
+14：CLDP 中文文件计划 http://www.linux.org.tw/CLDP/
+
+15：The Linux Documentation Project：http://www.tldp.org/
+
+16：酷学园认论区 http://phorum.study-area.org
+
+17：鸟哥癿私房菜馆认论区 http://phorum.vbird.org
+
+18：telnet://bbs.sayya.org
+
+19：李果正先生之 GNU/Linux 初学者之旅： http://info.sayya.org/~edt1023/linux_entry.html 
+鸟哥这里有也一个备仹 http://linux.vbird.org/linux_basic/0120howtolinux/0120howtolinux_3.php
+
+20： 信息人的有效学习(洪朝贵教授网页) http://people.ofset.org/~ckhung/a/c013.php
+
+21:spfdisk官网：http://spfdisk.sourceforge.net/
+
+22: 鸟哥的spfdisk教学：http://linux.vbird.org/linux_basic/0140spfdisk.php
+
+23:SegmentFault国内问答社区
