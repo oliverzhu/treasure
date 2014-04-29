@@ -1,5 +1,7 @@
 package com.home.util;
 
+import java.lang.reflect.Method;
+
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.ProgressDialog;
@@ -99,6 +101,51 @@ public class ContextUtils {
 		}
 		dialog.show();
 		return dialog;
+	}
+	
+	/**
+	 * 
+	 * @param context
+	 * @param title
+	 * @param message
+	 * @param buttonTexts
+	 * @param listeners
+	 * @return
+	 */
+	public static AlertDialog showAlertDialog(Context context, int title,
+			int message, int[] buttonTexts, OnClickListener[] listeners) {
+		AlertDialog.Builder dialog = new AlertDialog.Builder(context);
+		dialog.setTitle(title);
+		dialog.setMessage(message);
+		if (buttonTexts.length == 1) {
+			dialog.setNeutralButton(buttonTexts[0], listeners[0]);
+		} else if (buttonTexts.length == 2) {
+			dialog.setPositiveButton(buttonTexts[0], listeners[0]);
+			dialog.setNegativeButton(buttonTexts[1], listeners[1]);
+		} else if (buttonTexts.length == 3) {
+			dialog.setPositiveButton(buttonTexts[0], listeners[0]);
+			dialog.setNeutralButton(buttonTexts[1], listeners[1]);
+			dialog.setNegativeButton(buttonTexts[2], listeners[2]);
+		}
+		return dialog.create();
+	}
+	
+	@SuppressWarnings({ "unchecked", "rawtypes" })
+	public static String getCustomVersion()
+	{
+		try {
+			String className="android.os.SystemProperties";
+			String methodName ="get";
+			String key ="ro.custom.build.version";
+			Class clazz = Class.forName(className);
+			//Constructor con = clazz.getEnclosingConstructor();
+			Method method=clazz.getDeclaredMethod(methodName,String.class);
+			return (String)method.invoke(clazz, key);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return null;
 	}
 	
 	/**

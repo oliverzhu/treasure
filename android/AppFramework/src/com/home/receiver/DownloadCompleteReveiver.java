@@ -55,7 +55,7 @@ public class DownloadCompleteReveiver extends BroadcastReceiver {
 				{
 					Intent installIntent = new Intent();
 					installIntent.setAction(Intent.ACTION_VIEW);
-					installIntent.setDataAndType(Uri.parse("file://"+path),
+					installIntent.setDataAndType(Uri.parse(path),
 							"application/vnd.android.package-archive");
 					installIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK
 							| Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
