@@ -15,49 +15,40 @@ public class OrderWriter {
 	}
 
 	private void writeOrderTo(StringBuffer xml) {
-		xml.append("<orders>");
+		TagNode ordersTag = new TagNode("orders");
 		for(int i = 0;i < orders.getOrderCount();i++)
 		{
 			Order order = orders.getOrder(i);
-			xml.append("<order");
-			xml.append(" id'=");
-			xml.append(order.getOrderId());
-			xml.append("'>");
-			writeProductsTo(xml,order);
-			xml.append("</order>");
+			TagNode orderTag = new TagNode("order");
+			orderTag.addAttribute("id", order.getOrderId() + "");
+			writeProductsTo(orderTag, order);
+			ordersTag.add(orderTag);
 		}
-		xml.append("</orders>");
+		xml.append(ordersTag.toString());
 	}
 
-	private void writeProductsTo(StringBuffer xml, Order order) {
+	private void writeProductsTo(TagNode orderTag, Order order) {
 		for(int j = 0;j < order.getProductCount();j++)
 		{
 			Product product = order.getProduct(j);
-			xml.append("<product");
-			xml.append(" id='");
-			xml.append(product.getId());
-			xml.append("'");
-			xml.append(" color='");
-			xml.append(colorFor(product));
-			xml.append("'");
+			TagNode productTag = new TagNode("product");
+			productTag.addAttribute("id", product.getId() + "");
+			productTag.addAttribute("color", colorFor(product));
 			if(product.getSize() != 0)
 			{
-				xml.append(" size='");
-				xml.append(sizeFor(product));
-				xml.append("'");
+				productTag.addAttribute("size", sizeFor(product));
 			}
-			xml.append(">");
-			writePriceTo(xml,product);
-			xml.append(product.getName());
-			xml.append("</product>");
+			writePriceTo(productTag, product);
+			productTag.addValue(product.getName());
+			orderTag.add(productTag);
 		}
 	}
 
-	private void writePriceTo(StringBuffer xml, Product product) {
+	private void writePriceTo(TagNode productTag, Product product) {
 		TagNode priceNode = new TagNode("price");
 		priceNode.addAttribute("currency", currencyFor(product));
 		priceNode.addValue(priceFor(product));
-		xml.append(priceNode.toString());
+		productTag.add(priceNode);
 	}
 
 	private String priceFor(Product product) {
