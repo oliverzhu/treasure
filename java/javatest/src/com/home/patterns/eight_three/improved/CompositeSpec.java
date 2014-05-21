@@ -1,10 +1,16 @@
 package com.home.patterns.eight_three.improved;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
 public class CompositeSpec extends Spec{
-	private List<Spec> specs;
+	private List<Spec> specs = new ArrayList<Spec>();
+	
+	public CompositeSpec()
+	{
+	}
 	
 	public CompositeSpec(List<Spec> specs)
 	{
@@ -13,7 +19,12 @@ public class CompositeSpec extends Spec{
 	
 	public List<Spec> getSpecs()
 	{
-		return specs;
+		return Collections.unmodifiableList(specs);
+	}
+	
+	public void add(Spec spec)
+	{
+		specs.add(spec);
 	}
 
 	@Override
