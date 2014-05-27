@@ -6,10 +6,10 @@ import com.home.patterns.seven_two.Payment;
 
 
 public class CapitalStrategyTermLoan extends CapitalStrategy {
-	public double capital(Loan loan)
-	{
-		return riskAmountFor(loan) * duration(loan) * riskFactor(loan);
-	}
+//	public double capital(Loan loan)
+//	{
+//		return riskAmountFor(loan) * duration(loan) * riskFactor(loan);
+//	}
 	
 	public double duration(Loan loan)
 	{
