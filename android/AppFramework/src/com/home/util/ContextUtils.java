@@ -16,6 +16,7 @@ import android.content.pm.ResolveInfo;
 import android.graphics.Bitmap;
 import android.graphics.Matrix;
 import android.os.Build;
+import android.telephony.TelephonyManager;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -242,6 +243,18 @@ public class ContextUtils {
 				bitmapY, targetWidth, targetHeight);
 		
 		return targetBitmap;
+	}
+	
+	public static String getImei(Context context)
+	{
+		TelephonyManager telephonyManager = (TelephonyManager) context
+				.getSystemService(Context.TELEPHONY_SERVICE);
+		String imei = telephonyManager.getDeviceId();
+		if(imei == null)
+		{
+			imei = "";
+		}
+		return imei;
 	}
 	
 	public static Intent getActivityIntent(Context context,String packageName,String className)
