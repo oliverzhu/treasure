@@ -1,3 +1,79 @@
 1:面向模式的软件架构
 2:重构与模式
 3:深入浅出Networking
+
+
+https://github.com/nhaarman/ListViewAnimations
+
+https://github.com/nadavfima/ChartView
+
+listview滑动删除
+https://github.com/romannurik/Android-SwipeToDismiss
+
+https://github.com/jblough/Android-Pdf-Viewer-Library
+
+listView排序：
+https://github.com/bauerca/drag-sort-listview
+
+外观很不错的自定义数字输入面板，可以输入数字、时间、日期等等跟数字有关的内容:
+https://github.com/derekbrameyer/android-betterpickers
+
+往上拖拉底部视图，底部视图会往上滑动出现并覆盖主视图，同时ActionBar也会隐藏。往下拖拉该视图，该视图会重新往下滑动隐藏：
+https://github.com/umano/AndroidSlidingUpPanel
+
+点击主按钮，会弹出多个围绕着主按钮排列的子按钮，从而形成一个弹出式菜单。子按钮弹出和消失的动画效果都很棒。这种弹出式菜单按钮应用在Path app中。
+https://github.com/siyamed/android-satellite-menu
+
+实现数据统计图表中的曲线图（line chart）、柱状图（bar chart）以及饼状图（pie chart）
+https://bitbucket.org/danielnadeau/holographlibrary
+
+实现截图功能，可以手指拖动截图框，定义截图尺寸和位置，可以旋转图片然后才截图。截图功能十分齐全。
+https://github.com/edmodo/cropper
+
+在各种View中加入下拉刷新（pull to refresh）功能。下拉刷新时，View上方的ActionBar会被刷新的动画所代替，等刷新加载完毕，才重新显示ActionBar。
+https://github.com/chrisbanes/ActionBar-PullToRefresh
+
+实现弹出消息框（Toast）。可以在消息框上添加文字和按钮。可以连续弹出多个消息框，产生消息框队列，每个消息框持续出现5秒钟左右（当然可以自定义持续时间）。
+https://github.com/SimonVT/MessageBar
+
+滑动ScrollView或者listView时，界面顶部慢慢出现Action Bar（fade in），当停止滑动时，Action Bar慢慢淡出直至消失：
+https://github.com/ManuelPeinado/FadingActionBar
+
+在Grid View中加入固定的头部（Header），滑动Grid View时，header保持固定，不同section显示不同的title：
+https://github.com/TonicArtos/StickyGridHeaders
+
+实现卡片式列表布局。点击列表上某一行，该行跳到最前面显示具体内容。具体效果请看Gif效果图。可以在卡片中添加文字、链接、图片等等内容，这种效果多见于新闻App：
+https://github.com/nadavfima/cardsui-for-android
+
+长按界面上某个item，item会抖动，并且可以拖动item，重新排列位置：
+https://github.com/mrKlar/PagedDragDropGrid
+
+实现列表（ListView）header和footer隐藏之后滑动快速出现（Quick Return）的功能。如图1，是header的Quick Return，向上拖动列表时，header（红色部分）会向上滑动隐藏，无论列表拖动多少距离，一旦向下拖动列表时，header会马上出现；如图2，是footer的Quick Return，向上拖动列表时，footer（黑色部分）会向下滑动隐藏，无论列表拖动多少距离，一旦向下拖动列表时，footer会马上出现
+https://github.com/LarsWerkman/QuickReturnListView
+
+实现滑动视图（ScrollView）中的头部两种滑动效果。一种是向上滑动View时，头部也向上滑动并且消失，当向下滑动时，头部马上出现，所以叫做Quick Return（如效果图1）；一种是无论向上或者向下滑动View，头部都保持固定不动，所以叫做Sticky（如效果图2）：
+
+ 实现Chips EditText（或者叫Token EditText，Bubble EditText），基本功能和在邮件中输入邮箱地址类似。就是输入某个预定义的单词，空格之后，该单词会加上背景作为一个整体。支持文字自动提示和自动填写功能。如果输入的文字不是预先定义好的单词，则不会出现任何效果。具体效果情况Gif效果图
+https://github.com/kpbird/chips-edittext-library
+
+实现图片浏览功能，支持pinch（捏合）手势或者点击放大缩小。支持在ViewPager中翻页浏览图片：
+https://github.com/chrisbanes/PhotoView
+
+实现弹出通知效果。可以在屏幕顶部或者底部弹出通知。弹出的通知只在当前视图出现，当切换到其他视图时，通知也会跟随切换，而不像toast，无论视图如何切换，都会可见：
+https://github.com/johnkil/Android-AppMsg
+
+实现各种圆形或者半圆形菜单，以及圆形进度条：
+https://code.google.com/p/radial-menu-widget/
+
+实现效果很不错的翻页切换视图动画。翻页效果很逼真，能够随着手指的移动而进行慢慢翻页：
+https://github.com/harism/android_page_curl
+
+AndroidAsync 是一个底层的基于网络协议，提供各种网络通讯服务类库。它功能强大，提供包括raw Socket, HTTP client/server, WebSocket, 以及 Socket.IO 的类库。AndroidAsync是基于NIO的。 AndroidAsync具体功能包括： 1. 基于NIO。一个线程由callback函数驱动。效率很高。 2. 所有的操作都返回一个Future（http://en.wikipedia.org/wiki/Futures_and_promises），并且可以取消； 3. Socket client + socket server 4. HTTP client + server 5. WebSocket client + server 6. Socket.IO client：
+https://github.com/koush/AndroidAsync
+
+实现图片加文字瀑布流布局，支持下拉刷新瀑布流的内容：
+https://github.com/dodola/WaterFallExt
+
+实现各种形式的menu drawer（也叫slide menu)。可以从屏幕的左方、右方、上方、下方拉出菜单：
+https://github.com/SimonVT/android-menudrawer
+
