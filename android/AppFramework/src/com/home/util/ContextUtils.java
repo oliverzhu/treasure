@@ -7,13 +7,16 @@ import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.ComponentName;
 import android.content.Context;
-import android.content.Intent;
 import android.content.DialogInterface.OnClickListener;
+import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
-import android.content.pm.ResolveInfo;
 import android.content.pm.PackageManager.NameNotFoundException;
+import android.content.pm.ResolveInfo;
+import android.graphics.Bitmap;
+import android.graphics.Matrix;
 import android.os.Build;
+import android.telephony.TelephonyManager;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -204,6 +207,55 @@ public class ContextUtils {
                 Build.VERSION.RELEASE,
                 Build.VERSION.INCREMENTAL);
     }
+	
+	public static Bitmap scaleBitmap(Bitmap sampleBitmap,int targetWidth, int targetHeight) {
+		int bitmapHeight = sampleBitmap.getHeight();
+		int bitmapWidth = sampleBitmap.getWidth();
+		
+		int scaleWidth = bitmapHeight / targetWidth;
+		int scaleHeight = bitmapWidth / targetHeight;
+		int scale = scaleWidth < scaleHeight ? scaleWidth : scaleHeight;
+		if (scale < 1) {
+			scale = 1;
+		}
+		
+		//get scalebitmap
+		float fScaleWidth = targetWidth / (float)bitmapWidth;
+		float fScaleHeight = targetHeight / (float)bitmapWidth;
+		float fScale = fScaleWidth > fScaleHeight ? fScaleWidth : fScaleHeight;
+		if (fScale > 1.5f)
+			fScale = 1.5f;
+		Matrix matrix = new Matrix();
+		matrix.postScale(fScale, fScale);
+		Bitmap scaleBitmap = Bitmap.createBitmap(sampleBitmap, 0, 0,
+				bitmapWidth, bitmapHeight, matrix, true);
+
+		//get targetBitmap
+		int bitmapX = (scaleBitmap.getWidth() - targetWidth) / 2;
+		bitmapX = bitmapX > 0 ? bitmapX : 0;
+		int bitmapY = (scaleBitmap.getHeight() - targetHeight) / 2;
+		bitmapY = bitmapY > 0 ? bitmapY : 0;
+		targetWidth = targetWidth < (scaleBitmap.getWidth()) ? targetWidth
+				: (scaleBitmap.getWidth());
+		targetHeight = targetHeight < (scaleBitmap.getHeight()) ? targetHeight
+				: (scaleBitmap.getHeight());
+		Bitmap targetBitmap = Bitmap.createBitmap(scaleBitmap, bitmapX,
+				bitmapY, targetWidth, targetHeight);
+		
+		return targetBitmap;
+	}
+	
+	public static String getImei(Context context)
+	{
+		TelephonyManager telephonyManager = (TelephonyManager) context
+				.getSystemService(Context.TELEPHONY_SERVICE);
+		String imei = telephonyManager.getDeviceId();
+		if(imei == null)
+		{
+			imei = "";
+		}
+		return imei;
+	}
 	
 	public static Intent getActivityIntent(Context context,String packageName,String className)
 	{
