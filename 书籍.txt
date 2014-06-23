@@ -51,9 +51,7 @@ https://github.com/mrKlar/PagedDragDropGrid
 实现列表（ListView）header和footer隐藏之后滑动快速出现（Quick Return）的功能。如图1，是header的Quick Return，向上拖动列表时，header（红色部分）会向上滑动隐藏，无论列表拖动多少距离，一旦向下拖动列表时，header会马上出现；如图2，是footer的Quick Return，向上拖动列表时，footer（黑色部分）会向下滑动隐藏，无论列表拖动多少距离，一旦向下拖动列表时，footer会马上出现
 https://github.com/LarsWerkman/QuickReturnListView
 
-实现滑动视图（ScrollView）中的头部两种滑动效果。一种是向上滑动View时，头部也向上滑动并且消失，当向下滑动时，头部马上出现，所以叫做Quick Return（如效果图1）；一种是无论向上或者向下滑动View，头部都保持固定不动，所以叫做Sticky（如效果图2）：
-
- 实现Chips EditText（或者叫Token EditText，Bubble EditText），基本功能和在邮件中输入邮箱地址类似。就是输入某个预定义的单词，空格之后，该单词会加上背景作为一个整体。支持文字自动提示和自动填写功能。如果输入的文字不是预先定义好的单词，则不会出现任何效果。具体效果情况Gif效果图
+实现Chips EditText（或者叫Token EditText，Bubble EditText），基本功能和在邮件中输入邮箱地址类似。就是输入某个预定义的单词，空格之后，该单词会加上背景作为一个整体。支持文字自动提示和自动填写功能。如果输入的文字不是预先定义好的单词，则不会出现任何效果。具体效果情况Gif效果图
 https://github.com/kpbird/chips-edittext-library
 
 实现图片浏览功能，支持pinch（捏合）手势或者点击放大缩小。支持在ViewPager中翻页浏览图片：
