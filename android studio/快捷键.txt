@@ -1,0 +1,43 @@
+File->Settings->Keymap
+
+===================Editor Actions===================
+删除行 : Delete Line -> Ctrl+d
+复制行 ：Duplicate Line or Block -> Ctrl+Down
+
+
+===================Main menu -> Code -> Completion===============
+代码提示 ： Basic -> Shift + f
+
+===================Main menu -> Code -> Folding===============
+下移行 ： Move Line Down -> Alt+Down
+上移行 ： Move Line Up -> Alt+Up
+
+===================Main menu -> Navigate===============
+查找类 : Class... -> Ctrl+Shift+T
+查找文件 : File... -> Ctrl+Shift+R
+显示当前文件的结构  : File Structure -> Ctrl + O 
+显示类结构图  : Type Hierarchy -> Ctrl + T 
+
+
+===================================================
+导入包,自动修正 : Alt+回车
+
+看到当前方法的声明(显示当前光标在哪个方法里面) : Alt＋Q
+
+生成代码(如get,set方法,构造函数等) : Alt+Insert
+
+可以显示最近编辑的文件列表 : Ctrl＋E
+
+关闭文件 : Shift＋Click
+
+跳到大括号的开头结尾 : Ctrl＋[或]
+
+查询当前元素在当前文件中的引用，然后按F3可以选择 : Ctrl＋F7
+
+可以显示参数信息 : Ctrl＋P
+
+把代码包在一块内，例如try/catch : Ctrl＋Alt＋T
+
+可以选择单词继而语句继而行继而函数 : Ctrl＋W
+
+跳转到上次编辑的地方 ：Ctrl＋Shift＋Backspace
