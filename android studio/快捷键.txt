@@ -18,6 +18,10 @@ File->Settings->Keymap
 显示当前文件的结构  : File Structure -> Ctrl + O 
 显示类结构图  : Type Hierarchy -> Ctrl + T 
 
+===================Main menu -> Edit -> Find===============
+全局搜索 : Find in path... -> Ctrl+H
+
+
 
 ===================================================
 导入包,自动修正 : Alt+回车
