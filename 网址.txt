@@ -7,6 +7,7 @@ http://www.sourceforge.net/
   
 3：http://code.taobao.org
 
+===========================================================linux=================================================
 4：请推荐有关网络的书： http://linux.vbird.org/linux_basic/0120howtolinux/0120howtolinux_1.php
 
 5：计算机基础 (http://www.study-area.org/compu/compu.htm)
@@ -46,3 +47,7 @@ http://www.sourceforge.net/
 22: 鸟哥的spfdisk教学：http://linux.vbird.org/linux_basic/0140spfdisk.php
 
 23:SegmentFault国内问答社区
+
+=================================================设计===============================================
+交互设计精髓
+http://dribbble.com/
