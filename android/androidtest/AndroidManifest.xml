@@ -50,36 +50,9 @@
         <activity android:name=".bitmap.BitmapActivity"/>
         <activity android:name=".canvasPath.PathTestActivity"/>
         <activity android:name=".fragment.FragmentLayout$DetailsActivity"/>
-        <activity android:name=".baidumapsdk.BMapApiDemoMain"/>
         <activity android:name=".saveInstance.ActivityB"
             android:launchMode="singleTask"
             />
-        
-        <activity android:name=".baidumapsdk.BaseMapDemo" android:screenOrientation="sensor" 
-        	android:configChanges="orientation|keyboardHidden"> </activity>
-        <activity android:name=".baidumapsdk.ItemizedOverlayDemo" android:screenOrientation="sensor" 
-        	android:configChanges="orientation|keyboardHidden"> </activity>
-        <activity android:name=".baidumapsdk.PoiSearchDemo" android:screenOrientation="sensor" 
-        	android:configChanges="orientation|keyboardHidden"> </activity>
-        <activity android:name=".baidumapsdk.LocationOverlayDemo" android:screenOrientation="sensor" 
-        	android:configChanges="orientation|keyboardHidden"> </activity>
-        <activity android:name="OfflineDemo" android:screenOrientation="sensor" 
-        	android:configChanges="orientation|keyboardHidden"> </activity>
-        <activity android:name=".baidumapsdk.RoutePlanDemo" android:screenOrientation="sensor" 
-        	android:configChanges="orientation|keyboardHidden"> </activity>
-        <activity android:name=".baidumapsdk.GeoCoderDemo" android:screenOrientation="sensor" 
-        	android:configChanges="orientation|keyboardHidden"> </activity>
-        <activity android:name=".baidumapsdk.BusLineSearchDemo" android:screenOrientation="sensor" 
-        	android:configChanges="orientation|keyboardHidden"> </activity>
-        <activity android:name=".baidumapsdk.CloudSearchDemo" android:screenOrientation="sensor" 
-        	android:configChanges="orientation|keyboardHidden"> </activity>
-        <activity android:name="com.baidu.mapapi.search.PlaceCaterActivity" 
-            android:configChanges="orientation|keyboardHidden"
-            android:theme="@android:style/Theme.NoTitleBar"> </activity>
-        
-        <service android:name="com.baidu.location.f" android:enabled="true"
-			android:process=":remote">
-		</service>
     </application>
     
      <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
@@ -94,6 +67,5 @@
 	<uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE"></uses-permission>
 	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
 	<uses-permission android:name="android.permission.ACCES_MOCK_LOCATION"></uses-permission>
-	<uses-permission android:name="android.permission.ACCESS_GPS" />
 
 </manifest>

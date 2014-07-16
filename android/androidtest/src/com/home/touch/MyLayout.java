@@ -28,13 +28,12 @@ public class MyLayout extends FrameLayout {
 	
 	@Override
 	public boolean onTouchEvent(MotionEvent event) {
-		Log.i(TAG, "onTouchEvent default return = " + super.onTouchEvent(event));
 		switch (event.getAction()) {
 		case MotionEvent.ACTION_DOWN:
 			Log.i(TAG, "onTouchEvent ACTION_DOWN");
 			break;
 		case MotionEvent.ACTION_MOVE:
-			
+			Log.i(TAG, "onTouchEvent ACTION_MOVE");
 			break;
 		case MotionEvent.ACTION_UP:
 			Log.i(TAG, "onTouchEvent ACTION_UP");
