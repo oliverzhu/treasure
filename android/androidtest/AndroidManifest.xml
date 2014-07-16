@@ -14,7 +14,7 @@
         android:theme="@style/AppTheme" 
         >
         <activity
-            android:name=".density.DensityActivity"
+            android:name=".touch.TouchDemoActivity"
             android:label="@string/title_activity_main" 
             android:launchMode="singleTask"
             >
@@ -25,6 +25,8 @@
             </intent-filter>
         </activity>
         
+        <activity android:name=".density.DensityActivity">
+        </activity>
         <activity android:name=".baidumapsdk.DemoApplication">
         </activity>
         <activity android:name=".activityinfo.CheckActivityInfo">
