@@ -13,7 +13,7 @@
         android:theme="@style/AppTheme" 
         >
         <activity
-            android:name=".anim.animatorset.AnimatorSetDemoActivity"
+            android:name=".density.DensityActivity"
             android:label="@string/title_activity_main" 
             android:launchMode="singleTask"
             >
@@ -24,9 +24,9 @@
             </intent-filter>
         </activity>
         
-        <activity android:name=".touch.TouchDemoActivity">
+        <activity android:name=".anim.animatorset.AnimatorSetDemoActivity">
         </activity>
-        <activity android:name=".density.DensityActivity">
+        <activity android:name=".touch.TouchDemoActivity">
         </activity>
         <activity android:name=".baidumapsdk.DemoApplication">
         </activity>

@@ -8,6 +8,7 @@ import android.widget.FrameLayout;
 
 public class MyLayout extends FrameLayout {
 	private static final String TAG = "MyLaout";
+	private boolean flag = false;
 	public MyLayout(Context context) {
 		super(context);
 	}
@@ -23,7 +24,21 @@ public class MyLayout extends FrameLayout {
 	@Override
 	public boolean onInterceptTouchEvent(MotionEvent ev) {
 		Log.i(TAG, "onInterceptTouchEvent default return = " + super.onInterceptTouchEvent(ev));
-		return false;
+		switch (ev.getAction()) {
+		case MotionEvent.ACTION_DOWN:
+			Log.i(TAG, "onInterceptTouchEvent ACTION_DOWN");
+			break;
+		case MotionEvent.ACTION_MOVE:
+			Log.i(TAG, "onInterceptTouchEvent ACTION_MOVE");
+			flag = true;
+			break;
+		case MotionEvent.ACTION_UP:
+			Log.i(TAG, "onInterceptTouchEvent ACTION_UP");
+			break;
+		default:
+			break;
+		}
+		return flag;
 	}
 	
 	@Override

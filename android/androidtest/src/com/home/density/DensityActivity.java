@@ -31,7 +31,6 @@ public class DensityActivity extends Activity {
 		sb.append("scaledDensity = " + dm.scaledDensity + "\n");
 		sb.append("xdpi = " + dm.xdpi + "\n");
 		sb.append("ydpi = " + dm.ydpi + "\n");
-		
 		sb.append("1dip = " + dip2px(this,1) + "px \n");
 		TextView tv = (TextView) findViewById(R.id.textView);
 		tv.setText(sb.toString());
