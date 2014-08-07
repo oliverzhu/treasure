@@ -2,6 +2,7 @@ package com.home.util;
 
 import java.lang.reflect.Method;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.ProgressDialog;
@@ -18,6 +19,8 @@ import android.graphics.Matrix;
 import android.os.Build;
 import android.telephony.TelephonyManager;
 import android.util.Log;
+import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Toast;
 
 /**
@@ -255,6 +258,32 @@ public class ContextUtils {
 			imei = "";
 		}
 		return imei;
+	}
+	
+	/**
+	 * @param activity
+	 */
+	public static void showSoftKeyboard(Activity activity, View view) {
+		((InputMethodManager) activity.getSystemService(activity.INPUT_METHOD_SERVICE)).showSoftInput(view, 0);
+	}
+
+	/**
+	 * @param activity
+	 */
+	public static void hideSoftKeyboard(Activity activity) {
+		if (activity == null) {
+			return;
+		}
+		try {
+			View focus = activity.getCurrentFocus();
+			if (focus == null) {
+				return;
+			}
+			InputMethodManager imm = ((InputMethodManager) activity.getSystemService(activity.INPUT_METHOD_SERVICE));
+			imm.hideSoftInputFromWindow(focus.getWindowToken(), 0);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	public static Intent getActivityIntent(Context context,String packageName,String className)
