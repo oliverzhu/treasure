@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CostomerServiceCenter</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="fragment_title_faq">常见问题</string>
+    <string name="fragment_title_feedback">用户反馈</string>
+    <string name="fragment_title_electronic_warranty_card">电子保单</string>
+    <string name="fragment_title_more">更多</string>
+    
+    <string name="error_system">系统自动重启</string>
+    <string name="error_battery">耗电过多</string>
+    <string name="error_phone">无法拨打电话</string>
+    <string name="error_net">无法上网</string>
+    <string name="error_application">应用异常退出</string>
+    <string name="error_data">死机</string>
+    <string name="error_others">其他错误</string>
+    <string name="sugar_advise">其他建议</string>
+    <string name="history_feedback">历史反馈</string>
+
+</resources>
