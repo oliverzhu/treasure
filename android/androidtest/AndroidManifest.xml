@@ -13,7 +13,7 @@
         android:theme="@style/AppTheme" 
         >
         <activity
-            android:name=".directory.DirectoryActivity"
+            android:name=".srcolllayout.ScrollLayoutActivity"
             android:label="@string/title_activity_main" 
             android:launchMode="singleTask"
             >
@@ -24,6 +24,8 @@
             </intent-filter>
         </activity>
         
+        <activity android:name=".directory.DirectoryActivity">
+        </activity>
         <activity android:name=".progressbar.ProgessBarDemoActivity">
         </activity>
         <activity android:name=".density.DensityActivity">
