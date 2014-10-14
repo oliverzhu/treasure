@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_popup_menu_bg">
+    
+    <TextView 
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/myos_widget_height"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="@string/ex_date_picker_title"
+        android:textSize="@dimen/topbar_title_text_size"
+        android:textColor="@color/topbar_title_text_color"
+        android:background="@drawable/ic_popup_menu_title"/>
+    
+    <LinearLayout 
+        android:id="@+id/date_layout"
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="20dip"
+        android:layout_below="@id/title" 
+        android:layout_centerInParent="true"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+        
+    </LinearLayout>
+    
+    <com.home.datepicker.DatePicker
+        android:id="@+id/datapicker"
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="20dip"
+        android:layout_below="@id/title" 
+        android:layout_centerInParent="true"/>
+    
+    <LinearLayout 
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="-14dip"
+        android:paddingBottom="10dip"
+        android:layout_below="@id/date_layout"
+        android:orientation="horizontal">
+        
+        <Button 
+            android:id="@+id/negative"
+            android:layout_width="0dip"
+            android:layout_height="@dimen/myos_widget_height"
+            android:layout_weight="1.0"
+            android:background="@drawable/button_left_selector"
+            android:text="@string/cancel"
+            android:textSize="@dimen/myos_user_info_label_text"
+            android:textColor="@color/topbar_title_text_color"/>
+        
+        <Button 
+            android:id="@+id/positive"
+            android:layout_width="0dip"
+            android:layout_height="@dimen/myos_widget_height"
+            android:layout_weight="1.0"
+            android:background="@drawable/button_right_selector"
+            android:text="@string/ok"
+            android:textSize="@dimen/myos_user_info_label_text"
+            android:textColor="@color/topbar_title_text_color"/>
+    </LinearLayout>
+</RelativeLayout>

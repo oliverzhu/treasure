@@ -13,7 +13,7 @@
         android:theme="@style/AppTheme" 
         >
         <activity
-            android:name=".swipe.SwipeActivity"
+            android:name=".datepicker.DatePickerActivity"
             android:label="@string/title_activity_main" 
             android:launchMode="singleTask"
             >
@@ -24,11 +24,13 @@
             </intent-filter>
         </activity>
         
+        <activity android:name=".progressbar.ProgessBarDemoActivity">
+        </activity>
         <activity android:name=".srcolllayout.ScrollLayoutActivity">
         </activity>
         <activity android:name=".directory.DirectoryActivity">
         </activity>
-        <activity android:name=".progressbar.ProgessBarDemoActivity">
+        <activity android:name=".swipe.SwipeActivity">
         </activity>
         <activity android:name=".density.DensityActivity">
         </activity>

@@ -35,5 +35,18 @@
         <attr name="ptrAdapterViewBackground" format="reference|color" />
         <attr name="ptrDrawableTop" format="reference" />
         <attr name="ptrDrawableBottom" format="reference" />
-    </declare-styleable>     
+    </declare-styleable> 
+    
+    <declare-styleable name="NumberPicker">
+        <!-- Color for the solid color background if such for optimized rendering. -->
+        <attr name="solidColor" format="color|reference" />
+        <!-- The min height of the NumberPicker. -->
+        <attr name="internalMinHeight" format="dimension" />
+        <!-- The max height of the NumberPicker. -->
+        <attr name="internalMaxHeight" format="dimension" />
+        <!-- The min width of the NumberPicker. -->
+        <attr name="internalMinWidth" format="dimension" />
+        <!-- The max width of the NumberPicker. -->
+        <attr name="internalMaxWidth" format="dimension" />
+    </declare-styleable>
 </resources>

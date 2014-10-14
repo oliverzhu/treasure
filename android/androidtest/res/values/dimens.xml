@@ -11,5 +11,10 @@
     <dimen name="header_footer_top_bottom_padding">10dp</dimen>
     <dimen name="header_footer_internal_padding">20dp</dimen>
     <dimen name="header_footer_max_width">320dp</dimen>
+    
+    <dimen name="myos_widget_height">48dip</dimen>
+    
+    <dimen name="myos_user_info_label_text">15sp</dimen>
+    <dimen name="topbar_title_text_size">18.0sp</dimen>
 
 </resources>
