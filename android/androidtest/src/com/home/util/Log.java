@@ -3,7 +3,7 @@ package com.home.util;
 public class Log {
 	public static final boolean DEBUG = true;
 	public static final boolean DATA_DEBUG = true;
-	public static final boolean APP_DEBUG = false;
+	public static final boolean APP_DEBUG = true;
 	public static final boolean DISPLAY_DEBUG = false;
 	public static final int DATA = 0;
 	public static final int DISPLAY = 1;
