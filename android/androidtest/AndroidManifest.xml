@@ -4,7 +4,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="11"
+        android:minSdkVersion="14"
         android:targetSdkVersion="15" />
 
     <application
@@ -13,7 +13,7 @@
         android:theme="@style/AppTheme" 
         >
         <activity
-            android:name=".countdowntimer.CountDownTimerActivity"
+            android:name=".customswitch.SwitchActivity"
             android:label="@string/title_activity_main" 
             android:launchMode="singleTask"
             >
@@ -24,6 +24,8 @@
             </intent-filter>
         </activity>
         
+        <activity android:name=".countdowntimer.CountDownTimerActivity">
+        </activity>
         <activity android:name=".datepicker.DatePickerActivity">
         </activity>
         <activity android:name=".progressbar.ProgessBarDemoActivity">

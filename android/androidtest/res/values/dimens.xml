@@ -16,5 +16,9 @@
     
     <dimen name="myos_user_info_label_text">15sp</dimen>
     <dimen name="topbar_title_text_size">18.0sp</dimen>
+    
+    <dimen name="switch_min_width">51dp</dimen>
+    <dimen name="switch_padding_default">16dip</dimen>
+    <dimen name="switch_thumb_text_padding">12.5dip</dimen>
 
 </resources>

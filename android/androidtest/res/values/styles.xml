@@ -21,5 +21,4 @@
         <item name="android:paddingRight">0dip</item>
         <item name="android:paddingBottom">3dip</item>
     </style>
-
 </resources>
