@@ -52,6 +52,11 @@ git commit --amend -m "<BUG><SWDAO-753><S9320_4.2_V6.0:修改标题颜色>"
     git tag -f S9320_4.2_V6.0
 		git push tinno S9320_4.2_V6.0:S9320_4.2_V6.0
 		
+15:打版本tag
+在当前文件提交后(git push origin master)需要给当前版本打个tag
+git tag V7
+git push origin V7
+		
 二：SourceInsight
 1：添加目录 Build,Frameworks,Libcore,Mediatek,Packages,Vendor
 
