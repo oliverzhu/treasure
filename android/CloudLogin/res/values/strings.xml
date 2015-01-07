@@ -1,0 +1,154 @@
+<resources>
+
+    <string name="app_name">OneLogin</string>
+    
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="user_title">My information</string>
+    <string name="user_modify">Edit information</string>
+    <string name="user_edit">Edit</string>
+    <string name="main_menu_favorite">Favorite</string>
+    <string name="favorite_default_count">0</string>
+    <string name="sina_weibo">Sina</string>
+    <string name="tencent_weibo">QQ</string>
+    <string name="sina_login_label">Sina Login</string>
+    <string name="tencent_login_label">QQ Login</string>
+    <string name="cloud_login_label">Cloud Login</string>
+    <string name="user_bind_weibo">Already logged in</string>
+    <string name="modify_user_info">Edit</string>
+    <string name="user_logout">Logout</string>
+    <string name="user_signin">Register</string>
+    <string name="user_register">Register Account</string>
+    <string name="user_save">Save</string>
+    <string name="user_login">Login</string>
+    <string name="user_login_message">Login...</string>
+    <string name="user_login_load_user_info">Loading user information...</string>
+    <string name="user_login_timeout">Local data expiration, Re login...</string>
+    <string name="user_signin_message">Registering...</string>
+    <string name="user_signin_success">Register succeed</string>
+    <string name="user_signin_fail">Register fail</string>
+    <string name="user_modify_success">Save succeed</string>
+    <string name="user_avatar_modify_fail">Avatar upload fail</string>
+    <string name="user_avatar_load_fail">Avatar load fail</string>
+    <string name="user_avatar_load_success">Avatar load success</string>
+    <string name="user_modify_fail">Save fail</string>
+    <string name="user_saving">Saving...</string>
+    <string name="user_signin_fail_by_duplicate">Account already exists.</string>
+    <string name="user_signin_fail_by_email">Email has been registered.</string>
+    <string name="user_signin_fail_by_mobile">Mobile has been registered.</string>
+    <string name="user_name_hint">Account</string>
+    <string name="nick_name_hint">Nickname</string>
+    <string name="password_hint">Password</string>
+    <string name="birthday_hint">Birthday</string>
+    <string name="confirm_password_hint">Please confirm your password.</string>
+    <string name="old_password_hint">Original</string>
+    <string name="new_password_hint">New</string>
+    <string name="phone_hint">Phone(Optional)</string>
+    <string name="email_hint">Email(Optional)</string>
+    <string name="username_empty">The account cannot be empty.</string>
+    <string name="nickname_empty">The nickname cannot be empty.</string>
+    <string name="password_empty">The password cannot be empty.</string>
+    <string name="password_not_same">The passwords do not match.</string>
+    <string name="password_same">Not the same as the original password.</string>
+    <string name="old_password_not_true">The original password is not correct.</string>
+    <string name="login_success">Login succeed!</string>
+    <string name="login_fail">Login fail!</string>
+    <string name="login_fail_by_authorize">Login fail, Please check your account and password.</string>
+    <string name="login_fail_by_date">Login fail, Please confirm your system time.</string>
+    <string name="user_logouting">Logout...</string>
+    <string name="user_logout_success">Logout succeed!</string>
+    <string name="user_logout_error">Logout fail!</string>
+    <string name="switch_login_title">Switch Login</string>
+    <string name="switch_login_message">Cancel the current login confirmation?</string>
+    <string name="unknown_user">Anonymous</string>
+    <string name="unknown_user_ex">Logged out</string>
+    <string name="show_password">Show password</string>
+    
+    <string name="label_user_name">Account:</string>
+    <string name="label_nick_name">Nickname:</string>
+    <string name="label_phone">Phone:</string>
+    <string name="label_email">Email:</string>
+    <string name="label_sexdist">Gender:</string>
+    <string name="label_birthday">Birthday:</string>
+    <string name="label_address">Address:</string>
+    <string name="label_mobile">Mobile:</string>
+    <string name="label_email_ex">Email:</string>
+    
+    <string name="takePictureTitle">Upload Avatar</string>
+    <string name="takePictureFromAlbum">Obtained from the album</string>
+    <string name="takePictureFromCamera">Camera</string>
+    
+    <string name="pop_modify_userinfo_title">Edit Detail</string>
+    <string name="pop_modify_password_title">Edit Password</string>
+    
+    <string name="ex_default_account">Cloud Account</string>
+    <string name="ex_account">Account</string>
+    <string name="ex_email">Email</string>
+    <string name="ex_mobile">Mobile</string>
+    <string name="ex_address">Address</string>
+    <string name="ex_password">Password</string>
+    <string name="ex_gender">Gender</string>
+    <string name="ex_male">Male</string>
+    <string name="ex_female">Female</string>
+    <string name="ex_confirm_password">Confirm</string>
+    <string name="ex_account_hint">Account</string>
+    <string name="ex_password_hint">Password</string>
+    <string name="ex_email_hint">Please enter your email</string>
+    <string name="ex_forget_passwd">Forget Password</string>
+    <string name="ex_cooperate_account">Cooperation</string>
+    <string name="ex_register">Register Account</string>
+    <string name="ex_network_error">Network connection error!</string>
+    <string name="ex_register_title">Register</string>
+    <string name="ex_picture_title">Edit Avatar</string>
+    <string name="ex_picture_from_camera">Camera</string>
+    <string name="ex_picture_from_album">Obtained from the album</string>
+    <string name="ex_user_detail_title">Account Detail</string>
+    <string name="ex_logout">Logout</string>
+    <string name="ex_logout_content">Exit the account?</string>
+    <string name="ex_modify_password">Modify password</string>
+    <string name="ex_get_back_password">Find password</string>
+    <string name="ex_next_step">Next</string>
+    <string name="ex_finish">Finish</string>
+    <string name="ex_send_email_title">Send Email</string>
+    <string name="ex_send_email">Sending Email...</string>
+    
+    <string name="ex_smart_edit_nickname">Edit Nickname</string>
+    <string name="ex_smart_edit_mobile">Edit Mobile</string>
+    <string name="ex_smart_edit_address">My address</string>
+    <string name="ex_smart_edit_email">Edit Email</string>
+    
+    <string name="ex_edit_modify_avator">Edit Avatar</string>
+    <string name="ex_date_notice">Date format error</string>
+    <string name="ex_forget_password_main_hint">Please enter the registered email</string>
+    <string name="ex_forget_password_send_email">The new password has be send to %1$s , Please receive.</string>
+    <string name="ex_forget_password_not_exist">The email has not registered.</string>
+    <string name="ex_forget_password_coosdk">Cooperation account not support change password.</string>
+    <string name="ex_forget_password_anonymous">Anonymous account not support change password.</string>
+    <string name="ex_forget_password_email_title">Find password</string>
+    <string name="ex_forget_password_email_body">%1$s, Your password has been reset to  %2$s  Please login and modify the password!</string>
+    <string name="ex_register_account_hint">Enter 8-15 account</string>
+    <string name="ex_register_email_hint">Enter email</string>
+    <string name="ex_register_mobile_hint">Enter mobile</string>
+    <string name="ex_register_passwd_hint">Enter at least 8 password</string>
+    <string name="ex_register_confirm_passwd_hint">Repeat password</string>
+    
+    <string name="ex_register_account_notice">By letters and digits, length 8-50.</string>
+    <string name="ex_register_email_notice">Enter right email.</string>
+    <string name="ex_register_email_empty_notice">Email cannot be empty.</string>
+    <string name="ex_register_moblie_notice">Enter right mobile.</string>
+    <string name="ex_register_moblie_empty_notice">Mobile cannot be empty.</string>
+    <string name="ex_register_password_notice">Must contain letters, numbers, special characters, and the length of not less than 8.</string>
+    
+    <string name="ex_register_simple_waring_hint">Required, to facilitate the password, please fill in the correct.</string>
+    <string name="ex_register_waring_hint">Requtied, for the convenience of password and better enjoy our service, please fill in the correct.</string>
+    
+    <string name="ex_date_picker_title">Set Date</string>
+    <string name="ex_date_year">Year</string>
+    <string name="ex_date_month">Month</string>
+    <string name="ex_date_day">Day</string>
+    
+    <string name="ex_user_load_title">Load Data</string>
+    <string name="ex_user_load_message">Loading...</string>
+    
+    <string name="user_info">User Info</string>
+</resources>

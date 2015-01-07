@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ape="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <com.ape.onelogin.myos.widget.MyOSActionBar 
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/myos_widget_height"
+        ape:titleName="@string/ex_user_detail_title"
+        ape:simpleButton="false"
+        ape:opetionMenu="true"/>
+
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/user_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/myos_activity_marginLeft"
+                android:layout_marginRight="@dimen/myos_activity_marginRight"
+                android:orientation="vertical">
+                <RelativeLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/myos_avatar_marginTop"
+                    android:layout_marginBottom="@dimen/myos_avatar_marginBottom">
+                    
+                    <com.ape.onelogin.widget.CircleImageView 
+                        android:id="@+id/avatar"
+                        android:layout_width="@dimen/myos_avatar_small_width"
+                        android:layout_height="@dimen/myos_avatar_small_height"
+                        android:background="@drawable/ic_default_avatar_man_small"
+                        ape:borderWidth="0dip"
+                        ape:borderColor="@color/white"/>
+                    <ImageButton
+                        android:id="@+id/avatar_button"
+                        android:layout_width="@dimen/myos_avatar_small_width"
+                        android:layout_height="@dimen/myos_avatar_small_height"
+                        android:background="@drawable/avatar_small_selector"/>
+                    <TextView 
+                        android:id="@+id/nick_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/myos_widget_height"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/avatar"
+                        android:layout_marginLeft="30dip"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:text="@string/ex_default_account"
+                        android:textSize="@dimen/topbar_title_text_size"
+                        android:background="@drawable/myos_textview_selector"
+                        android:clickable="true"/>
+        
+                </RelativeLayout>
+                <View 
+                    android:id="@+id/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@drawable/divider"/>
+            </LinearLayout>
+            <include layout="@layout/myos_user_detail_container_child"/>
+            <Button 
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/myos_widget_height"
+                android:layout_marginLeft="@dimen/myos_activity_marginLeft"
+                android:layout_marginTop="50dip"
+                android:layout_marginRight="@dimen/myos_activity_marginRight"
+                android:layout_marginBottom="@dimen/myos_activity_marginBottom"
+                android:text="@string/ex_logout"
+                android:textColor="@android:color/white"
+                android:background="@drawable/myos_button_red_selector"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ape="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <com.ape.onelogin.myos.widget.MyOSActionBar 
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/myos_widget_height"
+        ape:simpleButton="true"
+        ape:simpleButtonName="@string/user_save"
+        ape:opetionMenu="false"/>
+    
+    <EditText 
+        android:id="@+id/edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/myos_activity_marginLeft"
+        android:layout_marginTop="@dimen/myos_activity_marginTop"
+        android:layout_marginRight="@dimen/myos_activity_marginRight"
+        android:layout_marginBottom="@dimen/myos_activity_marginBottom"
+        android:textSize="@dimen/myos_edittext"/>
+</LinearLayout>

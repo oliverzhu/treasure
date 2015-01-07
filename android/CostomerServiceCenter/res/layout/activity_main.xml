@@ -20,10 +20,11 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
 
-    <com.client.costomerservicecenter.widget.vpi.TabPageIndicator
+    <com.client.customerservicecenter.widget.vpi.TabPageIndicator
         android:id="@+id/indicator"
         android:layout_height="wrap_content"
         android:layout_width="fill_parent"
+        android:background="@drawable/bg_title_bar"
         />
     <android.support.v4.view.ViewPager
         android:id="@+id/pager"

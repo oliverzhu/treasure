@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <TextView
+        android:id="@+id/numberpicker_input"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:gravity="center"
+        android:singleLine="true"
+        android:background="@null" />
+</merge>

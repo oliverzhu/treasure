@@ -1,0 +1,155 @@
+<resources>
+
+    <string name="app_name">易登錄</string>
+    
+    <string name="ok">確定</string>
+    <string name="cancel">取消</string>
+    <string name="user_title">我的資料</string>
+    <string name="user_modify">修改資料</string>
+    <string name="user_edit">編輯</string>
+    <string name="main_menu_favorite">我的收藏</string>
+    <string name="favorite_default_count">0</string>
+    <string name="sina_weibo">新浪微博</string>
+    <string name="tencent_weibo">騰訊QQ</string>
+    <string name="sina_login_label">新浪登錄</string>
+    <string name="tencent_login_label">騰訊登錄</string>
+    <string name="cloud_login_label">雲登錄</string>
+    <string name="user_bind_weibo">已登錄</string>
+    <string name="modify_user_info">修改</string>
+    <string name="user_logout">登出</string>
+    <string name="user_signin">註冊</string>
+    <string name="user_register">註冊新用戶</string>
+    <string name="user_save">保存</string>
+    <string name="user_login">登錄</string>
+    <string name="user_login_message">正在登錄...</string>
+    <string name="user_login_load_user_info">載入使用者資訊...</string>
+    <string name="user_login_timeout">本地數據過期，重新登錄...</string>
+    <string name="user_signin_message">正在註冊...</string>
+    <string name="user_signin_success">註冊成功</string>
+    <string name="user_signin_fail">註冊失敗</string>
+    <string name="user_modify_success">保存成功</string>
+    <string name="user_modify_fail">保存失敗</string>
+    <string name="user_avatar_modify_fail">頭像上傳失敗</string>
+    <string name="user_avatar_load_fail">頭像載入失敗</string>
+    <string name="user_avatar_load_success">頭像載入成功</string>
+    <string name="user_saving">正在保存...</string>
+    <string name="user_signin_fail_by_duplicate">用戶名已存在</string>
+    <string name="user_signin_fail_by_email">郵箱已被註冊</string>
+    <string name="user_signin_fail_by_mobile">手機已被註冊</string>
+    <string name="user_name_hint">帳號</string>
+    <string name="nick_name_hint">昵稱</string>
+    <string name="password_hint">密碼</string>
+    <string name="birthday_hint">生日</string>
+    <string name="confirm_password_hint">確認您的密碼</string>
+    <string name="old_password_hint">原始密碼</string>
+    <string name="new_password_hint">新密碼</string>
+    <string name="phone_hint">電話(可選)</string>
+    <string name="email_hint">郵箱(可選)</string>
+    <string name="username_empty">用戶名不能為空</string>
+    <string name="nickname_empty">昵稱不能為空</string>
+    <string name="password_empty">密碼不能為空</string>
+    <string name="password_not_same">兩次密碼不一致</string>
+    <string name="password_same">不能與原始密碼相同</string>
+    <string name="old_password_not_true">原始密碼不正確</string>
+    <string name="login_success">登錄成功</string>
+    <string name="login_fail">登錄失敗</string>
+    <string name="login_fail_by_authorize">登錄失敗，請檢查您的用戶名和密碼</string>
+    <string name="login_fail_by_date">登錄失敗，請確認您的系統時間正確</string>
+    <string name="user_logouting">正在登出...</string>
+    <string name="user_logout_success">登出成功</string>
+    <string name="user_logout_error">登出失敗</string>
+    <string name="switch_login_title">切換登錄</string>
+    <string name="switch_login_message">確定取消當前登錄</string>
+    <string name="unknown_user">匿名</string>
+    <string name="unknown_user_ex">未登錄</string>
+    <string name="show_password">顯示密碼</string>
+    
+    <string name="label_user_name">帳號：</string>
+    <string name="label_nick_name">昵稱：</string>
+    <string name="label_phone">聯繫方式：</string>
+    <string name="label_email">電子郵件：</string>
+    <string name="label_sexdist">性別：</string>
+    <string name="label_birthday">生日：</string>
+    <string name="label_address">地址：</string>
+    <string name="label_mobile">手機：</string>
+    <string name="label_email_ex">郵箱：</string>
+    
+    <string name="takePictureTitle">上傳頭像</string>
+    <string name="takePictureFromAlbum">從相冊中獲取</string>
+    <string name="takePictureFromCamera">照相</string>
+    
+    <string name="pop_modify_userinfo_title">修改資料</string>
+    <string name="pop_modify_password_title">修改密碼</string>
+    
+    <string name="ex_default_account">雲帳戶</string>
+    <string name="ex_account">帳號</string>
+    <string name="ex_email">郵箱</string>
+    <string name="ex_mobile">手機</string>
+    <string name="ex_address">位址</string>
+    <string name="ex_password">密碼</string>
+    <string name="ex_gender">性別</string>
+    <string name="ex_male">男</string>
+    <string name="ex_female">女</string>
+    <string name="ex_confirm_password">確認密碼</string>
+    <string name="ex_account_hint">帳號</string>
+    <string name="ex_password_hint">密碼</string>
+    <string name="ex_email_hint">請輸入您的郵箱</string>
+    <string name="ex_forget_passwd">忘記密碼</string>
+    <string name="ex_cooperate_account">社交帳戶登錄</string>
+    <string name="ex_register">新用戶註冊</string>
+    <string name="ex_network_error">網路連接錯誤</string>
+    <string name="ex_register_title">註冊帳戶</string>
+    <string name="ex_picture_title">修改頭像</string>
+    <string name="ex_picture_from_camera">拍照</string>
+    <string name="ex_picture_from_album">從圖庫中選擇照片</string>
+    <string name="ex_user_detail_title">帳戶資訊</string>
+    <string name="ex_logout">註銷</string>
+    <string name="ex_logout_content">是否退出已登錄帳戶？</string>
+    <string name="ex_modify_password">修改密碼</string>
+    <string name="ex_get_back_password">找回密碼</string>
+    <string name="ex_next_step">下一步</string>
+    <string name="ex_finish">完成</string>
+    
+    <string name="ex_smart_edit_nickname">修改昵稱</string>
+    <string name="ex_smart_edit_mobile">修改手機</string>
+    <string name="ex_smart_edit_address">我的地址</string>
+    <string name="ex_smart_edit_email">更改郵箱</string>
+    
+    <string name="ex_edit_modify_avator">編輯頭像</string>
+    <string name="ex_date_notice">日期格式錯誤</string>
+    <string name="ex_forget_password_main_hint">請輸入註冊帳戶所使用的郵箱</string>
+    <string name="ex_forget_password_send_email">系統已將密碼發送至 %1$s 郵箱，請登錄郵箱後查看</string>
+    <string name="ex_register_account_hint">輸入8-50位帳號</string>
+    <string name="ex_register_email_hint">輸入電子郵箱</string>
+    <string name="ex_register_mobile_hint">輸入手機</string>
+    <string name="ex_register_passwd_hint">輸入8位元以上密碼</string>
+    <string name="ex_register_confirm_passwd_hint">重複輸入8位元以上密碼</string>
+    
+    <string name="ex_register_account_notice">由字母、數位組成，長度8-50位</string>
+    <string name="ex_register_email_notice">輸入正確的郵箱</string>
+    <string name="ex_register_email_empty_notice">郵箱不能為空</string>
+    <string name="ex_register_moblie_notice">輸入正確的手機號碼</string>
+    <string name="ex_register_moblie_empty_notice">手機不能為空</string>
+    <string name="ex_register_password_notice">必須包含字母、數位、特殊字元，且長度不少於8位</string>
+    
+    <string name="ex_register_simple_waring_hint">為必填項，為方便找回密碼，請正確填寫。</string>
+    <string name="ex_register_waring_hint">為必填項，為了方便找回密碼及更好的享受我們的服務，請您正確填寫。</string>
+    
+    <string name="ex_send_email_title">發送郵件</string>
+    <string name="ex_send_email">郵件發送中...</string>
+    <string name="ex_forget_password_not_exist">此郵箱還未註冊。</string>
+    <string name="ex_forget_password_coosdk">協力廠商帳戶不支援密碼修改。</string>
+    <string name="ex_forget_password_anonymous">匿名帳戶不支援密碼修改。</string>
+    <string name="ex_forget_password_email_title">找回密碼</string>
+    <string name="ex_forget_password_email_body">%1$s, 您的密碼已經重置為  %2$s  請登錄並修改密碼!</string>
+    
+    <string name="ex_date_picker_title">設定日期</string>
+    <string name="ex_date_year">年</string>
+    <string name="ex_date_month">月</string>
+    <string name="ex_date_day">日</string>
+    
+    <string name="ex_user_load_title">載入數據</string>
+    <string name="ex_user_load_message">載入中...</string>
+    
+    <string name="user_info">使用者資訊</string>
+</resources>

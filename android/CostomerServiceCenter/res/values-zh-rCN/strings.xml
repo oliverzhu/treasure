@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">用户中心</string>
+    
+    <string name="btn_ok">确定</string>
+    <string name="btn_cancel">取消</string>
+    <string name="btn_save">保存</string>
+    
+    <string name="fragment_title_faq">常见问题</string>
+    <string name="fragment_title_feedback">用户反馈</string>
+    <string name="fragment_title_electronic_warranty_card">电子保单</string>
+    <string name="fragment_title_more">更多</string>
+    
+    <string name="error_system">系统自动重启</string>
+    <string name="error_battery">耗电过多</string>
+    <string name="error_phone">无法拨打电话</string>
+    <string name="error_net">无法上网</string>
+    <string name="error_application">应用异常退出</string>
+    <string name="error_data">死机</string>
+    <string name="error_others">其他错误</string>
+    <string name="sugar_advise">其他建议</string>
+    <string name="history_feedback">历史反馈</string>
+    
+    <string name="tip_description">问题描述</string>
+    <string name="tip_phone">您的电话</string>
+    <string name="tip_email">您的邮箱</string>
+    <string name="tip_pic">附图</string>
+    <string name="tip_noMessages">"点击屏幕   重新加载"</string>
+    <string name="tip_noData">无反馈</string>
+    <string name="tip_loading">正在加载...</string>
+    <string name="hint_writeReply">追加反馈</string>
+    <string name="hint_description">说明（必填）</string>
+    <string name="hint_search">搜索</string>
+    <string name="hint_contact">联系方式（可选）</string>
+    <string name="hint_pic">附图支持格式:jpeg,jpg,bmp,png,gif</string>
+    <string name="label_customerservice">客服回复</string>
+    <string name="label_user">您</string>
+    <string name="label_anonymous">匿名</string>
+    <string name="label_feedback_type">"问题类型  :  "</string>
+    <string name="label_feedback_content">"反馈内容"</string>
+    <string name="label_feedback_answer">"客服回复"</string>
+    <string name="label_location">定位城市网点</string>
+    <string name="label_near_by_serviceoutlets">城市服务网点</string>
+    <string name="label_serviceoutlets">全国售后网点查询</string>
+    
+    <string name="submit">提交</string>
+    <string name="comment">反馈</string>
+    <string name="submitComment">正在提交</string>
+	<string name="submitSuccess">提交成功</string>
+	<string name="submitFail">提交失败</string>
+	<string name="commentHint">反馈内容不能为空</string>
+	
+	<string name="toast_net_error">当前网络不可用</string>
+	<string name="toast_server_error">获取失败</string>
+	<string name="toast_picutre_size">至多只能上传10张图片</string>
+	<string name="toast_activate_fail">无法激活，请稍后再试</string>
+    <string name="toast_activate_success">激活成功</string>
+    <string name="toast_activate_user_success">保存成功</string>
+    <string name="toast_locating">正在定位...</string>
+    <string name="toast_delete_warn">未解决的问题不可删除</string>
+    <string name="toast_lack_login_error">请先安装登录应用</string>
+	
+	<string name="recently">刚刚</string>
+	<string name="minutesAgo">分钟前</string>
+	<string name="hoursAgo">小时前</string>
+	
+	<string name="resolving">"待解决"</string>
+	<string name="resolved">"已解决"</string>
+	<string name="replied">"已回复"</string>
+	
+	<string name="title_imei">维修串号IMEI</string>
+    <string name="title_repair_date">保修到期</string>
+    <string name="title_user_msg">用户信息</string>
+    <string name="title_about">什么是电子保卡</string>
+    <string name="title_warranty_policy">三包政策</string>
+    <string name="title_service_outlets">服务网点</string>
+    <string name="title_version_update">版本更新</string>
+    <string name="title_gps">开启定位服务</string>
+    <string name="title_content_warranty_policy">"				SUGAR手机售后服务承诺："</string>
+    
+    <string name="summary_repair_date">如无法联网激活,维修仍以票据为准</string>
+    <string name="summary_user_msg">完善用户信息有助于提高维修效率</string>
+    <string name="summary_gps">获取您的位置自动定位附近的服务维修</string>
+    <string name="summary_content_warranty_policy">"				严格依据《消费者权益保护法》、《中华人民共和国产品质量法》及《移动电话机商品维修更换退费责任规定》实行售后三包服务，服务内容如下：\n				在三包有效期内，您可依照本规定享受维修、更换、退货的权利，修理、换货、退货应当凭发票和三包凭证办理。\n				自您购机日起7日内，移动电话主机出现《移动电话机商品性能故障表》所列性能故障的情况，经SUGAR售后服务中心检测确定，依据您的选择，免费办理退货、换货或修理。\n				自您购机日起8日—30日内，移动电话主机出现《移动电话机商品性能故障表》所列性能故障的情况，经由SUGAR售后服务中心检测确定，依据您的选择，可免费进行换货或者修理。\n				自您购机日起12个月内，移动电话主机出现《移动电话机商品性能故障表》所列性能故障的情况，经由SUGAR售后服务中心检测确定，依据您的选择，可免费进行修理。\n				电池、充电器、外接有线耳机、数据线等移动电话机附件，出现《移动电话机商品性能故障表》所列性能故障的，经由SUGAR售后服务中心检测确定，可为您免费更换同品牌同型号同规格的附件，更换两次仍不能正常使用的，免费为您退货。电池（内置密封）、充电器、数据线保修时间均为1年，外接有线耳机（第三方品牌耳机除外）保修时间为6个月。"</string>
+    
+    
+    <string name="dialog_title_activate">激活提醒</string>
+    <string name="dialog_message_activate">电子保卡需要联网激活，激活后将享受无纸化保修服务，是否开启网络</string>
+    <string name="dialog_title_feedback_delete">删除</string>
+    <string name="dialog_message_feedback_delete">是否删除该记录</string>
+    
+    <string name="progressdialog_title_activate">电子保卡</string>
+    <string name="progressdialog_message_activate">正在激活...</string>
+    
+    <string name="activated">已激活</string>
+    <string name="activate">激活</string>
+    
+    <string name="content_ewc">"				电子保修卡是手机保修信息注册方式之一。\n				购买有电子保修卡功能手机的用户，除了填写和注册纸质保修卡之外，还需要注册电子保卡，注册不收取用户任何费用，只需用户将手机联网即可。通过电子保卡，用户信息可以快速准确地被发送到厂家的销售和售后系统，以便您能享受到更为便利的服务。每个手机有一个串号（IMEI），注册的是串号不是手机号码，所以换号码也没有关系。\n				注册流程：打开【用户中心】客户端，点击\"电子保卡\"点击页面上的\"激活\"按钮"。</string>
+    
+    <string name="notification_title_activate">激活提醒</string>
+    <string name="notification_summary_activate">激活电子保单，享受无纸质化保修服务</string>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="borderWidth" format="dimension" />
+    <attr name="borderColor" format="color" />
+    <declare-styleable name="CircleImageView">
+        <attr name="borderWidth" />
+        <attr name="borderColor" />
+    </declare-styleable>
+    
+    <declare-styleable name="MyOSEditText">
+        <attr name="style">
+            <enum name="top" value="0"/>
+            <enum name="middle" value="1"/>
+            <enum name="bottom" value="2"/>
+            <enum name="independent" value="3"/>
+        </attr>
+        <attr name="maxLength" format="integer"/>
+        <attr name="showNotice" format="boolean"/>
+        <attr name="showNecessary" format="boolean"/>
+        <attr name="title" format="string"/>
+        <attr name="hint" format="string"/>
+        <attr name="necessaryHint" format="string"/>
+        <attr name="icon" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="MyOSActionBar">
+        <attr name="titleName" format="reference"/>
+        <attr name="simpleButtonName" format="reference"/>
+        <attr name="simpleButton" format="boolean"/>
+        <attr name="opetionMenu" format="boolean"/>
+    </declare-styleable>
+    
+    <declare-styleable name="NumberPicker">
+        <!-- Color for the solid color background if such for optimized rendering. -->
+        <attr name="solidColor" format="color|reference" />
+        <!-- The min height of the NumberPicker. -->
+        <attr name="internalMinHeight" format="dimension" />
+        <!-- The max height of the NumberPicker. -->
+        <attr name="internalMaxHeight" format="dimension" />
+        <!-- The min width of the NumberPicker. -->
+        <attr name="internalMinWidth" format="dimension" />
+        <!-- The max width of the NumberPicker. -->
+        <attr name="internalMaxWidth" format="dimension" />
+    </declare-styleable>
+</resources>

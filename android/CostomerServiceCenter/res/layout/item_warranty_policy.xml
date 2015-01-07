@@ -1,0 +1,57 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/view_selector"
+    android:paddingLeft="20dip"
+    android:paddingRight="20dip"
+    >
+    <ImageView 
+        android:id="@+id/icon_card_about"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_alignParentLeft="true"
+    	android:layout_centerVertical="true"
+    	android:src="@drawable/ic_warranty_policy"/>
+    <LinearLayout 
+        android:id="@+id/container_about"
+        android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:gravity="center_vertical"
+		android:layout_marginLeft="12dip"
+		android:layout_toRightOf="@+id/icon_card_about"
+		android:layout_toLeftOf="@+id/indicator"
+		android:paddingTop="16dip"
+		android:paddingBottom="16dip"
+		android:orientation="vertical"
+		>
+        <TextView 
+         	android:id="@+id/title_card_about"
+         	android:layout_width="match_parent"
+ 			android:layout_height="0dip"
+ 			android:gravity="center_vertical"
+ 			android:textSize="16sp"
+ 			android:textColor="@color/text_color_primary"
+ 			android:text="@string/title_warranty_policy"
+ 			android:layout_weight="1"
+        />
+    </LinearLayout>
+    
+    <ImageView 
+        android:id="@+id/indicator"
+        android:layout_width="15dip"
+    	android:layout_height="15dip"
+    	android:layout_alignParentRight="true"
+    	android:scaleType="centerInside"
+    	android:layout_centerVertical="true"
+    	android:src="@drawable/ic_indicator"/>
+    
+    <ImageView 
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+		android:layout_height="0.67dip"
+		android:background="@drawable/divider_horizontal_dark"
+		android:layout_below="@+id/container_about"
+        />
+</RelativeLayout>

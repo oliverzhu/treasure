@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/title_bar" 
+        layout="@layout/title_bar"/>
+    
+    <com.client.customerservicecenter.widget.ptr.PullToRefreshScrollView
+        android:id="@+id/dismissable_container"
+        android:layout_below="@+id/title_bar"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"/>
+    
+    <RelativeLayout 
+        android:id="@+id/reload"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_bar"
+        android:visibility="gone">
+        <ImageView 
+            android:id="@+id/errorLogo"
+            android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerInParent="true"
+		    android:src="@drawable/ic_empty_view"
+            />
+        <TextView 
+        	android:id="@+id/empty"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/errorLogo"
+		    android:layout_centerHorizontal="true"
+		    android:layout_marginTop="8dip"
+		    android:text="@string/tip_noMessages"/>
+    </RelativeLayout>
+    
+    <LinearLayout android:id="@+id/loading_container"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_bar"
+        android:gravity="center">
+        <ProgressBar 
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView 
+        	android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/tip_loading"
+            android:paddingTop="4dip"
+            android:singleLine="true" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FF6b6f78"
+    android:orientation="vertical" >
+    <TextView 
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:layout_weight="1"
+    	android:gravity="center"
+    	android:textSize="16sp"
+    	android:textColor="#ffffff"
+    	android:text="@string/takePictureTitle"
+        />
+ 
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:layout_weight="1"
+        >
+        <Button 
+            android:id="@+id/takePictureFormAlbum"
+	        android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:layout_marginLeft="40dp"
+	    	android:layout_marginRight="40dp"
+	    	android:gravity="center"
+	    	android:textSize="18sp"
+	    	android:textColor="#555555"
+	    	android:layout_centerVertical="true"
+	    	android:background="@drawable/btn_login_selector"
+	    	android:text="@string/takePictureFromAlbum"
+        />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:layout_weight="1"
+        >
+        <Button 
+            android:id="@+id/takePictureFormCamera"
+	        android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:layout_marginLeft="40dp"
+	    	android:layout_marginRight="40dp"
+	    	android:gravity="center"
+	    	android:textSize="18sp"
+	    	android:textColor="#555555"
+	    	android:layout_centerVertical="true"
+	    	android:text="@string/takePictureFromCamera"
+	    	android:background="@drawable/btn_login_selector"
+        />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:layout_weight="1"
+        >
+        <Button 
+            android:id="@+id/cancel"
+	        android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:layout_marginLeft="40dp"
+	    	android:layout_marginRight="40dp"
+	    	android:gravity="center"
+	    	android:textSize="18sp"
+	    	android:textColor="#555555"
+	    	android:text="@string/cancel"
+	    	android:layout_centerVertical="true"
+	    	android:background="@drawable/btn_login_selector"
+        />
+    </RelativeLayout>
+    
+
+</LinearLayout>

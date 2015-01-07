@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ape="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/myos_activity_paddingLeft"
+        android:paddingTop="@dimen/myos_activity_paddingTop"
+        android:paddingBottom="@dimen/myos_activity_paddingBottom"
+        android:orientation="vertical">
+        
+        <com.ape.onelogin.myos.widget.MyOSEditText 
+            android:id="@+id/account"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/myos_widget_height"
+            ape:title="@string/ex_account"
+            ape:hint="@string/ex_register_account_hint"
+            ape:style="top"/>
+        
+        <com.ape.onelogin.myos.widget.MyOSEditText 
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/myos_widget_height"
+            ape:title="@string/ex_email"
+            ape:hint="@string/ex_register_email_hint"
+            ape:style="middle"/>
+        
+        <com.ape.onelogin.myos.widget.MyOSEditText 
+            android:id="@+id/mobile"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/myos_widget_height"
+            ape:title="@string/ex_mobile"
+            ape:hint="@string/ex_register_mobile_hint"
+            ape:style="bottom"/>
+        
+        <com.ape.onelogin.myos.widget.MyOSEditText 
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/myos_widget_height"
+            android:layout_marginTop="5dip"
+            ape:title="@string/ex_password"
+            ape:hint="@string/ex_register_passwd_hint"
+            ape:style="independent"/>
+
+        <CheckBox 
+            android:id="@+id/show_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:saveEnabled="false"
+            android:text="@string/show_password"
+            android:textSize="@dimen/myos_label_text"
+            android:textColor="@color/myos_label_text"
+            android:button="@drawable/myos_checkbox_selector"
+            android:paddingLeft="10dip"/>
+    
+        <TextView 
+            android:id="@+id/notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dip"
+            android:layout_marginRight="@dimen/myos_activity_marginRight"
+            android:drawableLeft="@drawable/ic_necessary"
+            android:text="@string/ex_register_simple_waring_hint"
+            android:textColor="@color/myos_edittext_hint"
+            android:textSize="@dimen/myos_link_text"/>
+
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/myos_activity_marginRight"
+            android:layout_marginTop="0dip">
+            
+            <TextView 
+                android:id="@+id/warning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:textColor="@color/myos_warning"
+                android:textSize="@dimen/myos_label_text"/>
+            
+           <Button 
+               android:id="@+id/signin"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/myos_widget_height"
+               android:layout_marginTop="4dip"
+               android:layout_gravity="center_horizontal"
+               android:layout_below="@id/warning"
+               android:text="@string/user_signin"
+               android:textColor="@android:color/white"
+               android:background="@drawable/myos_button_general_selector"
+               android:enabled="false"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

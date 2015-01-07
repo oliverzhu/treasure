@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   	android:paddingLeft="20dip"
+    android:paddingTop="12dip"
+    android:paddingBottom="12dip"
+    android:paddingRight="12dip"
+    >
+    <EditText 
+        android:id="@+id/editText"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:layout_toLeftOf="@+id/sendComment"
+		android:layout_marginLeft="10dp"
+		android:drawableLeft="@drawable/comment_write"
+		android:hint="@string/hint_writeReply"
+		android:textColorHint="@color/text_hint"
+		android:background="@drawable/send_edittext_selector"
+		android:textCursorDrawable="@null"
+		android:textColor="@color/text_normal"
+		android:textSize="@dimen/hint_text_size"
+		android:maxLength="1000"/>
+        
+     <ImageView 
+        android:id="@+id/sendComment"
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"
+		android:src="@drawable/send_comment_selector"/>
+</RelativeLayout>

@@ -1,0 +1,122 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ape.onelogin"
+    android:versionCode="100100"
+    android:versionName="1.0.01" >
+
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="17"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/> 
+    
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_SYNC_STATS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SOCIAL_STREAM" />
+    <uses-permission android:name="android.permission.WRITE_SOCIAL_STREAM" />
+    
+    <application
+        android:name="com.ape.onelogin.OneLoginApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        
+        <!--  MyOS UI activity, added by juan.li, START -->
+        <activity 
+            android:name="com.ape.onelogin.myos.ui.LoginActivity"
+            android:theme="@style/Theme.CloudLogin.NoActionBar"
+            android:windowSoftInputMode="stateHidden|stateUnchanged"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <!-- <category android:name="android.intent.category.LAUNCHER"/> -->
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.ape.onelogin.login.core.Action.ONELOGIN_ACCESS" />
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        
+        <activity 
+            android:name="com.ape.onelogin.myos.ui.RegisterActivity"
+            android:theme="@style/Theme.CloudLogin.NoActionBar"
+            android:windowSoftInputMode="stateHidden|stateUnchanged"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity 
+            android:name="com.ape.onelogin.myos.ui.UserEditActivity"
+            android:theme="@style/Theme.CloudLogin.NoActionBar"
+            android:windowSoftInputMode="stateHidden|stateUnchanged"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.ape.onelogin.login.core.Action.ONELOGIN_EDIT" />
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name="com.ape.onelogin.myos.ui.PasswordActivity"
+            android:theme="@style/Theme.CloudLogin.NoActionBar"
+            android:windowSoftInputMode="stateHidden|stateUnchanged"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity 
+            android:name="com.ape.onelogin.myos.ui.SmartEditActivity"
+            android:theme="@style/Theme.CloudLogin.NoActionBar"
+            android:windowSoftInputMode="stateHidden|stateUnchanged"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--  MyOS UI activity, added by juan.li, END -->
+        
+        <service 
+            android:name="com.ape.onelogin.authenticator.AuthenticationService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator"/>
+            </intent-filter>
+            <meta-data 
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authenticator"/>
+        </service>
+        
+        <service
+            android:name="com.ape.onelogin.service.CloudSdkService"
+            android:exported="true" >
+             <intent-filter>
+                 <action android:name="com.ape.onelogin.service.CloudSdkService"/>
+            </intent-filter>
+        </service>
+        
+        <activity android:name="com.tencent.connect.common.AssistActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" 
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:noHistory="true"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent1103402063" />
+             </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

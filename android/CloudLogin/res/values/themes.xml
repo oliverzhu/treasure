@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.CloudLogin" parent="@android:style/Theme.Holo.Light">
+         <item name="android:actionBarStyle">@style/CloudLogin.ActionBar.Theme.Holo</item>
+         <item name="android:windowBackground">@color/window_background</item>
+         <item name="android:windowAnimationStyle">@style/Animation_Activity_entry</item>
+    </style>
+    
+    <style name="Theme.CloudLogin.NoActionBar" parent="@android:style/Theme.Holo.Light.NoActionBar">
+         <item name="android:windowBackground">@color/window_background</item>
+         <item name="android:windowAnimationStyle">@style/Animation_Activity_entry</item>
+    </style>
+    
+    <style name="Theme.CloudLogin.Register" parent="@style/Theme.CloudLogin">
+         <item name="android:homeAsUpIndicator">@drawable/icon_back</item>
+    </style>
+</resources>

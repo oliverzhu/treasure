@@ -9,10 +9,11 @@
     android:orientation="vertical">
     
     <ImageView 
+        android:id="@+id/contactUs"
         android:layout_height="fill_parent"
         android:layout_width="fill_parent"
         android:layout_weight="2.5"
-        android:src="@drawable/ic_call_us"
+        android:src="@drawable/ic_call_us_selector"
         />
     <GridView 
         android:id="@+id/gridView"

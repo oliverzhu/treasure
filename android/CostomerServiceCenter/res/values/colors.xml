@@ -2,4 +2,17 @@
 <resources>
     <color name="bg_window">#fff6f6f6</color>
     <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="tip">#FF0BADA5</color>
+    
+    <color name="topbar_divider">#fff4f4f4</color>
+    
+    <color name="list_divider">#ffd8d8d8</color>
+    
+    <color name="text_normal">#ff666666</color>
+    <color name="text_hint">#ffbbbbbb</color>
+    
+    <color name="text_color_primary">#FF414141</color>
+    <color name="text_color_summary">#FF787878</color>
+    <drawable name="list_item_selected">#20000000</drawable>
 </resources>

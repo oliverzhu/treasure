@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Customer Service</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="empty">""</string>
+    
+    <string name="contactPhoneNumber">"4008852999"</string>
+    
+    <string name="btn_ok">Ok</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_save">Sava</string>
+    
+    <string name="fragment_title_faq">Faq</string>
+    <string name="fragment_title_feedback">Feedback</string>
+    <string name="fragment_title_electronic_warranty_card">Warranty</string>
+    <string name="fragment_title_more">More</string>
+    
+    <string name="error_system">Reboots</string>
+    <string name="error_battery">Power issue</string>
+    <string name="error_phone">Call issue</string>
+    <string name="error_net">Net issue</string>
+    <string name="error_application">Force close</string>
+    <string name="error_data">Crash issue</string>
+    <string name="error_others">Others</string>
+    <string name="sugar_advise">Suggestions</string>
+    <string name="history_feedback">Feedback</string>
+    
+    <string name="tip_description">Problem description</string>
+    <string name="tip_phone">Your phone number</string>
+    <string name="tip_email">Your eamil</string>
+    <string name="tip_pic">Appended drawings</string>
+    <string name="tip_noMessages">No feedback</string>
+    <string name="tip_noData">No feedback</string>
+    <string name="tip_loading">Loading...</string>
+    <string name="hint_writeReply">augmented feedback</string>
+    <string name="hint_description">Description(required)</string>
+    <string name="hint_search">Search</string>
+    <string name="hint_contact">Contact(choosable)</string>
+    <string name="hint_pic">Drawing format:jpeg,jpg,bmp,png,gif</string>
+    <string name="label_customerservice">Customer reply</string>
+    <string name="label_user">You</string>
+    <string name="label_anonymous">Anonymous</string>
+    <string name="label_feedback_type">"Feedback type  :  "</string>
+    <string name="label_feedback_content">"Feedback content"</string>
+    <string name="label_feedback_answer">"Customer reply"</string>
+    <string name="label_location">Locate city after-Sale outlets</string>
+    <string name="label_near_by_serviceoutlets">City after-sale outlets</string>
+    <string name="label_serviceoutlets">After-sale outlets query</string>
+    
+    <string name="submit">Submit</string>
+    <string name="comment">Feedback</string>
+    <string name="submitComment">Submitting</string>
+	<string name="submitSuccess">Submit successfully</string>
+	<string name="submitFail">Submit failure</string>
+	<string name="commentHint">comment cannot be empty</string>
+	
+	<string name="toast_net_error">The network is not available</string>
+	<string name="toast_server_error">Get data failure</string>
+	<string name="toast_picutre_size">Can only upload at most 10 images</string>
+	<string name="toast_activate_fail">Cannot be activated,please try again later</string>
+    <string name="toast_activate_success">Activate successfully</string>
+    <string name="toast_activate_user_success">Save successfully</string>
+    <string name="toast_locating">Locating...</string>
+    <string name="toast_delete_warn">Unresolved issues can not be deleted</string>
+	
+	<string name="recently">recently</string>
+	<string name="minutesAgo">minutes ago</string>
+	<string name="hoursAgo">hours ago</string>
+	
+	<string name="resolving">"at issue"</string>
+	<string name="resolved">resolved</string>
+	<string name="replied">replied</string>
+	
+	<string name="title_imei">Repair IMEI</string>
+    <string name="title_repair_date">Warranty expires</string>
+    <string name="title_user_msg">User info</string>
+    <string name="title_about">About electronic warranty card</string>
+    <string name="title_warranty_policy">Warranty policy</string>
+    <string name="title_service_outlets">Service outlets</string>
+    <string name="title_version_update">Version update</string>
+    <string name="title_gps">Turn on location services</string>
+    <string name="title_content_warranty_policy">"				SUGAR mobile phone customer service commitment:"</string>
+    
+    <string name="summary_repair_date">If you can not activate by network, repair bills still prevail</string>
+    <string name="summary_user_msg">Improve user information helps improve maintenance efficiency</string>
+    <string name="summary_gps">Get your location automatically locate your nearest repair service</string>
+    <string name="summary_content_warranty_policy">"				Strict according to \"consumer protection law\", \"law of the people's Republic of China product quality law\" and "\mobile phone repair replacement merchandise refund liability provisions implementation of customer service\" three packs of services, service content is as follows: \n				in three packs of validity period, you can be in accordance with the provisions enjoy maintenance, replacement, return of the rights, repair, a replacement, return should be handled with the invoice and the three guarantees certificate. \n				since you purchase within 7 days, the mobile phone host appeared "\mobile phone product performance fault table\" listed in the performance of a fault condition, by SUGAR after sale service center detection determines, according to your choice, free for return, replacement or repair. \n				since you purchase within 8 days to 30 days, the mobile phone host appeared "\mobile phone product performance fault table\" listed in the performance of the fault situation, determined via the SUGAR customer service service center detection, on the basis of your choice, free of charge for replacement or repair. \n				since you purchase within 12 months as of the date, the mobile phone host appeared "\mobile phone product performance fault form\" listed in the performance of fault conditions, determined via SUGAR after-sales service center detection, according to your choice, free repair. \n				battery, charger, earphone, data line external cable mobile telephone accessories, appear \"mobile telephone product performance fault form\" listed in the performance of the fault, determine via SUGAR after-sales service center detection, the attachment for your free replacement of the same brand of the same model with the specifications, the replacement of two still can not normal use. Free of charge for your return. (sealed) batteries, charger, data line, the warranty period shall be 1 years, external wired headset (except the third party brand earphone) warranty period of 6 months. "</string>
+    
+    
+    <string name="dialog_title_activate">Activation reminder</string>
+    <string name="dialog_message_activate">Electronic warranty card requires networking activation, the activation will enjoy paperless warranty service, whether to open network</string>
+    <string name="dialog_title_feedback_delete">Delete</string>
+    <string name="dialog_message_feedback_delete">Whether to delete the record</string>
+    
+    <string name="progressdialog_title_activate">Electronic warranty card</string>
+    <string name="progressdialog_message_activate">Activating...</string>
+    
+    <string name="activated">Activated</string>
+    <string name="activate">Activate</string>
+    
+    <string name="content_ewc">"				Electronic warranty card is one of the mobile phone warranty information registration method. \n 				To buy Electronic warranty cards feature phone users, in addition to fill and registration paper warranty card, also need to register the electronic card, registration does not charge any fees only user, users will be mobile phone network can be. Through the electronic card, the user information can be quickly and accurately is sent to the manufacturers of the sales and after-sale system, so that you can enjoy more convenient services. Each phone has a serial number (IMEI), serial number registered is not mobile phone number, so the change number to also have no relation.\n				registration process: open [center] user client, click on the \"electronic card\" click on the page \"activation\" button\."</string>
+    
+    <string name="notification_title_activate">Activation reminder</string>
+    <string name="notification_summary_activate">Activate e-policy, enjoy free paper of warranty service</string>
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ape="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/ic_login_avatar_bg">
+    
+    <ImageButton 
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:src="@drawable/myos_button_home_default_selector"
+        android:background="@null"
+        android:visibility="gone"/>
+        
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+        <com.ape.onelogin.widget.CircleImageView
+            android:id="@+id/avatar"
+            android:layout_width="@dimen/myos_avatar_width"
+            android:layout_height="@dimen/myos_avatar_height"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/ic_default_avatar_man_big"
+            ape:borderWidth="0dip"
+            ape:borderColor="@color/white"/>
+        
+        <ImageButton
+            android:id="@+id/avatar_button"
+            android:layout_width="@dimen/myos_avatar_width"
+            android:layout_height="@dimen/myos_avatar_height"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/avatar_selector"
+            android:clickable="false"/>
+        
+        <TextView 
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dip"
+            android:layout_below="@id/avatar_button"
+            android:layout_centerHorizontal="true"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="1.5"
+            android:shadowColor="@color/myos_account_name_shadow"
+            android:textColor="@color/myos_account_name_main"
+            android:textSize="@dimen/myos_account_name_size"
+            android:text="@string/ex_default_account"/>
+    </RelativeLayout>
+</RelativeLayout>

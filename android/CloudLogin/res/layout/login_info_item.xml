@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    >
+    <ImageView 
+        android:id="@+id/sdk_label" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:src="@drawable/account_sina" 
+        android:layout_alignParentLeft="true" 
+        android:layout_centerVertical="true" />
+    <TextView 
+        android:id="@+id/user_name"
+        android:textSize="16.0sp" 
+        android:textColor="@color/user_normal" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="10.0dip" 
+        android:layout_marginTop="30.0dip" 
+        android:layout_marginBottom="30.0dip" 
+        android:text="@string/sina_weibo" 
+        android:layout_toRightOf="@+id/sdk_label"
+        android:layout_centerVertical="true" 
+        android:textIsSelectable="false" />
+    <Button 
+        android:textSize="15.0sp" 
+        android:textColor="@color/disable" 
+        android:id="@+id/user_bind_sdk" 
+        android:background="@drawable/btn_normal_button" 
+        android:layout_width="55.0dip" 
+        android:layout_height="30.0dip" 
+        android:layout_marginTop="30.0dip" 
+        android:layout_marginRight="16.0dip" 
+        android:layout_marginBottom="30.0dip" 
+        android:text="@string/user_bind_weibo" 
+        android:layout_alignParentRight="true" 
+        android:layout_centerVertical="true" 
+        android:textIsSelectable="false"
+        android:visibility="gone" />
+</RelativeLayout>

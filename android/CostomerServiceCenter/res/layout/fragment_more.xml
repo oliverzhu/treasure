@@ -1,0 +1,25 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <include
+        android:id="@+id/item_warranty_policy" 
+        layout="@layout/item_warranty_policy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <include
+        android:id="@+id/item_service_outlets" 
+        layout="@layout/item_service_outlets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <include 
+        android:id="@+id/item_version_update"
+        layout="@layout/item_version_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>

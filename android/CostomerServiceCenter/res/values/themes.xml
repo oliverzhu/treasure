@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.CustomerService" parent="@android:style/Theme.Holo.Light">
+    <style name="Theme.CustomerService" parent="@android:style/Theme.Holo.Light.NoActionBar">
          <item name="android:windowBackground">@color/bg_window</item>
          <item name="android:windowAnimationStyle">@style/Animation_Activity_entry</item>
+    </style>
+    
+    <style name="Theme.CustomerService.Feedback" parent="@android:style/Theme.Holo.Light">
+         <item name="android:windowBackground">@color/bg_window</item>
+         <item name="android:windowAnimationStyle">@style/Animation_Activity_entry</item>
+         <item name="android:actionBarStyle">@style/Theme.MyActionBar</item>
+         <item name="android:homeAsUpIndicator">@drawable/ic_home_actionbar</item>
+         <item name="android:windowContentOverlay">@null</item>
     </style>
 </resources>

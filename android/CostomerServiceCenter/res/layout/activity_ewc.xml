@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_popup_menu_bg">
+
+    <TextView 
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_title_height"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="@string/fragment_title_electronic_warranty_card"
+        android:textSize="@dimen/text_size_primary"
+        android:textColor="@color/text_normal"
+        android:background="@drawable/ic_popup_menu_title"/>
+    
+    <TextView 
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:paddingLeft="12dip"
+        android:paddingRight="12dip"
+        android:paddingTop="16dip"
+        android:paddingBottom="16dip"
+        android:text="@string/content_ewc"
+        android:textSize="@dimen/text_size_summary"
+        android:textColor="@color/text_normal"
+        />
+</RelativeLayout>

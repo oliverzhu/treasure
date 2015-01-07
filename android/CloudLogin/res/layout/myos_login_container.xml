@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <include layout="@layout/myos_common_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="382"/>
+            
+        <include layout="@layout/myos_login_frame"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="618"/>
+    </LinearLayout>
+</ScrollView>

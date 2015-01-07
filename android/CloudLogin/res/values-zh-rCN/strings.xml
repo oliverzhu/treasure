@@ -1,0 +1,155 @@
+<resources>
+
+    <string name="app_name">易登录</string>
+    
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="user_title">我的资料</string>
+    <string name="user_modify">修改资料</string>
+    <string name="user_edit">编辑</string>
+    <string name="main_menu_favorite">我的收藏</string>
+    <string name="favorite_default_count">0</string>
+    <string name="sina_weibo">新浪微博</string>
+    <string name="tencent_weibo">腾讯QQ</string>
+    <string name="sina_login_label">新浪登录</string>
+    <string name="tencent_login_label">腾讯登录</string>
+    <string name="cloud_login_label">云登录</string>
+    <string name="user_bind_weibo">已登录</string>
+    <string name="modify_user_info">修改</string>
+    <string name="user_logout">登出</string>
+    <string name="user_signin">注册</string>
+    <string name="user_register">注册新用户</string>
+    <string name="user_save">保存</string>
+    <string name="user_login">登录</string>
+    <string name="user_login_message">正在登录...</string>
+    <string name="user_login_load_user_info">加载用户信息...</string>
+    <string name="user_login_timeout">本地数据过期，重新登录...</string>
+    <string name="user_signin_message">正在注册...</string>
+    <string name="user_signin_success">注册成功</string>
+    <string name="user_signin_fail">注册失败</string>
+    <string name="user_modify_success">保存成功</string>
+    <string name="user_modify_fail">保存失败</string>
+    <string name="user_avatar_modify_fail">头像上传失败</string>
+    <string name="user_avatar_load_fail">头像加载失败</string>
+    <string name="user_avatar_load_success">头像加载成功</string>
+    <string name="user_saving">正在保存...</string>
+    <string name="user_signin_fail_by_duplicate">用户名已存在</string>
+    <string name="user_signin_fail_by_email">邮箱已被注册</string>
+    <string name="user_signin_fail_by_mobile">手机已被注册</string>
+    <string name="user_name_hint">账号</string>
+    <string name="nick_name_hint">昵称</string>
+    <string name="password_hint">密码</string>
+    <string name="birthday_hint">生日</string>
+    <string name="confirm_password_hint">确认您的密码</string>
+    <string name="old_password_hint">原始密码</string>
+    <string name="new_password_hint">新密码</string>
+    <string name="phone_hint">电话(可选)</string>
+    <string name="email_hint">邮箱(可选)</string>
+    <string name="username_empty">用户名不能为空</string>
+    <string name="nickname_empty">昵称不能为空</string>
+    <string name="password_empty">密码不能为空</string>
+    <string name="password_not_same">两次密码不一致</string>
+    <string name="password_same">不能与原始密码相同</string>
+    <string name="old_password_not_true">原始密码不正确</string>
+    <string name="login_success">登录成功</string>
+    <string name="login_fail">登录失败</string>
+    <string name="login_fail_by_authorize">登录失败，请检查您的用户名和密码</string>
+    <string name="login_fail_by_date">登录失败，请确认您的系统时间正确</string>
+    <string name="user_logouting">正在登出...</string>
+    <string name="user_logout_success">登出成功</string>
+    <string name="user_logout_error">登出失败</string>
+    <string name="switch_login_title">切换登录</string>
+    <string name="switch_login_message">确定取消当前登录</string>
+    <string name="unknown_user">匿名</string>
+    <string name="unknown_user_ex">未登录</string>
+    <string name="show_password">显示密码</string>
+    
+    <string name="label_user_name">账号：</string>
+    <string name="label_nick_name">昵称：</string>
+    <string name="label_phone">联系方式：</string>
+    <string name="label_email">电子邮件：</string>
+    <string name="label_sexdist">性别：</string>
+    <string name="label_birthday">生日：</string>
+    <string name="label_address">地址：</string>
+    <string name="label_mobile">手机：</string>
+    <string name="label_email_ex">邮箱：</string>
+    
+    <string name="takePictureTitle">上传头像</string>
+    <string name="takePictureFromAlbum">从相册中获取</string>
+    <string name="takePictureFromCamera">照相</string>
+    
+    <string name="pop_modify_userinfo_title">修改资料</string>
+    <string name="pop_modify_password_title">修改密码</string>
+    
+    <string name="ex_default_account">云账户</string>
+    <string name="ex_account">帐号</string>
+    <string name="ex_email">邮箱</string>
+    <string name="ex_mobile">手机</string>
+    <string name="ex_address">地址</string>
+    <string name="ex_password">密码</string>
+    <string name="ex_gender">性别</string>
+    <string name="ex_male">男</string>
+    <string name="ex_female">女</string>
+    <string name="ex_confirm_password">确认密码</string>
+    <string name="ex_account_hint">帐号</string>
+    <string name="ex_password_hint">密码</string>
+    <string name="ex_email_hint">请输入您的邮箱</string>
+    <string name="ex_forget_passwd">忘记密码</string>
+    <string name="ex_cooperate_account">社交账户登录</string>
+    <string name="ex_register">新用户注册</string>
+    <string name="ex_network_error">网络连接错误</string>
+    <string name="ex_register_title">注册账户</string>
+    <string name="ex_picture_title">修改头像</string>
+    <string name="ex_picture_from_camera">拍照</string>
+    <string name="ex_picture_from_album">从图库中选择照片</string>
+    <string name="ex_user_detail_title">账户信息</string>
+    <string name="ex_logout">注销</string>
+    <string name="ex_logout_content">是否退出已登录账户？</string>
+    <string name="ex_modify_password">修改密码</string>
+    <string name="ex_get_back_password">找回密码</string>
+    <string name="ex_next_step">下一步</string>
+    <string name="ex_finish">完成</string>
+    
+    <string name="ex_smart_edit_nickname">修改昵称</string>
+    <string name="ex_smart_edit_mobile">修改手机</string>
+    <string name="ex_smart_edit_address">我的地址</string>
+    <string name="ex_smart_edit_email">更改邮箱</string>
+    
+    <string name="ex_edit_modify_avator">编辑头像</string>
+    <string name="ex_date_notice">日期格式错误</string>
+    <string name="ex_forget_password_main_hint">请输入注册账户所使用的邮箱</string>
+    <string name="ex_forget_password_send_email">系统已将密码发送至 %1$s 邮箱，请登录邮箱后查看</string>
+    <string name="ex_register_account_hint">输入8-50位帐号</string>
+    <string name="ex_register_email_hint">输入电子邮箱</string>
+    <string name="ex_register_mobile_hint">输入手机</string>
+    <string name="ex_register_passwd_hint">输入8位以上密码</string>
+    <string name="ex_register_confirm_passwd_hint">重复输入8位以上密码</string>
+    
+    <string name="ex_register_account_notice">由字母、数字组成，长度8-50位</string>
+    <string name="ex_register_email_notice">输入正确的邮箱</string>
+    <string name="ex_register_email_empty_notice">邮箱不能为空</string>
+    <string name="ex_register_moblie_notice">输入正确的手机号码</string>
+    <string name="ex_register_moblie_empty_notice">手机不能为空</string>
+    <string name="ex_register_password_notice">必须包含字母、数字、特殊字符，且长度不少于8位</string>
+    
+    <string name="ex_register_simple_waring_hint">为必填项，为方便找回密码，请正确填写。</string>
+    <string name="ex_register_waring_hint">为必填项，为了方便找回密码及更好的享受我们的服务，请您正确填写。</string>
+    
+    <string name="ex_send_email_title">发送邮件</string>
+    <string name="ex_send_email">邮件发送中...</string>
+    <string name="ex_forget_password_not_exist">此邮箱还未注册。</string>
+    <string name="ex_forget_password_coosdk">第三方账户不支持密码修改。</string>
+    <string name="ex_forget_password_anonymous">匿名账户不支持密码修改。</string>
+    <string name="ex_forget_password_email_title">找回密码</string>
+    <string name="ex_forget_password_email_body">%1$s, 您的密码已经重置为  %2$s  请登录并修改密码!</string>
+    
+    <string name="ex_date_picker_title">设定日期</string>
+    <string name="ex_date_year">年</string>
+    <string name="ex_date_month">月</string>
+    <string name="ex_date_day">日</string>
+    
+    <string name="ex_user_load_title">加载数据</string>
+    <string name="ex_user_load_message">加载中...</string>
+    
+    <string name="user_info">用户信息</string>
+</resources>

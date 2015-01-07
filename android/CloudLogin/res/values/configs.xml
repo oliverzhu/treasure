@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="config_shortAnimTime">200</integer>
+    <integer name="config_longAnimTime">500</integer>
+    <integer name="config_progressAnimTime">100</integer>
+    
+    <integer name="max_account_length">50</integer>
+    <integer name="max_nickname_length">50</integer>
+    <integer name="max_mobile_length">16</integer>
+    <integer name="max_email_length">128</integer>
+    <integer name="max_address_length">255</integer>
+    <integer name="max_password_length">255</integer>
+</resources>

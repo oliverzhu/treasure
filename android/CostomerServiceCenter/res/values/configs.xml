@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <integer name="config_shortAnimTime">200</integer>
+    <integer name="config_progressAnimTime">100</integer>
+    <integer name="db_version">3</integer>
 </resources>

@@ -1,0 +1,28 @@
+<RelativeLayout 
+     	xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/user_topbar" 
+        android:background="@drawable/top_bar_bg"
+        android:layout_width="fill_parent" 
+        android:layout_height="@dimen/topbar_height" 
+        android:layout_alignParentTop="true">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/home_button_selector"/>
+        
+        <TextView 
+            android:id="@+id/bar_title"
+            android:textSize="@dimen/topbar_title_text_size" 
+            android:textColor="@color/text_color_primary" 
+            android:gravity="center" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:singleLine="true" 
+            android:layout_toRightOf="@+id/back"
+            android:layout_centerVertical="true"
+            android:textIsSelectable="false"/>
+</RelativeLayout>

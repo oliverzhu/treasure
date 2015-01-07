@@ -1,0 +1,31 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <include
+        android:id="@+id/item_imei" 
+        layout="@layout/item_imei"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <include
+        android:id="@+id/item_repair_date" 
+        layout="@layout/item_repair_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <include 
+        android:id="@+id/item_user_msg"
+        layout="@layout/item_user_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <include
+        android:id="@+id/item_about" 
+        layout="@layout/item_card_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>
