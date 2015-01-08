@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">ตัวจัดการไฟล์</string>
+    <string name="added_favorite">เพิ่มลงในรายการโปรด</string>
+    <string name="cancel">ยกเลิก</string>
+    <string name="category_all">ทั้งหมด</string>
+    <string name="category_apk">APKs</string>
+    <string name="category_document">เอกสาร</string>
+    <string name="category_favorite">รายการโปรด</string>
+    <string name="category_music">เพลง</string>
+    <string name="category_other">อื่น ๆ ที่ใช้</string>
+    <string name="category_picture">รูปภาพ</string>
+    <string name="category_theme">ธีมส์</string>
+    <string name="category_video">วิดีโอ</string>
+    <string name="category_zip">การบีบอัดข้อมูล</string>
+    <string name="category_app_mm">แอพลิเคชัน / มัลติมีเดีย</string>
+    <string name="confirm">ตกลง</string>
+    <string name="confirm_know">ตกลง</string>
+    <string name="enable_sd_card">การเก็บรักษาโทรศัพท์ไม่ว่าง</string>
+    <string name="error_info_cant_send_folder">ไม่สามารถส่งโฟลเดอร์</string>
+    <string name="fail_to_create_folder">ไม่สามารถสร้างโฟลเดอร์%1$S</string>
+    <string name="fail_to_rename">เปลี่ยนชื่อแฟ้มล้มเหลว%1$s</string>
+    <string name="file_info_canread">อ่านได้:</string>
+    <string name="file_info_canwrite">เขียนได้:</string>
+    <string name="file_info_ishidden">ที่ซ่อนอยู่:</string>
+    <string name="file_info_location">เส้นทาง:</string>
+    <string name="file_info_modified">เวลา:</string>
+    <string name="file_info_size">ขนาด:</string>
+    <string name="file_size">ไบต์%d </string>
+    <string name="instruction">ป้อนที่อยู่ต่อไปนี้ในไคลเอนต์ FTP ของคุณ:</string>
+    <string name="instruction_pre">บริการเริ่มต้นที่จะช่วยให้เซิร์ฟเวอร์ FTP</string>
+    <string name="menu_item_search">ค้นหา</string>
+    <string name="menu_item_sort">เรียงลำดับตาม</string>
+    <string name="menu_item_sort_date">วันที่</string>
+    <string name="menu_item_sort_name">ชื่อ</string>
+    <string name="menu_item_sort_size">ขนาด</string>
+    <string name="menu_item_sort_type">ชนิด</string>
+    <string name="new_folder_name">โฟลเดอร์ใหม่</string>
+    <string name="no">ไม่</string>
+    <string name="no_file">(โฟลเดอร์ว่าง)</string>
+    <string name="no_wifi">ไม่มีเครือข่าย Wi-Fi</string>
+    <string name="no_wifi_hint">ไม่มีเครือข่าย Wi-Fi กดเพื่อตรวจสอบการตั้งอินเตอร์เน็ตไร้สาย</string>
+    <string name="notif_server_starting">เซิร์ฟเวอร์ FTP เริ่มต้น</string>
+    <string name="notif_title">เซิร์ฟเวอร์ FTP</string>
+    <string name="operation_cancel">ยกเลิก</string>
+    <string name="operation_cancel_selectall">ยกเลิกการเลือกทั้งหมด</string>
+    <string name="operation_copy">สำเนา</string>
+    <string name="operation_copy_path">เส้นทางที่สำเนาไฟล์</string>
+    <string name="operation_create_folder">โฟลเดอร์ใหม่</string>
+    <string name="operation_create_folder_message">ใส่ชื่อโฟลเดอร์</string>
+    <string name="operation_delete">ลบ</string>
+    <string name="operation_delete_confirm_message">ยืนยันการลบ?</string>
+    <string name="operation_deleting">กำลังลบ ...</string>
+    <string name="operation_favorite">เพิ่มในรายการโปรด</string>
+    <string name="operation_hide_sys">ซ่อนตัวแฟ้มที่ซ่อนไว้</string>
+    <string name="operation_info">รายละเอียด</string>
+    <string name="operation_move">ย้าย</string>
+    <string name="operation_moving">กำลังย้าย ...</string>
+    <string name="operation_paste">วาง</string>
+    <string name="operation_pasting">กำลังวาง ...</string>
+    <string name="operation_refresh">รีเฟรช</string>
+    <string name="operation_rename">ตั้งชื่อใหม่</string>
+    <string name="operation_rename_message">ป้อนชื่อใหม่</string>
+    <string name="operation_selectall">เลือกทั้งหมด</string>
+    <string name="operation_send">ส่ง</string>
+    <string name="operation_show_sys">แสดงไฟล์ที่ซ่อน</string>
+    <string name="operation_unfavorite">เอาออกจากรายการโปรด</string>
+    <string name="removed_favorite">เอาออกจากรายการโปรดแล้ว</string>
+    <string name="sd_card_available">เนื้อที่ว่าง %1$s</string>
+    <string name="sd_card_size">เนื้อที่รวม %1$s</string>
+    <string name="sd_folder">เอสดีการ์ด</string>
+    <string name="start_server">เริ่มให้บริการ</string>
+    <string name="stop_server">หยุดให้บริการ</string>
+    <string name="storage_warning">จัดเก็บข้อมูลภายนอกไม่สามารถใช้ได้หรือไม่สามารถอ่านได้</string>
+    <string name="tab_category">เรียกดู</string>
+    <string name="tab_remote">FTP</string>
+    <string name="tab_sd">ไฟล์</string>
+    <string name="wifi_state">สถานะWLAN </string>
+    <string name="yes">ใช่</string>
+    <string name="dialog_select_type">เลือกประเภทของไฟล์</string>
+    <string name="dialog_type_text">ข้อความ</string>
+    <string name="dialog_type_audio">เครื่องเสียง</string>
+    <string name="dialog_type_video">วีดีโอ</string>
+    <string name="dialog_type_image">รูปภาพ</string>
+    <string name="favorite_photo">ภาพถ่าย</string>
+    <string name="favorite_sdcard">การ์ด SD</string>
+    <string name="favorite_ringtone">ริงโทน</string>
+    <string name="multi_select_title">เลือกไว้%1$sรายการที่ </string>
+    <string name="menu_setting">การตั้งค่า</string>
+    <string name="menu_exit">ทางออก</string>
+    <string name="preference_title">การตั้งค่าทั่วไป</string>
+    <string name="pref_primary_folder">โฟลเดอร์หน้าแรก</string>
+    <string name="pref_read_root">อ่านรายการราก</string>
+    <string name="pref_show_real_path">แสดงเส้นทางจริง</string>
+    <string name="pref_primary_folder_summary">ค่าปัจจุบันของโฟลเดอร์ที่ปรากฏขึ้นเมื่อแอพลิเคชันเริ่มต้นคือ%1$s</string>
+    <string name="pref_show_real_path_summary">เส้นทางที่แท้จริงแสดงในแถบนำทาง</string>
+
+    <string name="default_search_text">ค้นหาไฟล์</string>
+    <string name="search_empty">เนื้อหาการค้นหาจะต้องไม่ว่างเปล่า</string>
+    <string name="search_setting_description">ไฟล์และโฟลเดอร์ท้องถิ่น</string>
+    <string name="search_result">%2$dผลการ สำหรับ  \"%1$s\"</string>
+    <string name="search_text_empty">เนื้อหาการค้นหาจะต้องไม่ว่างเปล่า</string>
+
+    <string name="phone_storage">จัดเก็บโทรศัพท์</string>
+    <string name="storage_sd_card">เอสดีการ์ด</string>
+    <string name="usb_storage">จัดเก็บข้อมูล USB ภายนอก</string>
+    <string name="create_hidden_file">ไฟล์จะถูกซ่อนไว้ถ้าชื่อของมันเริ่มต้นด้วย\'.\'</string>
+    <string name="modify_hidden_file">ไฟล์จะไม่ถูกซ่อนไว้ถ้าชื่อของมันไม่ได้เริ่มต้นด้วย\'.\'</string>
+    <string name="file_name_too_long">ชื่อที่ใส่ยาวเกินไป</string>
+    <string name="invalid_char_prompt">คุณได้ป้อนตัวอักษรที่ไม่ถูกต้อง</string>
+    <string name="invalid_empty_name">ไฟล์หรือชื่อโฟลเดอร์ต้องไม่ว่างเปล่า</string>
+
+    <string name="send_file">ส่งไฟล์</string>
+    <string name="msg_unable_open_file">รูปแบบไฟล์นี้ไม่ได้รับการสนับสนุน</string>
+
+    <string name="fail_to_paste_file">วาง แฟ้ม ล้มเหลว%1$s</string>
+    <string name="insufficient_memory">เนื้อที่ไม่เพียงพอ</string>
+    <string name="file_exist">ชื่อที่มีอยู่แล้ว</string>
+    <string name="file_name_empty">ชื่อไฟล์่ว่างเปล่า</string>
+    <string name="no_permission">ได้รับอนุญาต</string>
+    <string name="files_loading">กำลังโหลด ...</string>
+    
+    <string name="cloud_storage">การจัดเก็บเมฆ</string>
+    <string name="operation_send_to_cloud">ส่งไปยังเมฆ</string>
+    <string name="wait">กรุณารอสักครู่ \u2026</string>
+    <string name="create_transfer_connection">กำลังสร้างการเชื่อมต่อ กรุณารอสักครู่ \u2026</string>
+    
+    <string name="menu_title">ตัวเลือก</string>
+    <string name="menu_item_more">More</string>
+    <string name="menu_refresh_str">รีเฟรช</string>
+    <string name="menu_create_file_str">สร้างไฟล์</string>
+    <string name="menu_upload_str">อัปโหลด</string>
+    <string name="menu_download_str">ดาวน์โหลด</string>
+    <string name="menu_delete_str">ลบ</string>
+    
+    <string name="operation_success">ความสำเร็จ</string>
+    <string name="no_network_eror">ไม่มีเครือข่าย</string>
+    <string name="network_connect_error">เครือข่ายผิดพลาด</string>
+    <string name="wait_network_response">รอการตอบสนองของเครือข่าย</string>
+    <string name="task_queueing">งานแถวคอย กรุณารอสักครู่</string>
+    <string name="no_service_sdk">ไม่ได้ติดตั้งโปรแกรมเข้าสู่ระบบหนึ่งคลิก</string>
+    <string name="no_user_id">ได้รับข้อมูลของผู้ใช้</string>
+    <string name="user_logout">You are in logout status！</string>
+    <string name="get_file_list_fail">ไม่สามารถได้รับรายชื่อไฟล์</string>
+    <string name="get_user_info_error">ได้รับข้อมูลของผู้ใช้ล้มเหลว</string>
+    <string name="cloud_file_service_error">ได้รับบริการไฟล์ล้มเหลว</string>
+
+    <string name="cloud_kindly_prompt_title">Kindly reminder</string>
+    <string name="no_wifi_prompt">เครือข่ายในปัจจุบันไม่ได้เป็นWiFi  ต่อหรือไม่?</string>
+    <string name="default_user">คุณเป็นผู้เข้าชม เข้าสู่ระบบเพื่อป้องกันไม่ให้ไฟล์หายไป!</string>
+    <string name="hello_user">สวัสดี%1$s</string>
+    
+    <string name="transfer_list_title">รายการถ่ายโอน</string>
+    <string name="download_list">รายการดาวน์โหลด</string>
+    <string name="upload_list">รายการอัปโหลด</string>
+    <string name="uploading_list">รายการที่กำลังอัปโหลด  (%1$s)</string>
+    <string name="uploaded_list">รายการที่อัปโหลดเสร็จแล้ว  (%1$s)</string>
+    <string name="no_transfer_recorder">ไม่มีบันทึกการถ่ายโอน</string>
+    <string name="delete_download_record">ลบบันทึกการดาวน์โหลด</string>
+    <string name="delete_local_files_Q">ลบไฟล์ท้องถิ่น?</string>
+    <string name="delete_upload_record">Delete upload record</string>
+    <string name="nonsupport_download_folder">ไม่สนับสนุนโฟลเดอร์ดาวน์โหลด</string>
+    <string name="download_path_prompt">Download path is: %1$s</string>
+    <string name="view_cloud_file_prompt">Cloud file need to download to view, download?</string>
+    
+    <string name="search_cloud_file">ค้นหาไฟล์เมฆ</string>
+    <string name="search_cloud_setting_prompt">ค้นหาไฟล์เมฆ</string>
+
+    <string name="cloud_login">Begin to use</string>
+    <string name="cloud_login_prompt">Upload files to the cloud, convenient and safe, go to upload now!</string>
+
+    <string name="pull_to_refresh_pull_label">Pull to refresh...</string>
+    <string name="pull_to_refresh_release_label">Release to refresh...</string>
+    <string name="pull_to_refresh_refreshing_label">Loading...</string>
+    <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
+    <string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cloudphoto_bottom_controls"
+    android:layout_width="match_parent"
+    android:layout_height="54dip"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:background="@drawable/controls_panel_bg"
+    android:orientation="horizontal"
+    android:visibility="gone" >
+
+    <RelativeLayout
+        android:id="@+id/cloudphoto_bottom_control_download"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_gravity="bottom|center_horizontal" >
+
+        <ImageButton
+            android:id="@+id/cloudphoto_bottom_control_download_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="6dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/control_download_white" />
+            
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_download_str"
+            style="@style/CloudPhotoControlTextStyle"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cloudphoto_bottom_control_delete"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="bottom|center_horizontal" >
+
+        <ImageButton
+            android:id="@+id/cloudphoto_bottom_control_delete_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="6dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/control_delete_white" />
+            
+         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/operation_delete"
+            style="@style/CloudPhotoControlTextStyle"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

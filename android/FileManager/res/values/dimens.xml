@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_icon_height">36dp</dimen>
+    <dimen name="tab_bar_height">44dp</dimen>
+    <dimen name="tab_text_size">14sp</dimen>
+    <dimen name="actionMode_btn_margin_top">6dp</dimen>
+    <dimen name="actionMode_btn_margin_bottom">6dp</dimen>
+    <dimen name="actionMode_btn_margin_left">10dp</dimen>
+    <dimen name="actionMode_btn_margin_right">10dp</dimen>
+    <dimen name="actionMode_btn_text_size">14sp</dimen>
+    <dimen name="actionMode_title_text_size">16sp</dimen>
+    <dimen name="bottom_action_bar_height">60dp</dimen>
+    <dimen name="bottom_action_bar_margin_left">4dp</dimen>
+
+    <dimen name="navigation_bar_height">49dp</dimen>
+    <dimen name="navigation_bar_padding_top">5dp</dimen>
+    <dimen name="navigation_bar_padding_bottom">1dp</dimen>
+    <dimen name="no_sd_card_image_text_gap">25dp</dimen>
+    <dimen name="no_sd_card_text_size">12sp</dimen>
+
+    <dimen name="categories_left_gap">10dp</dimen>
+    <dimen name="categories_top_gap">21dp</dimen>
+    <dimen name="categories_right_gap">10dp</dimen>
+    <dimen name="categories_bottom_gap">7dp</dimen>
+    <dimen name="category_btn_left_gap">7dp</dimen>
+    <dimen name="category_btn_top_gap">18dp</dimen>
+    <dimen name="category_btn_right_gap">7dp</dimen>
+    <dimen name="category_btn_bottom_gap">7dp</dimen>
+    <dimen name="category_btn_icon_text_gap">2dp</dimen>
+
+    <dimen name="category_btn_text_size">16sp</dimen>
+    <dimen name="category_btn_count_size">12sp</dimen>
+
+    <dimen name="storage_information_top_gap">4dp</dimen>
+    <dimen name="storage_information_left_gap">29dp</dimen>
+    <dimen name="storage_information_right_gap">29dp</dimen>
+    <dimen name="storage_information_bottom_gap">7dp</dimen>
+    <dimen name="storage_information_text_size">14dip</dimen>
+    <dimen name="storage_information_v_gap">4dp</dimen>
+    <dimen name="sd_card_capacity_text_size">10dip</dimen>
+    <dimen name="sd_card_capacity_bottom_gap">4dip</dimen>
+    <dimen name="information_text_drawablePadding">5dp</dimen>
+    <dimen name="information_item_left_gap">0dp</dimen>
+    <dimen name="category_bar_height">2dp</dimen>
+    <dimen name="category_legend_icon_w">20dp</dimen>
+    <dimen name="category_legend_icon_h">20dp</dimen>
+    <dimen name="category_legend_icon_left_gap">0dp</dimen>
+    <dimen name="category_legend_icon_text_gap">10dp</dimen>
+    
+    <dimen name="path_text_size">12sp</dimen>
+    <dimen name="list_title_text_size">12sp</dimen>
+    <dimen name="list_error_prompt_text_size">12sp</dimen>
+
+    <dimen name="file_list_divider_height">0.7dp</dimen>
+    <dimen name="file_list_item_height">64dp</dimen>
+    <dimen name="file_list_item_padding_left">20dp</dimen>
+    <dimen name="file_list_item_padding_right">20dp</dimen>
+    <dimen name="file_list_item_padding_top">8dp</dimen>
+    <dimen name="file_list_item_padding_bottom">8dp</dimen>
+    <dimen name="file_list_item_icon_width">39dp</dimen>
+    <dimen name="file_list_item_icon_height">39dp</dimen>
+    <dimen name="file_list_item_icon_margin_right">5dp</dimen>
+    <dimen name="file_list_item_name_padding_left">3dip</dimen>
+    <dimen name="file_list_item_checkout_margin_left">4dip</dimen>
+    <dimen name="file_list_item_checkout_margin_right">0dip</dimen>
+    <dimen name="file_list_item_text_size">16sp</dimen>
+    <dimen name="file_list_item_info_text_size">12sp</dimen>
+    
+    <dimen name="round_progress_diameters">35dp</dimen>
+    <dimen name="round_progress_ring_width">3dp</dimen>
+
+    <dimen name="cloud_photo_control_text_margin_top">34dip</dimen>
+    <dimen name="cloud_photo_control_text_size">14sp</dimen>
+
+    <dimen name="cloud_login_prompt_size">12sp</dimen>
+    <dimen name="cloud_login_prompt_margin_top">10dp</dimen>
+    <dimen name="cloud_login_prompt_margin_left">20dp</dimen>
+    <dimen name="cloud_login_prompt_margin_right">20dp</dimen>
+    <dimen name="cloud_login_btn_height">48dp</dimen>
+    <dimen name="cloud_login_btn_marginLeft">20dip</dimen>
+    <dimen name="cloud_login_btn_marginTop">60dip</dimen>
+    <dimen name="cloud_login_btn_marginRight">20dip</dimen>
+    <dimen name="cloud_login_btn_marginBottom">20dip</dimen>
+                
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+
+    <dimen name="dialog_title_text_size">18sp</dimen>
+    <dimen name="dialog_content_text_size">16sp</dimen>
+    <dimen name="dialog_information_text_size">14sp</dimen>
+</resources>

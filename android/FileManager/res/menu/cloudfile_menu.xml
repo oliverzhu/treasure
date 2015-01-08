@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_delete"
+        android:icon="@drawable/operation_button_delete"
+        android:title="@string/operation_delete"
+        android:showAsAction="always" />
+
+    <item android:id="@+id/action_download"
+        android:icon="@drawable/operation_button_download"
+        android:title="@string/menu_download_str"
+        android:showAsAction="always" />
+
+    <item android:id="@+id/action_select_all"
+        android:icon="@drawable/operation_button_selectall"
+        android:title="@string/operation_selectall"
+        android:showAsAction="collapseActionView" />
+
+    <item android:id="@+id/action_cancel"
+        android:icon="@drawable/operation_button_cancel"
+        android:title="@string/operation_cancel"
+        android:showAsAction="collapseActionView" />
+</menu>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Copyright (c) 2010-2011, The MiCode Open Source Community (www.micode.net)
+
+ * This file is part of FileExplorer.
+ *
+ * FileExplorer is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * FileExplorer is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with SwiFTP.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ape.filemanager"
+    android:versionCode="1014"
+    android:versionName="1.0.14" >
+
+    <uses-sdk android:minSdkVersion="16"  
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <permission android:name="com.ape.cloudfile.cache.READ_DATABASE" />
+    <permission android:name="com.ape.cloudfile.cache.WRITE_DATABASE" />
+
+    <application
+        android:icon="@drawable/app_filemanager"
+        android:label="@string/app_name"
+        android:theme="@style/FileManagerBase"
+        android:supportsRtl="true"
+        >
+        <activity
+            android:name="com.ape.filemanager.FileManagerMainActivity"
+            android:theme="@style/FileNangerNoTitle"
+            android:noHistory="true"
+            android:screenOrientation="nosensor" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.ape.filemanager.FileExplorerTabActivity"
+            android:configChanges="screenSize|keyboardHidden"
+            android:screenOrientation="nosensor"
+            android:theme="@style/FileManagerTabTheme"
+            android:anyDensity="true" >
+<!--             <intent-filter > -->
+<!--                 <action android:name="android.intent.action.MAIN" /> -->
+<!--                 <category android:name="android.intent.category.DEFAULT" /> -->
+<!--                 <category android:name="android.intent.category.LAUNCHER" /> -->
+<!--             </intent-filter> -->
+            <intent-filter >
+                <action android:name="android.intent.action.PICK" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+
+                <data android:scheme="file" />
+            </intent-filter>
+<!--             <intent-filter > -->
+<!--                 <action android:name="android.intent.action.GET_CONTENT" /> -->
+
+<!--                 <category android:name="android.intent.category.OPENABLE" /> -->
+<!--                 <category android:name="android.intent.category.DEFAULT" /> -->
+
+<!--                 <data android:mimeType="*/*" /> -->
+<!--             </intent-filter> -->
+            <intent-filter >
+                <action android:name="com.mediatek.filemanager.ADD_FILE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.OPENABLE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.ape.filemanager.cloudstorage" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+<!--  
+        <activity android:name="com.android.fileexplorer.SearchActivity" >
+            <intent-filter >
+                <action android:name="android.intent.action.SEARCH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+-->
+
+        <activity
+            android:label="@string/menu_setting"
+            android:launchMode="singleTop"
+            android:name="FileExplorerPreferenceActivity"
+            android:theme="@android:style/Theme.Holo.NoActionBar"
+            android:screenOrientation="nosensor" >
+        </activity>
+
+        <service android:name="com.ape.filemanager.FTPServerService" />
+
+        <meta-data
+            android:name="android.app.default_searchable"
+            android:value="com.ape.filemanager.search.FileManagerSearchActivity" />
+        <activity
+            android:configChanges="orientation|keyboardHidden|screenSize|mcc|mnc"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:name="com.ape.filemanager.search.FileManagerSearchActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="nosensor">
+            <!-- FileManagerOperTheme -->
+            <intent-filter >
+                <action android:name="android.intent.action.SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+
+        
+        <activity
+            android:label="@string/transfer_list_title"
+            android:name="com.ape.cloudfile.transfer.TransferFilesActivity"
+            android:theme="@style/FileManagerTabTheme"
+            android:screenOrientation="nosensor" >
+            <intent-filter>
+                <action android:name="com.ape.cloudfile.download.action" />
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        
+        <service android:name="com.ape.cloudfile.transfer.TransferService" />
+
+        <activity
+            android:configChanges="orientation|keyboardHidden|screenSize|mcc|mnc"
+            android:name="com.ape.cloudfile.cloudImage.CloudImageViewActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="nosensor">
+        </activity>
+        
+        <meta-data
+            android:name="android.app.default_searchable"
+            android:value="com.ape.cloudfile.cloudSearch.CloudFileSearchActivity" />
+        <activity
+            android:configChanges="orientation|keyboardHidden|screenSize|mcc|mnc"
+            android:label="@string/cloud_storage"
+            android:launchMode="singleTask"
+            android:name="com.ape.cloudfile.cloudSearch.CloudFileSearchActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="nosensor">
+            <!-- FileManagerOperTheme -->
+            <intent-filter >
+                <action android:name="android.intent.action.SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/cloud_searchable" />
+        </activity>
+
+        <provider
+            android:name="com.ape.cloudfile.accessDAO.CloudFileCacheProvider"
+            android:authorities="com.ape.cloudfile.cacheProvider"
+            android:exported="true"
+            android:readPermission="com.ape.cloudfile.cache.READ_DATABASE"
+            android:writePermission="com.ape.cloudfile.cache.WRITE_DATABASE" />
+
+    </application>
+
+</manifest>

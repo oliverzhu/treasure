@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">مدير الملفات</string>
+    <string name="added_favorite">تمت الإضافة إلى المفضلة </string>
+    <string name="cancel">إلغاء</string>
+    <string name="category_all">الكل </string>
+    <string name="category_apk">APKs</string>
+    <string name="category_document">المستندات</string>
+    <string name="category_favorite">المفضلة </string>
+    <string name="category_music">الموسيقى </string>
+    <string name="category_other">أخرى مستخدمة</string>
+    <string name="category_picture">الصور </string>
+    <string name="category_theme">الموضوعات</string>
+    <string name="category_video">الفيديوهات</string>
+    <string name="category_zip">الملفات المضغوطة</string>
+    <string name="category_app_mm">التطبيقات/ الوسائط المتعددة</string>
+    <string name="confirm">موافق</string>
+    <string name="confirm_know">موافق</string>
+    <string name="enable_sd_card">وحدة تخزين الهاتف مشغولة</string>
+    <string name="error_info_cant_send_folder">غير قادر على إرسال المجلد</string>
+    <string name="fail_to_create_folder">فشل إنشاء المجلد، <xliff:g id="number">%1$s</xliff:g></string>
+    <string name="fail_to_rename">فشل إعادة تسمية الملف، <xliff:g id="number">%1$s</xliff:g></string>
+    <string name="file_info_canread">قابل للقراءة:</string>
+    <string name="file_info_canwrite">قابل للكتابة:</string>
+    <string name="file_info_ishidden">مخفي: </string>
+    <string name="file_info_location">المسار:</string>
+    <string name="file_info_modified">التوقيت: </string>
+    <string name="file_info_size">الحجم:</string>
+    <string name="file_size"><xliff:g id="number">%d</xliff:g> بايت</string>
+    <string name="instruction">أدخل العنوان التالي في تطبيق FTP الخاص بك:</string>
+    <string name="instruction_pre">بدء الخدمة لتفعيل خادم FTP</string>
+    <string name="menu_item_search">بحث</string>
+    <string name="menu_item_sort">تصنيف بـ</string>
+    <string name="menu_item_sort_date">التاريخ</string>
+    <string name="menu_item_sort_name">الاسم </string>
+    <string name="menu_item_sort_size">الحجم:</string>
+    <string name="menu_item_sort_type">التوقيت </string>
+    <string name="new_folder_name">مجلد جديد</string>
+    <string name="no">لا</string>
+    <string name="no_file">(ملف فارغ)</string>
+    <string name="no_wifi">لا توجد شبكة Wifi</string>
+    <string name="no_wifi_hint">لا توجد شبكة Wifi، اضغط لفحص ضبط Wifi</string>
+    <string name="notif_server_starting">بدء خادم FTP</string>
+    <string name="notif_title">خادم FTP</string>
+    <string name="operation_cancel">إلغاء</string>
+    <string name="operation_cancel_selectall">إزالة اختيار الكل</string>
+    <string name="operation_copy">نسخ</string>
+    <string name="operation_copy_path">نسخ مسار الملف</string>
+    <string name="operation_create_folder">مجلد جديد</string>
+    <string name="operation_create_folder_message">أدخل اسم المجلد</string>
+    <string name="operation_delete">حذف</string>
+    <string name="operation_delete_confirm_message">تأكيد الحذف؟</string>
+    <string name="operation_deleting">جاري الحذف...</string>
+    <string name="operation_favorite">إضافة إلى المفضلة</string>
+    <string name="operation_hide_sys">إخفاء الملفات المخفية</string>
+    <string name="operation_info">التفاصيل </string>
+    <string name="operation_move">نقل</string>
+    <string name="operation_moving">جاري النقل...</string>
+    <string name="operation_paste">لصق</string>
+    <string name="operation_pasting">جاري اللصق...</string>
+    <string name="operation_refresh">تحديث</string>
+    <string name="operation_rename">إعادة تسمية </string>
+    <string name="operation_rename_message">أدخل اسما جديدا</string>
+    <string name="operation_selectall">اختيار الكل </string>
+    <string name="operation_send">إرسال </string>
+    <string name="operation_show_sys">إظهار الملفات المخفية</string>
+    <string name="operation_unfavorite">إزالة من المفضلة </string>
+    <string name="removed_favorite">تمت الإزالة من المفضلة </string>
+    <string name="sd_card_available">المساحة المتوفرة <xliff:g id="number">%1$s</xliff:g></string>
+    <string name="sd_card_size">المساحة الكلية <xliff:g id="number">%1$s</xliff:g></string>
+    <string name="sd_folder">بطاقة SD</string>
+    <string name="start_server">بدء الخدمة  </string>
+    <string name="stop_server">إيقاف الخدمة</string>
+    <string name="storage_warning">وحدة التخزين الخارجية غير متوفرة أو لا يمكن قرائتها</string>
+    <string name="tab_category">تصفح</string>
+    <string name="tab_remote">FTP</string>
+    <string name="tab_sd">ملف</string>
+    <string name="wifi_state">حالة WLAN</string>
+    <string name="yes">نعم</string>
+    <string name="dialog_select_type">اختر نوع الملف</string>
+    <string name="dialog_type_text">نص</string>
+    <string name="dialog_type_audio">صوت</string>
+    <string name="dialog_type_video">فيديو</string>
+    <string name="dialog_type_image">صورة</string>
+    <string name="favorite_photo">صورة</string>
+    <string name="favorite_sdcard">بطاقة SD</string>
+    <string name="favorite_ringtone">نغمة رنين</string>
+    <string name="multi_select_title">تم اختيار   ملف<xliff:g id="number">%1$s</xliff:g></string>
+    <string name="menu_setting">التفضيلات</string>
+    <string name="menu_exit">خروج</string>
+    <string name="preference_title">الضبط العام</string>
+    <string name="pref_primary_folder">المجلد الرئيسي</string>
+    <string name="pref_read_root">قراءة الأصل </string>
+    <string name="pref_show_real_path">عرض المسار الفعلي</string>
+    <string name="pref_primary_folder_summary">القيمة الحالية للمجلد التي تظهر عند بدء التطبيق هي <xliff:g id="number">%1$s</xliff:g></string>
+    <string name="pref_show_real_path_summary">إظهار المسار الفعلي في شريط التصفح</string>
+
+    <string name="default_search_text">بحث في الملفات</string>
+    <string name="search_empty">يجب أن لا يكون محتوى البحث فارغا</string>
+    <string name="search_setting_description">الملفات والمجلدات المحلية</string>
+    <string name="search_result">%2$d نتيجة (نتائج) لـ \"%1$s\"</string>
+    <string name="search_text_empty">يجب أن لا تكون محتويات البحث فارغة</string>
+
+    <string name="phone_storage">وحدة تخزين الهاتف  </string>
+    <string name="storage_sd_card">بطاقة SD</string>
+    <string name="usb_storage">وحدة تخزين USB خارجية</string>
+    <string name="create_hidden_file">سيتم إخفاء الملف إذا بدأ اسمه بـ \'.\'.</string>
+    <string name="modify_hidden_file">لن يتم إخفاء الملف إذا لم يبدأ اسمه بـ \'.\'.</string>
+    <string name="file_name_too_long">الاسم المدخل طويل جدا</string>
+    <string name="invalid_char_prompt">لقد أدخلت حروفا غير صالحة</string>
+    <string name="invalid_empty_name">لا يمكن أن يكون اسم الملف أو المجلد فارغا</string>
+
+    <string name="send_file">إرسال الملف</string>
+    <string name="msg_unable_open_file">صيغة الملف غير مدعومة</string>
+
+    <string name="fail_to_paste_file">فشل لصق الملف (الملفات)، %1$s</string>
+    <string name="insufficient_memory">مساحة غير كافية</string>
+    <string name="file_exist">الاسم موجود بالفعل </string>
+    <string name="file_name_empty">اسم الملف فارغ</string>
+    <string name="no_permission">لا يوجد تصريح</string>
+    <string name="files_loading">تحميل...</string>
+    
+    <string name="cloud_storage">تخزين سحابي</string>
+    <string name="operation_send_to_cloud">إرسال إلى التخزين السحابي</string>
+    <string name="wait">من فضلك انتظر \u2026</string>
+    <string name="create_transfer_connection">جاري إنشاء اتصال، من فضلك انتظر \u2026</string>
+    
+    <string name="menu_title">خيارات</string>
+    <string name="menu_item_more">More</string>
+    <string name="menu_refresh_str">تحديث</string>
+    <string name="menu_create_file_str">إنشاء ملف</string>
+    <string name="menu_upload_str">رفع</string>
+    <string name="menu_download_str">تحميل </string>
+    <string name="menu_delete_str">حذف</string>
+    
+    <string name="operation_success">نجاح</string>
+    <string name="no_network_eror">لا توجد شبكة</string>
+    <string name="network_connect_error">خطأ في الشبكة</string>
+    <string name="wait_network_response">بانتظار استجابة الشبكة</string>
+    <string name="task_queueing">المهمة قيد الانتظار، من فضلك انتظر!</string>
+    <string name="no_service_sdk">لا يوجد تطبيقات تدعم تسجيل دخول مفتاح واحد</string>
+    <string name="no_user_id">جاري الحصول على معلومات المستخدم</string>
+    <string name="user_logout">You are in logout status！</string>
+    <string name="get_file_list_fail">لا يمكن الحصول على قائمة الملفات</string>
+    <string name="get_user_info_error">فشل الحصول على معلومات المستخدم</string>
+    <string name="cloud_file_service_error">فشل الحصول على خدمة الملفات</string>
+
+    <string name="cloud_kindly_prompt_title">Kindly reminder</string>
+    <string name="no_wifi_prompt">الشبكة الحالية ليست Wifi، استمرار؟</string>
+    <string name="default_user">أنت زائر، سجل الدخول لمنع ضياع الملفات!</string>
+    <string name="hello_user">مرحبا، <xliff:g id="number">%1$s</xliff:g></string>
+    
+    <string name="transfer_list_title">قائمة النقل</string>
+    <string name="download_list">قائمة التحميل</string>
+    <string name="upload_list">قائمة الرفع</string>
+    <string name="uploading_list">رفع القائمة (%1$s)</string>
+    <string name="uploaded_list">القائمة المرفوعة (%1$s)</string>
+    <string name="no_transfer_recorder">لا يوجد سجل للنقل </string>
+    <string name="delete_download_record">حذف سجل التحميل </string>
+    <string name="delete_local_files_Q">حذف الملفات المحلية؟</string>
+    <string name="delete_upload_record">Delete upload record</string>
+    <string name="nonsupport_download_folder">لا يدعم تحميل الحافظات</string>
+    <string name="download_path_prompt">Download path is: <xliff:g id="number">%1$s</xliff:g></string>
+    <string name="view_cloud_file_prompt">Cloud file need to download to view, download?</string>
+    
+    <string name="search_cloud_file">البحث في الملفات السحابية</string>
+    <string name="search_cloud_setting_prompt">البحث في الملفات السحابية</string>
+
+    <string name="cloud_login">Begin to use</string>
+    <string name="cloud_login_prompt">Upload files to the cloud, convenient and safe, go to upload now!</string>
+
+    <string name="pull_to_refresh_pull_label">Pull to refresh...</string>
+    <string name="pull_to_refresh_release_label">Release to refresh...</string>
+    <string name="pull_to_refresh_refreshing_label">Loading...</string>
+    <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
+    <string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+
+</resources>

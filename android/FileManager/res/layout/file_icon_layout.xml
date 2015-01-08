@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/file_list_item_icon_width"
+    android:layout_height="@dimen/file_list_item_icon_height"
+    android:layout_marginRight="@dimen/file_list_item_icon_margin_right"
+    android:layout_gravity="center"
+    android:gravity="center">
+    <ImageView
+        android:id="@+id/file_image_frame"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerInside"
+        android:gravity="center"
+        android:background="@drawable/image_icon_bg"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+    <ImageView
+        android:id="@+id/file_image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerInside"
+        android:gravity="center"
+        android:layout_gravity="center" />
+</FrameLayout>

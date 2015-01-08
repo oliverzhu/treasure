@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/tab_bar_height"
+    android:background="@drawable/tinno_title_bg_holo_light"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/title_back_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp" >
+	    <ImageView
+	        android:id="@+id/title_back_btn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_vertical"
+	        android:scaleType="centerInside"
+	        android:src="@drawable/title_panel_back"
+	        />
+	    <ImageView
+	        android:id="@+id/title_icon"
+	        android:layout_width="@dimen/title_icon_height"
+	        android:layout_height="@dimen/title_icon_height"
+	        android:layout_gravity="center_vertical"
+	        android:scaleType="centerInside"
+	        />
+	</LinearLayout>
+
+    <SearchView
+        android:id="@+id/title_search_view"
+        android:title="@string/menu_item_search"
+        android:icon="@drawable/fm_search"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:iconifiedByDefault="true"
+        android:focusable="false"
+        />
+</LinearLayout>

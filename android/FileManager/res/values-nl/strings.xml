@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Bestandsbeheer</string>
+    <string name="added_favorite">Voeg toe aan favorieten</string>
+    <string name="cancel">Annuleer</string>
+    <string name="category_all">Alle</string>
+    <string name="category_apk">APK\'s</string>
+    <string name="category_document">Documenten</string>
+    <string name="category_favorite">Favorieten</string>
+    <string name="category_music">Muziek</string>
+    <string name="category_other">Overig gebruikt</string>
+    <string name="category_picture">Afbeeldingen</string>
+    <string name="category_theme">Thema\'s</string>
+    <string name="category_video">Video\'s</string>
+    <string name="category_zip">Zips</string>
+    <string name="category_app_mm">Toepassing/multimedia</string>
+    <string name="confirm">OK</string>
+    <string name="confirm_know">OK</string>
+    <string name="enable_sd_card">Telefoonopslag is bezig.</string>
+    <string name="error_info_cant_send_folder">Niet in staat map te verzenden</string>
+    <string name="fail_to_create_folder">Mislukt om de map te creëren, %1$s</string>
+    <string name="fail_to_rename">Mislukt om het bestand te hernoemen, %1$s</string>
+    <string name="file_info_canread">Leesbaar:</string>
+    <string name="file_info_canwrite">Schrijfbaar:</string>
+    <string name="file_info_ishidden">Verborgen:</string>
+    <string name="file_info_location">Pad:</string>
+    <string name="file_info_modified">Tijd:</string>
+    <string name="file_info_size">Grootte:</string>
+    <string name="file_size">%d Bytes</string>
+    <string name="instruction">Voer het volgende adres in in de FTP client:</string>
+    <string name="instruction_pre">Start service om FTP-server te activeren</string>
+    <string name="menu_item_search">Zoek</string>
+    <string name="menu_item_sort">Sorteer op</string>
+    <string name="menu_item_sort_date">Datum</string>
+    <string name="menu_item_sort_name">Naam</string>
+    <string name="menu_item_sort_size">Grootte</string>
+    <string name="menu_item_sort_type">Type</string>
+    <string name="new_folder_name">Nieuwe map</string>
+    <string name="no">Geen</string>
+    <string name="no_file">(lege map)</string>
+    <string name="no_wifi">Geen Wifi-netwerk</string>
+    <string name="no_wifi_hint">Geen Wifi-netwerk, klik om Wifi-instellingen te controleren</string>
+    <string name="notif_server_starting">FTP-server gestart</string>
+    <string name="notif_title">FTP-server</string>
+    <string name="operation_cancel">Annuleer</string>
+    <string name="operation_cancel_selectall">Deselecteer alles</string>
+    <string name="operation_copy">Kopie</string>
+    <string name="operation_copy_path">Kopieer bestandspad</string>
+    <string name="operation_create_folder">Nieuwe map</string>
+    <string name="operation_create_folder_message">Voer mapnaam in</string>
+    <string name="operation_delete">Wissen</string>
+    <string name="operation_delete_confirm_message">Wissen bevestigen?</string>
+    <string name="operation_deleting">Aan het wissen...</string>
+    <string name="operation_favorite">Voeg toe aan favorieten</string>
+    <string name="operation_hide_sys">Verberg verborgen bestanden</string>
+    <string name="operation_info">Details</string>
+    <string name="operation_move">Verplaats</string>
+    <string name="operation_moving">Aan het verplaasten...</string>
+    <string name="operation_paste">Plakken</string>
+    <string name="operation_pasting">Aan het plakken...</string>
+    <string name="operation_refresh">Refresh</string>
+    <string name="operation_rename">Hernoem</string>
+    <string name="operation_rename_message">Voer een nieuwe naam in</string>
+    <string name="operation_selectall">Selecteer alles</string>
+    <string name="operation_send">Verzenden</string>
+    <string name="operation_show_sys">Toon verborgen bestanden</string>
+    <string name="operation_unfavorite">Verwijder uit favorieten</string>
+    <string name="removed_favorite">Verwijderd uit favorieten</string>
+    <string name="sd_card_available">Beschikbare ruimte %1$s</string>
+    <string name="sd_card_size">Totale ruimte %1$s</string>
+    <string name="sd_folder">SD-kaart</string>
+    <string name="start_server">Start service</string>
+    <string name="stop_server">Stop service</string>
+    <string name="storage_warning">Externe opslag is niet beschikbaar of kan niet gelezen worden</string>
+    <string name="tab_category">Bladeren</string>
+    <string name="tab_remote">FTP</string>
+    <string name="tab_sd">Bestand</string>
+    <string name="wifi_state">WLAN-status</string>
+    <string name="yes">Ja</string>
+    <string name="dialog_select_type">Selecteer bestandstype</string>
+    <string name="dialog_type_text">Tekst</string>
+    <string name="dialog_type_audio">Audio</string>
+    <string name="dialog_type_video">Video</string>
+    <string name="dialog_type_image">Afbeelding</string>
+    <string name="favorite_photo">Foto</string>
+    <string name="favorite_sdcard">SD-kaart</string>
+    <string name="favorite_ringtone">Ringtone</string>
+    <string name="multi_select_title"> %1$s item(s) geselecteerd</string>
+    <string name="menu_setting">Voorkeuren</string>
+    <string name="menu_exit">Verlaten</string>
+    <string name="preference_title">Algemene instellingen</string>
+    <string name="pref_primary_folder">Thuismap</string>
+    <string name="pref_read_root">Lees root</string>
+    <string name="pref_show_real_path">Toon echte pad</string>
+    <string name="pref_primary_folder_summary">De huidige waarde van de map die verschijnt zodra de toepassing start is %1$s</string>
+    <string name="pref_show_real_path_summary">Toon echte pad in navigatiebalk</string>
+
+    <string name="default_search_text">Zoek bestanden</string>
+    <string name="search_empty">Zoekinhoud moet niet leeg zijn.</string>
+    <string name="search_setting_description">Locale bestanden en mappen</string>
+    <string name="search_result">%2$d resulta(a)t(en) voor \"%1$s\"</string>
+    <string name="search_text_empty">Zoekinhouden moeten niet leeg zijn.</string>
+
+    <string name="phone_storage">Telefoonopslag</string>
+    <string name="storage_sd_card">SD-kaart</string>
+    <string name="usb_storage">Externe USB-opslag</string>
+    <string name="create_hidden_file">Bestand zal verborgen zijn als de naam begint met \'.\'.</string>
+    <string name="modify_hidden_file">Bestand zal niet verborgen zijn als de naam niet begint met \'.\'.</string>
+    <string name="file_name_too_long">De ingevoerde naam is te lang.</string>
+    <string name="invalid_char_prompt">U heeft (een) ongeldig(e) karakter(s) ingevoerd.</string>
+    <string name="invalid_empty_name">Bestands- of mapnaam kan niet leeg zijn.</string>
+
+    <string name="send_file">Verzend bestand</string>
+    <string name="msg_unable_open_file">Het bestandsformaat wordt niet ondersteund.</string>
+
+    <string name="fail_to_paste_file">Plakken bestand(en) mislukt, %1$s</string>
+    <string name="insufficient_memory">onvoldoende ruimte.</string>
+    <string name="file_exist">naam bestaat al.</string>
+    <string name="file_name_empty">bestandsnaam is leeg.</string>
+    <string name="no_permission">geen toestemming.</string>
+    <string name="files_loading">Laden...</string>
+    
+    <string name="cloud_storage">Cloud-opslag</string>
+    <string name="operation_send_to_cloud">Naar cloud verzenden</string>
+    <string name="wait">Even geduld\u2026</string>
+    <string name="create_transfer_connection">Verbinding tot stand brengen, even geduld\u2026</string>
+    
+    <string name="menu_title">Optie</string>
+    <string name="menu_item_more">More</string>
+    <string name="menu_refresh_str">Refresh</string>
+    <string name="menu_create_file_str">Creëer bestand</string>
+    <string name="menu_upload_str">Upload</string>
+    <string name="menu_download_str">Download</string>
+    <string name="menu_delete_str">Wissen</string>
+    
+    <string name="operation_success">Succes</string>
+    <string name="no_network_eror">Geen netwerk</string>
+    <string name="network_connect_error">Netwerkfout</string>
+    <string name="wait_network_response">Wachten op reactie netwerk</string>
+    <string name="task_queueing">Taakrij, even geduld!</string>
+    <string name="no_service_sdk">Geen toepassingen ondersteunen Onekey Login.</string>
+    <string name="no_user_id">Gebruikersinformatie verkrijgen</string>
+    <string name="user_logout">You are in logout status！</string>
+    <string name="get_file_list_fail">Kan geen bestandslijst krijgen</string>
+    <string name="get_user_info_error">Gebruikersinformatie verkrijgen mislukt</string>
+    <string name="cloud_file_service_error">Bestandservice verkrijgen mislukt</string>
+
+    <string name="cloud_kindly_prompt_title">Kindly reminder</string>
+    <string name="no_wifi_prompt">Het huidige netwerk is geen Wifi, verdergaan?</string>
+    <string name="default_user">U bent een bezoeker, login om bestandsverlies tegen te gaan!</string>
+    <string name="hello_user">Hallo, %1$s</string>
+    
+    <string name="transfer_list_title">Transferlijst</string>
+    <string name="download_list">Downloadlijst</string>
+    <string name="upload_list">Uploadlijst</string>
+    <string name="uploading_list">Uploaden lijst (%1$s)</string>
+    <string name="uploaded_list">Geüploade lijst (%1$s)</string>
+    <string name="no_transfer_recorder">Geen transfergegevens</string>
+    <string name="delete_download_record">Wis downloadgegevens</string>
+    <string name="delete_local_files_Q">Locale bestanden wissen?</string>
+    <string name="delete_upload_record">Delete upload record</string>
+    <string name="nonsupport_download_folder">Ondersteunt downlaoden map niet</string>
+    <string name="download_path_prompt">Download path is: %1$s</string>
+    <string name="view_cloud_file_prompt">Cloud file need to download to view, download?</string>
+    
+    <string name="search_cloud_file">Zoek cloudbestanden</string>
+    <string name="search_cloud_setting_prompt">Zoek cloudbestanden</string>
+
+    <string name="cloud_login">Begin to use</string>
+    <string name="cloud_login_prompt">Upload files to the cloud, convenient and safe, go to upload now!</string>
+
+    <string name="pull_to_refresh_pull_label">Pull to refresh...</string>
+    <string name="pull_to_refresh_release_label">Release to refresh...</string>
+    <string name="pull_to_refresh_refreshing_label">Loading...</string>
+    <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
+    <string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+
+</resources>

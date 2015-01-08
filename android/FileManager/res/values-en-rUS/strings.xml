@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">File Manager</string>
+    <string name="added_favorite">Added to Favorites</string>
+    <string name="cancel">Cancel</string>
+    <string name="category_all">All</string>
+    <string name="category_apk">APKs</string>
+    <string name="category_document">Documents</string>
+    <string name="category_favorite">Favorites</string>
+    <string name="category_music">Music</string>
+    <string name="category_other">Other used</string>
+    <string name="category_picture">Pictures</string>
+    <string name="category_theme">Themes</string>
+    <string name="category_video">Videos</string>
+    <string name="category_zip">Zips</string>
+    <string name="category_app_mm">Application/Multimedia</string>
+    <string name="confirm">OK</string>
+    <string name="confirm_know">OK</string>
+    <string name="enable_sd_card">Phone storage is busy.</string>
+    <string name="error_info_cant_send_folder">Unable to send the folder</string>
+    <string name="fail_to_create_folder">Failed to create the folder, <xliff:g id="number">%1$s</xliff:g></string>
+    <string name="fail_to_rename">Failed to rename the file, <xliff:g id="number">%1$s</xliff:g></string>
+    <string name="file_info_canread">Readable:</string>
+    <string name="file_info_canwrite">Writable:</string>
+    <string name="file_info_ishidden">Hidden:</string>
+    <string name="file_info_location">Path:</string>
+    <string name="file_info_modified">Modified:</string>
+    <string name="file_info_size">Size:</string>
+    <string name="file_size">%d Bytes</string>
+    <string name="instruction">Enter the following address into your FTP Client:</string>
+    <string name="instruction_pre">Start service to enable FTP server</string>
+    <string name="menu_item_search">Search</string>
+    <string name="menu_item_sort">Sort by</string>
+    <string name="menu_item_sort_date">Date</string>
+    <string name="menu_item_sort_name">Name</string>
+    <string name="menu_item_sort_size">Size</string>
+    <string name="menu_item_sort_type">Type</string>
+    <string name="new_folder_name">New folder</string>
+    <string name="no">No</string>
+    <string name="no_file">(Empty Folder)</string>
+    <string name="no_wifi">No Wi-Fi network</string>
+    <string name="no_wifi_hint">No Wi-Fi network, press to check WiFi settings</string>
+    <string name="notif_server_starting">FTP Server started</string>
+    <string name="notif_title">FTP Server</string>
+    <string name="operation_cancel">Cancel</string>
+    <string name="operation_cancel_selectall">Deselect All</string>
+    <string name="operation_copy">Copy</string>
+    <string name="operation_copy_path">Copy file path</string>
+    <string name="operation_create_folder">New folder</string>
+    <string name="operation_create_folder_message">Enter folder name</string>
+    <string name="operation_delete">Delete</string>
+    <string name="operation_delete_confirm_message">Confirm Deletion?</string>
+    <string name="operation_deleting">Deleting...</string>
+    <string name="operation_favorite">Add to Favorites</string>
+    <string name="operation_hide_sys">Hide hidden files</string>
+    <string name="operation_info">Details</string>
+    <string name="operation_move">Move</string>
+    <string name="operation_moving">Moving...</string>
+    <string name="operation_paste">Paste</string>
+    <string name="operation_pasting">Pasting...</string>
+    <string name="operation_refresh">Refresh</string>
+    <string name="operation_rename">Rename</string>
+    <string name="operation_rename_message">Enter a new name</string>
+    <string name="operation_selectall">Select All</string>
+    <string name="operation_send">Send</string>
+    <string name="operation_show_sys">Show hidden files</string>
+    <string name="operation_unfavorite">Remove from Favorites</string>
+    <string name="removed_favorite">Removed from Favorites</string>
+    <string name="sd_card_available">Available <xliff:g id="available_size">%1$s</xliff:g></string>
+    <string name="sd_card_size">Total space <xliff:g id="total_size">%1$s</xliff:g></string>
+    <string name="sd_folder">SD card</string>
+    <string name="start_server">Start Service</string>
+    <string name="stop_server">Stop Service</string>
+    <string name="storage_warning">External storage is not available or cannot be read</string>
+    <string name="tab_category">Browse</string>
+    <string name="tab_remote">FTP</string>
+    <string name="tab_sd">File</string>
+    <string name="wifi_state">WLAN Status</string>
+    <string name="yes">Yes</string>
+    <string name="dialog_select_type">Select file type</string>
+    <string name="dialog_type_text">Text</string>
+    <string name="dialog_type_audio">Audio</string>
+    <string name="dialog_type_video">Video</string>
+    <string name="dialog_type_image">Image</string>
+    <string name="favorite_photo">Photo</string>
+    <string name="favorite_sdcard">SD Card</string>
+    <string name="favorite_ringtone">Ringtone</string>
+    <string name="multi_select_title"><xliff:g id="number">%1$s</xliff:g> selected</string>
+    <string name="menu_setting">Preferences</string>
+    <string name="menu_exit">Exit</string>
+    <string name="preference_title">General Settings</string>
+    <string name="pref_primary_folder">Home folder</string>
+    <string name="pref_read_root">Read root</string>
+    <string name="pref_show_real_path">Display real path</string>
+    <string name="pref_primary_folder_summary">The current value of the folder that appears when the application starts is <xliff:g id="number">%1$s</xliff:g></string>
+    <string name="pref_show_real_path_summary">Show real path in navigation bar</string>
+
+    <string name="default_search_text">Search Files</string>
+    <string name="search_empty">Search content should not be empty.</string>
+    <string name="search_setting_description">Local files and folders</string>
+    <string name="search_result"><xliff:g id="number">%2$d</xliff:g> result(s) for \"<xliff:g id="number">%1$s</xliff:g>\"</string>
+    <string name="search_text_empty">Search contents should not be empty.</string>
+
+    <string name="phone_storage">Phone storage</string>
+    <string name="storage_sd_card">SD card</string>
+    <string name="usb_storage">External USB storage</string>
+    <string name="create_hidden_file">File will be hidden if its name starts with \'.\'.</string>
+    <string name="modify_hidden_file">File will not be hidden if its name does not starts with \'.\'.</string>
+    <string name="file_name_too_long">The input name is too long.</string>
+    <string name="invalid_char_prompt">You have input invalid character(s).</string>
+    <string name="invalid_empty_name">File or folder name cannot be empty.</string>
+
+    <string name="send_file">Send file</string>
+    <string name="msg_unable_open_file">The file format is not supported.</string>
+
+    <string name="fail_to_paste_file">Paste file(s) failed, <xliff:g id="number">%1$s</xliff:g></string>
+    <string name="insufficient_memory">insufficient space.</string>
+    <string name="file_exist">name already exists.</string>
+    <string name="file_name_empty">file name is empty.</string>
+    <string name="no_permission">no permission.</string>
+    <string name="files_loading">Loading...</string>
+    
+    <string name="cloud_storage">Cloud storage</string>
+    <string name="operation_send_to_cloud">To cloud</string>
+    <string name="wait">Please wait\u2026</string>
+    <string name="create_transfer_connection">Creating connection, please wait\u2026</string>
+    
+    <string name="menu_title">Option</string>
+    <string name="menu_item_more">More</string>
+    <string name="menu_refresh_str">Refresh</string>
+    <string name="menu_create_file_str">Create File</string>
+    <string name="menu_upload_str">Upload</string>
+    <string name="menu_download_str">Download</string>
+    <string name="menu_delete_str">Delete</string>
+    
+    <string name="operation_success">Success</string>
+    <string name="no_network_eror">No network</string>
+    <string name="network_connect_error">Network error</string>
+    <string name="wait_network_response">Waiting for network response</string>
+    <string name="task_queueing">Task queuing, please wait!</string>
+    <string name="no_service_sdk">No Applications support Onekey Login.</string>
+    <string name="no_user_id">Getting user information</string>
+    <string name="user_logout">You are in logout status！</string>
+    <string name="get_file_list_fail">Can\'t get file list</string>
+    <string name="get_user_info_error">Get user information failed.</string>
+    <string name="cloud_file_service_error">Get file service failed.</string>
+    <string name="source_file_not_exist">Source file not exist!</string>
+    <string name="cannot_download_file">Cannot download file:<xliff:g id="number">%1$s</xliff:g></string>
+    <string name="cannot_upload_file">Cannot upload file:<xliff:g id="number">%1$s</xliff:g></string>
+
+    <string name="cloud_kindly_prompt_title">Kindly reminder</string>
+    <string name="no_wifi_prompt">The current network is not WiFi, continue?</string>
+    <string name="default_user">You are a visitor, login to prevent file lost!</string>
+    <string name="hello_user">Hello, <xliff:g id="number">%1$s</xliff:g></string>
+
+    <string name="transfer_list_title">Transfer list</string>
+    <string name="download_list">Download list</string>
+    <string name="upload_list">Upload list</string>
+    <string name="downloading_list">Downloading list(<xliff:g id="number">%1$s</xliff:g>)</string>
+    <string name="downloaded_list">Downloaded list(<xliff:g id="number">%1$s</xliff:g>)</string>
+    <string name="uploading_list">Uploading list (<xliff:g id="number">%1$s</xliff:g>)</string>
+    <string name="uploaded_list">Uploaded list (<xliff:g id="number">%1$s</xliff:g>)</string>
+    <string name="no_transfer_recorder">No transfer record</string>
+    <string name="delete_download_record">Delete download record</string>
+    <string name="delete_local_files_Q">Delete local files?</string>
+    <string name="delete_upload_record">Delete upload record</string>
+    <string name="nonsupport_download_folder">Not support folder download</string>
+    <string name="download_path_prompt">Download path is: <xliff:g id="number">%1$s</xliff:g></string>
+    <string name="view_cloud_file_prompt">Cloud file need to download to view, download?</string>
+    <string name="system_folder_delete_fail"><xliff:g id="number">%1$s</xliff:g> is system folder, cannot delete.</string>
+    <string name="add_to_download_repeat"><xliff:g id="number">%1$d</xliff:g> file(s) exist, do not download again</string>
+    
+    <string name="search_cloud_file">Search cloud files</string>
+    <string name="search_cloud_setting_prompt">Search cloud files</string>
+
+    <string name="cloud_login">Begin to use</string>
+    <string name="cloud_login_prompt">Upload files to the cloud, convenient and safe, go to upload now!</string>
+
+    <string name="pull_to_refresh_pull_label">Pull to refresh...</string>
+    <string name="pull_to_refresh_release_label">Release to refresh...</string>
+    <string name="pull_to_refresh_refreshing_label">Loading...</string>
+    <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
+    <string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+    
+</resources>

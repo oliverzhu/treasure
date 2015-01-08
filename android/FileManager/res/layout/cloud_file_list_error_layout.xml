@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/error_information_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone" >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/error_image"
+            android:src="@drawable/sd_not_available"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/error_prompt"
+            android:text="@string/enable_sd_card"
+            android:layout_marginTop="@dimen/no_sd_card_image_text_gap"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            style="@style/FileListErrorPromptTextStyle"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/login_prompt"
+            android:text="@string/cloud_login_prompt"
+            android:layout_marginTop="@dimen/cloud_login_prompt_margin_top"
+            android:layout_marginLeft="@dimen/cloud_login_prompt_margin_left"
+            android:layout_marginRight="@dimen/cloud_login_prompt_margin_right"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/cloud_login_prompt_size"
+            android:textColor="@color/normal_information_color"
+            android:gravity="center"
+            android:visibility="gone" />
+       </LinearLayout>
+       
+       <Button
+            android:id="@+id/cloud_login_btn"
+            android:background="@drawable/login_button_bg"
+            android:layout_height="@dimen/cloud_login_btn_height"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/cloud_login_btn_marginLeft"
+            android:layout_marginRight="@dimen/cloud_login_btn_marginRight"
+            android:layout_marginTop="@dimen/cloud_login_btn_marginTop"
+            android:layout_marginBottom="@dimen/cloud_login_btn_marginBottom"
+            android:textColor="@android:color/white"
+            android:text="@string/cloud_login"
+            android:visibility="gone" />
+
+</LinearLayout>

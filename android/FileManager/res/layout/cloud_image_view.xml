@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cloud_photo_view_bg_color"
+    android:orientation="vertical" >
+
+	<Gallery
+	    android:id="@+id/cloud_image_gallery"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:spacing="10dip"
+	    />
+
+	<include layout="@layout/cloud_photo_top_controls" />
+
+	<include layout="@layout/cloud_photo_bottom_controls" />
+
+</RelativeLayout>

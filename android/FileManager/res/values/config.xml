@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <bool name="have_favorite">false</bool>
+    <bool name="have_setting_menu">false</bool>
+    
+    <bool name="default_show_real_path">true</bool>
+    
+    <bool name="have_cloud_file">true</bool>
+    
+    <bool name="cloud_file_multi_transfer">true</bool>
+    
+    <bool name="myos_option_menu_style">true</bool>
+    
+    <bool name="cloud_file_can_upload_file">false</bool>
+    
+    <integer name="upload_progressAnimTime">300</integer>
+    
+    <integer name="category_numColumns">2</integer>
+    
+    <integer name="bottom_bar_normal_item_count">2</integer>
+    <integer name="bottom_bar_edit_item_count">5</integer>
+</resources>

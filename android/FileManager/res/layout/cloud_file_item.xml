@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res/com.ape.filemanager"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/file_list_item_padding_left"
+    android:paddingRight="@dimen/file_list_item_padding_right"
+    >
+<!-- for list title tag display -->
+<LinearLayout
+    android:id="@+id/list_title_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/file_list_item_padding_top"
+    android:visibility="gone"
+    android:clickable="false" >
+    <TextView
+	    android:id="@+id/list_title"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:singleLine="true"
+	    style="@style/CloudFileListTitleTextStyle" />
+</LinearLayout>
+
+<!-- for list item display -->
+<LinearLayout
+    android:id="@+id/list_item_content_view"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/file_list_item_height"
+    android:paddingTop="@dimen/file_list_item_padding_top"
+    android:paddingBottom="@dimen/file_list_item_padding_bottom"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+
+    <FrameLayout
+        android:layout_width="@dimen/file_list_item_icon_width"
+        android:layout_height="@dimen/file_list_item_icon_height"
+        android:layout_marginRight="@dimen/file_list_item_icon_margin_right"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/file_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:layout_gravity="center" />
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/file_info_layout"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/file_list_item_name_padding_left">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/file_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                style="@style/FileListItemMainTextStyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/modified_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="left"
+                android:gravity="left"
+                style="@style/FileListItemInfoTextStyle" />
+            <TextView
+                android:id="@+id/file_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="left"
+                style="@style/FileListItemInfoTextStyle" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/file_checkbox_area"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/file_list_item_checkout_margin_left"
+        android:layout_marginRight="@dimen/file_list_item_checkout_margin_right">
+
+        <ImageView
+            android:id="@+id/file_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:gravity="center"
+            android:layout_gravity="center" />
+
+        <com.ape.cloudfile.widget.RoundProgressBar
+	        android:id="@+id/roundProgressBar"
+	        android:layout_width="@dimen/round_progress_diameters"
+	        android:layout_height="@dimen/round_progress_diameters"
+	        android:layout_gravity="center"
+	        android:visibility="invisible"
+
+	        android_custom:roundColor="@color/progress_unuse_gray"
+	        android_custom:roundProgressColor="@color/progress_color"
+	        android_custom:textIsDisplayable="false"
+	        android_custom:roundWidth="@dimen/round_progress_ring_width"
+	        android_custom:beginAngle="-90"/>
+    </FrameLayout>
+</LinearLayout>
+</FrameLayout>

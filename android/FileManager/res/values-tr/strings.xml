@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Dosya Yöneticisi</string>
+    <string name="added_favorite">Favorilere eklenenler</string>
+    <string name="cancel">İptal </string>
+    <string name="category_all">Tüm</string>
+    <string name="category_apk">APK\'ler</string>
+    <string name="category_document">Evraklar</string>
+    <string name="category_favorite">Favoriler </string>
+    <string name="category_music">Müzik</string>
+    <string name="category_other">Kullanılan diğer</string>
+    <string name="category_picture">Resimler</string>
+    <string name="category_theme">Temalar</string>
+    <string name="category_video">Videolar</string>
+    <string name="category_zip">Fermuarlar</string>
+    <string name="category_app_mm">Başvuru / Multimedya</string>
+    <string name="confirm">Tamam</string>
+    <string name="confirm_know">Tamam</string>
+    <string name="enable_sd_card">Telefonun depolaması meşgul.</string>
+    <string name="error_info_cant_send_folder">Klasör gönderilemiyor</string>
+    <string name="fail_to_create_folder">Klasör oluşturulamadı <xliff:g id="number">%1$s</xliff:g> </string>
+    <string name="fail_to_rename">Dosya yeniden adlandırılamadı,<xliff:g id="number">%1$s</xliff:g> </string>
+    <string name="file_info_canread">Okunabilir:</string>
+    <string name="file_info_canwrite">Yazılabilir:</string>
+    <string name="file_info_ishidden">Gizli:</string>
+    <string name="file_info_location">Yol:</string>
+    <string name="file_info_modified">Zaman:</string>
+    <string name="file_info_size">Boyut:</string>
+    <string name="file_size">%d Bit</string>
+    <string name="instruction">FTP Müşteri içine aşağıdaki adresi girin:</string>
+    <string name="instruction_pre">FTP sunucusunu etkinleştirmek için hizmeti başlatın</string>
+    <string name="menu_item_search">Arama</string>
+    <string name="menu_item_sort">İle sırala</string>
+    <string name="menu_item_sort_date">Tarih</string>
+    <string name="menu_item_sort_name">İsim</string>
+    <string name="menu_item_sort_size">Boyut</string>
+    <string name="menu_item_sort_type">Tip</string>
+    <string name="new_folder_name">Yeni klasör</string>
+    <string name="no">Hayır</string>
+    <string name="no_file">(Boş klasör)</string>
+    <string name="no_wifi">Wi-Fi ağı yok</string>
+    <string name="no_wifi_hint">Wi-Fi ağı yok, WiFi ayarlarını kontrol etmek için bastırın</string>
+    <string name="notif_server_starting">FTP Sunucu başladı</string>
+    <string name="notif_title">FTP Sunucu</string>
+    <string name="operation_cancel">İptal </string>
+    <string name="operation_cancel_selectall">Tümünün Seçimini Kaldır</string>
+    <string name="operation_copy">Kopyala</string>
+    <string name="operation_copy_path">Dosya yolunu kopyala</string>
+    <string name="operation_create_folder">Yeni klasör</string>
+    <string name="operation_create_folder_message">Klasör adını girin</string>
+    <string name="operation_delete">Siliniyor ...</string>
+    <string name="operation_delete_confirm_message">Silme onaylansın mı?</string>
+    <string name="operation_deleting">Siliniyor ...</string>
+    <string name="operation_favorite">Favorilere Ekle</string>
+    <string name="operation_hide_sys">Gizli dosyaları gizle</string>
+    <string name="operation_info">Ayrıntılar</string>
+    <string name="operation_move">Hareket</string>
+    <string name="operation_moving">Hareketli ...</string>
+    <string name="operation_paste">Yapıştır</string>
+    <string name="operation_pasting">Yapıştırıyor ...</string>
+    <string name="operation_refresh">Yenile</string>
+    <string name="operation_rename">Adını değiştirin</string>
+    <string name="operation_rename_message">Yeni bir ad girin</string>
+    <string name="operation_selectall">Tümünü Seçin</string>
+    <string name="operation_send">Gönderin</string>
+    <string name="operation_show_sys">Gizli dosyaları gösterin</string>
+    <string name="operation_unfavorite">Favorilerden kaldır</string>
+    <string name="removed_favorite">Favorilerden kaldırıldı</string>
+    <string name="sd_card_available">Kullanılabilir alan %1$s</string>
+    <string name="sd_card_size">Toplam alan %1$s</string>
+    <string name="sd_folder">SD kartı</string>
+    <string name="start_server">Hizmeti başlat</string>
+    <string name="stop_server">Hizmeti Durdur</string>
+    <string name="storage_warning">Harici depolama mevcut değildir veya okunamıyor</string>
+    <string name="tab_category">Gözat</string>
+    <string name="tab_remote">FTP</string>
+    <string name="tab_sd">Dosya</string>
+    <string name="wifi_state">WLAN Durumu</string>
+    <string name="yes">Evet</string>
+    <string name="dialog_select_type">Dosya türünü seçin</string>
+    <string name="dialog_type_text">Metin</string>
+    <string name="dialog_type_audio">Ses</string>
+    <string name="dialog_type_video">Video</string>
+    <string name="dialog_type_image">Görüntü</string>
+    <string name="favorite_photo">Fotoğraf</string>
+    <string name="favorite_sdcard">SD kartı</string>
+    <string name="favorite_ringtone">Zil sesi</string>
+    <string name="multi_select_title">Seçilen<xliff:g id="number">%1$s</xliff:g> öğe (ler)</string>
+    <string name="menu_setting">Tercihler</string>
+    <string name="menu_exit">Çıkış</string>
+    <string name="preference_title">Genel Ayarlar</string>
+    <string name="pref_primary_folder">Ana klasör</string>
+    <string name="pref_read_root">Kök oku</string>
+    <string name="pref_show_real_path">Gerçek yolunu görüntüleme</string>
+    <string name="pref_primary_folder_summary">Uygulama başladığında görüntülenen klasörün mevcut değeri <xliff:g id="number">%1$s</xliff:g></string>
+    <string name="pref_show_real_path_summary">Gezinme çubuğunda gerçek yolu göster</string>
+
+    <string name="default_search_text">Arama Dosyaları</string>
+    <string name="search_empty">Arama içeriği boş olmamalıdır.</string>
+    <string name="search_setting_description">Yerel dosyalar ve klasörleri</string>
+    <string name="search_result">\"%1$s\"  için %2$d sonuç(lar)</string>
+    <string name="search_text_empty">Arama içerikleri boş olmamalıdır.</string>
+
+    <string name="phone_storage">Telefon depolama</string>
+    <string name="storage_sd_card">SD kartı</string>
+    <string name="usb_storage">Harici USB depolama</string>
+    <string name="create_hidden_file">Adı \'.\' ile başlarsa dosya gizli olacaktır.</string>
+    <string name="modify_hidden_file">Adı \'.\' ile başlamazsa dosya gizli olmayacaktır.</string>
+    <string name="file_name_too_long">Giriş adı çok uzun.</string>
+    <string name="invalid_char_prompt">Girişi geçersiz karakter(ler)iniz var.</string>
+    <string name="invalid_empty_name">Dosya veya klasör adı boş olamaz.</string>
+
+    <string name="send_file">Dosyayı gönder</string>
+    <string name="msg_unable_open_file">Dosya biçimi desteklenmiyor.</string>
+
+    <string name="fail_to_paste_file">Dosya(ları) yapıştırma başarısız,  %1$s, </string>
+    <string name="insufficient_memory">yetersiz alan.</string>
+    <string name="file_exist">adı zaten var.</string>
+    <string name="file_name_empty">dosya adı boş.</string>
+    <string name="no_permission">izin yok.</string>
+    <string name="files_loading">Yükleniyor ...</string>
+    
+    <string name="cloud_storage">Bulut depolama</string>
+    <string name="operation_send_to_cloud">Buluta gönder</string>
+    <string name="wait">Lütfen bekleyin \u2026</string>
+    <string name="create_transfer_connection">Bağlantı oluşturuluyor, lütfen bekleyin \u2026</string>
+    
+    <string name="menu_title">Seçenek</string>
+    <string name="menu_item_more">More</string>
+    <string name="menu_refresh_str">Yenileyin</string>
+    <string name="menu_create_file_str">Dosya Oluşturun</string>
+    <string name="menu_upload_str">Yükleyin</string>
+    <string name="menu_download_str">İndirin</string>
+    <string name="menu_delete_str">Siliniyor ...</string>
+    
+    <string name="operation_success">Başarı</string>
+    <string name="no_network_eror">Şebeke yok</string>
+    <string name="network_connect_error">Ağ hatası</string>
+    <string name="wait_network_response">Ağ yanıtı bekleniyor</string>
+    <string name="task_queueing">Görev kuyrukta, lütfen bekleyin!</string>
+    <string name="no_service_sdk">Hiçbir Uygulamalar Onekey Girişini desteklemiyor.</string>
+    <string name="no_user_id">Kullanıcı bilgilerini alınıyor</string>
+    <string name="user_logout">You are in logout status！</string>
+    <string name="get_file_list_fail">Dosya listesi alınamıyor</string>
+    <string name="get_user_info_error">Kullanıcı bilgilerini alma başarısız.</string>
+    <string name="cloud_file_service_error">Dosya hizmeti alma başarısız.</string>
+
+    <string name="cloud_kindly_prompt_title">Kindly reminder</string>
+    <string name="no_wifi_prompt">Geçerli ağ WiFi değil, devam etsin mi?</string>
+    <string name="default_user">Siz bir ziyaretçisiniz, dosya kaybını önlemek için giriş yapınız!</string>
+    <string name="hello_user">Merhaba,%1$s</string>
+    
+    <string name="transfer_list_title">Transfer listesi</string>
+    <string name="download_list">İndirme listesi</string>
+    <string name="upload_list">Yükleme listesi</string>
+    <string name="uploading_list">Liste yükleniyor (%1$s)</string>
+    <string name="uploaded_list">Yüklenen listesi (%1$s)</string>
+    <string name="no_transfer_recorder">Transfer kaydı yok</string>
+    <string name="delete_download_record">İndir kaydı silinisin mi?</string>
+    <string name="delete_local_files_Q">Yerel dosyaları silinsin mi?</string>
+    <string name="delete_upload_record">Delete upload record</string>
+    <string name="nonsupport_download_folder">Klasörü indir desteklenmiyor</string>
+    <string name="download_path_prompt">Download path is: %1$s</string>
+    <string name="view_cloud_file_prompt">Cloud file need to download to view, download?</string>
+    
+    <string name="search_cloud_file">Arama bulut dosyaları</string>
+    <string name="search_cloud_setting_prompt">Arama bulut dosyaları</string>
+
+    <string name="cloud_login">Begin to use</string>
+    <string name="cloud_login_prompt">Upload files to the cloud, convenient and safe, go to upload now!</string>
+
+    <string name="pull_to_refresh_pull_label">Pull to refresh...</string>
+    <string name="pull_to_refresh_release_label">Release to refresh...</string>
+    <string name="pull_to_refresh_refreshing_label">Loading...</string>
+    <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
+    <string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+
+</resources>

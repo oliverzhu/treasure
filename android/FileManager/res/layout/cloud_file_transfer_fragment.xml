@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/content_background">
+	
+    <RelativeLayout 
+        android:id="@+id/error_information_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="visible" >
+        <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/error_information_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cloud_empty_no_data" />"
+        <TextView 
+            android:id="@+id/error_information_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/FileListErrorPromptTextStyle"
+            android:text="@string/no_user_id" />
+        </LinearLayout>
+    </RelativeLayout>
+    
+	<LinearLayout
+	    android:id="@+id/transfer_list_content"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:visibility="gone" >
+
+	    <com.ape.cloudfile.widget.CloudListView
+	        android:id="@+id/transfer_list"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        android:divider="@drawable/divider_horizontal_dark"
+            android:dividerHeight="@dimen/file_list_divider_height"
+	        android:visibility="gone" />
+	    
+	    <RelativeLayout 
+	        android:id="@+id/transfer_empty_view"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:gravity="center" >
+	        <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:gravity="center"
+	            >
+	        <ImageView
+	            android:id="@+id/empty_image"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/cloud_empty_no_data" />"
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            style="@style/FileListErrorPromptTextStyle"
+	            android:text="@string/no_transfer_recorder" />
+	        </LinearLayout>
+	    </RelativeLayout>
+
+	    <com.ape.cloudfile.widget.BottomActionBar
+	        android:id="@+id/bottom_aciton_bar"
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/bottom_action_bar_height"
+	        android:layout_marginLeft="@dimen/bottom_action_bar_margin_left"
+            android:layout_marginRight="@dimen/bottom_action_bar_margin_left"
+	        />
+	</LinearLayout>
+
+</FrameLayout>

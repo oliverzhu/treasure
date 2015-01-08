@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Trình quản lý tệp</string>
+    <string name="added_favorite">Đã thêm vào mục yêu thích</string>
+    <string name="cancel">Hủy</string>
+    <string name="category_all">Tất cả</string>
+    <string name="category_apk">các APK</string>
+    <string name="category_document">Tài liệu</string>
+    <string name="category_favorite">Mục yêu thích</string>
+    <string name="category_music">Nhạc</string>
+    <string name="category_other">Được sử dụng khác</string>
+    <string name="category_picture">Ảnh</string>
+    <string name="category_theme">Chủ đề</string>
+    <string name="category_video">Video</string>
+    <string name="category_zip">Zip</string>
+    <string name="category_app_mm">Ứng dụng/Đa phương tiện truyền thông</string>
+    <string name="confirm">OK</string>
+    <string name="confirm_know">OK</string>
+    <string name="enable_sd_card">Thiết bị lưu trữ của điện thoại đang bận.</string>
+    <string name="error_info_cant_send_folder">Không thể gửi thư mục này</string>
+    <string name="fail_to_create_folder">Lỗi tạo thư mục,  %1$s</string>
+    <string name="fail_to_rename">Lỗi đổi tên thư mục,  %1$s</string>
+    <string name="file_info_canread">Có thể đọc:</string>
+    <string name="file_info_canwrite">Có thể ghi:</string>
+    <string name="file_info_ishidden">Ẩn:</string>
+    <string name="file_info_location">Đường dẫn</string>
+    <string name="file_info_modified">Thời gian:</string>
+    <string name="file_info_size">Kích cỡ:</string>
+    <string name="file_size">%d Byte</string>
+    <string name="instruction">Nhập địa chỉ sau dây vào FTP Client của bạn:</string>
+    <string name="instruction_pre">Bắt đầu dịch vụ để bật máy chủ FTP</string>
+    <string name="menu_item_search">Tìm kiếm</string>
+    <string name="menu_item_sort">Phân loại</string>
+    <string name="menu_item_sort_date">Ngày tháng</string>
+    <string name="menu_item_sort_name">Tên</string>
+    <string name="menu_item_sort_size">Kích cỡ</string>
+    <string name="menu_item_sort_type">Loại</string>
+    <string name="new_folder_name">Thư mục mới</string>
+    <string name="no">Không</string>
+    <string name="no_file">(Thư mục trống)</string>
+    <string name="no_wifi">Không có mạng Wi-Fi</string>
+    <string name="no_wifi_hint">Không có mạng Wi-Fi, nhấn để kiểm tra cài đặt WiFi</string>
+    <string name="notif_server_starting">Máy chủ FTP đã bắt đầu</string>
+    <string name="notif_title">Máy chủ FTP</string>
+    <string name="operation_cancel">Hủy</string>
+    <string name="operation_cancel_selectall">Bỏ chọn tất cả</string>
+    <string name="operation_copy">Sao chép</string>
+    <string name="operation_copy_path">Sao chép đường dẫn tệp</string>
+    <string name="operation_create_folder">Thư mục mới</string>
+    <string name="operation_create_folder_message">Nhập tên thư mục</string>
+    <string name="operation_delete">Xóa</string>
+    <string name="operation_delete_confirm_message">Xác nhận Xóa?</string>
+    <string name="operation_deleting">Đang xóa…</string>
+    <string name="operation_favorite">Thêm vào Mục yêu thích</string>
+    <string name="operation_hide_sys">Ẩn các thư mục ẩn</string>
+    <string name="operation_info">Chi tiết</string>
+    <string name="operation_move">Di chuyển</string>
+    <string name="operation_moving">Đang di chuyển...</string>
+    <string name="operation_paste">Dán</string>
+    <string name="operation_pasting">Đang dán…</string>
+    <string name="operation_refresh">Làm mới</string>
+    <string name="operation_rename">Đổi tên</string>
+    <string name="operation_rename_message">Nhập tên mới</string>
+    <string name="operation_selectall">Chọn tất cả</string>
+    <string name="operation_send">Gửi</string>
+    <string name="operation_show_sys">Hiện các tệp ẩn</string>
+    <string name="operation_unfavorite">Xóa khỏi mục yêu thích</string>
+    <string name="removed_favorite">Đã xóa khỏi mục yêu thích</string>
+    <string name="sd_card_available">Không gian sẵn có%1$s</string>
+    <string name="sd_card_size">Tổng không gian %1$s</string>
+    <string name="sd_folder">Thẻ SD</string>
+    <string name="start_server">Bắt đầu dịch vụ</string>
+    <string name="stop_server">Dừng dịch vụ</string>
+    <string name="storage_warning">Bộ lưu trữ ngoài không sẵn có hoặc không thể được đọc</string>
+    <string name="tab_category">Duyệt</string>
+    <string name="tab_remote">FTP</string>
+    <string name="tab_sd">Tệp</string>
+    <string name="wifi_state">Trang thái WLAN</string>
+    <string name="yes">Có</string>
+    <string name="dialog_select_type">Chọn loại tệp</string>
+    <string name="dialog_type_text">Văn bản</string>
+    <string name="dialog_type_audio">Âm thanh</string>
+    <string name="dialog_type_video">Video</string>
+    <string name="dialog_type_image">Hình ảnh</string>
+    <string name="favorite_photo">Ảnh</string>
+    <string name="favorite_sdcard">Thẻ SD</string>
+    <string name="favorite_ringtone">Nhạc chuông</string>
+    <string name="multi_select_title">Mục %1$s đã chọn</string>
+    <string name="menu_setting">Tùy chọn</string>
+    <string name="menu_exit">Thoát</string>
+    <string name="preference_title">Cài đặt chung</string>
+    <string name="pref_primary_folder">Thư mục chính</string>
+    <string name="pref_read_root">Đọc gốc</string>
+    <string name="pref_show_real_path">Hiển thị đường dẫn thực</string>
+    <string name="pref_primary_folder_summary">Giá trị hiện tại của thưa mục xuất hiện khi ứng dụng bắt đầu là %1$s</string>
+    <string name="pref_show_real_path_summary">Hiện đường dẫn thực ở thanh điều hướng</string>
+
+    <string name="default_search_text">Chọn tệp</string>
+    <string name="search_empty">Nội dung tìm kiếm không được trống.</string>
+    <string name="search_setting_description">Tệp và thư mục địa phương</string>
+    <string name="search_result">%2$d kết quả cho \"%1$s\"</string>
+    <string name="search_text_empty">Nội dung tìm kiếm không được trống.</string>
+
+    <string name="phone_storage">Bộ lưu trữ điện thoại</string>
+    <string name="storage_sd_card">Thẻ SD</string>
+    <string name="usb_storage">Bộ lưu trữ USB ngoài</string>
+    <string name="create_hidden_file">Tệp sẽ được ẩn nếu tên của tệp bắt đầu với \'.\'.</string>
+    <string name="modify_hidden_file">Tệp sẽ không được ẩn nếu tên của tệp không bắt đầu với \'.\'.</string>
+    <string name="file_name_too_long">Tên nhập vào quá dài.</string>
+    <string name="invalid_char_prompt">Bạn đã nhập ký tự không hợp lệ.</string>
+    <string name="invalid_empty_name">Tên tệp hoặc thư mục không thể bị trống.</string>
+
+    <string name="send_file">Gửi tệp</string>
+    <string name="msg_unable_open_file">Định dạng tệp không được hỗ trợ.</string>
+
+    <string name="fail_to_paste_file">Lỗi dán tệp, %1$s</string>
+    <string name="insufficient_memory">Không gian không phù hợp.</string>
+    <string name="file_exist">Tên đã tồn tại.</string>
+    <string name="file_name_empty">Tên tệp trống.</string>
+    <string name="no_permission">Không được phép.</string>
+    <string name="files_loading">Đang tải…</string>
+    
+    <string name="cloud_storage">Bộ lưu trữ đám mây</string>
+    <string name="operation_send_to_cloud">Gửi tới đám mây</string>
+    <string name="wait">Vui lòng chờ\u2026</string>
+    <string name="create_transfer_connection">Đang tạo kết nối, vui lòng chờ\u2026</string>
+    
+    <string name="menu_title">Tùy chọn</string>
+    <string name="menu_item_more">More</string>
+    <string name="menu_refresh_str">Làm mới</string>
+    <string name="menu_create_file_str">Tạo tệp</string>
+    <string name="menu_upload_str">Tải lên</string>
+    <string name="menu_download_str">Tải xuống</string>
+    <string name="menu_delete_str">Xóa</string>
+    
+    <string name="operation_success">Thành công</string>
+    <string name="no_network_eror">Không có mạng</string>
+    <string name="network_connect_error">Lỗi mạng</string>
+    <string name="wait_network_response">Chờ trả lời mạng</string>
+    <string name="task_queueing">Xếp hàng nhiệm vụ, vui lòng đợi!</string>
+    <string name="no_service_sdk">Không có ứng dụng nào hỗ trợ đăng nhập một phím</string>
+    <string name="no_user_id">Nhận thông tin người dùng</string>
+    <string name="user_logout">You are in logout status！</string>
+    <string name="get_file_list_fail">Không nhận danh sách tệp</string>
+    <string name="get_user_info_error">Lỗi nhận thông tin người dùng.</string>
+    <string name="cloud_file_service_error">Lỗi nhận dịch vụ tệp.</string>
+
+    <string name="cloud_kindly_prompt_title">Kindly reminder</string>
+    <string name="no_wifi_prompt">Mạng hiện tại không phải WiFi, tiếp tục không?</string>
+    <string name="default_user">Bạn là một khách thăm, đăng nhập để ngăn chặn mất tệp!</string>
+    <string name="hello_user">Xin chào,%1$s</string>
+    
+    <string name="transfer_list_title">Truyền danh sách</string>
+    <string name="download_list">Tải xuống danh sách</string>
+    <string name="upload_list">Tải lên danh sách</string>
+    <string name="uploading_list">Đang tải lên danh sách (%1$s)</string>
+    <string name="uploaded_list">Danh sách được tải lên (%1$s)</string>
+    <string name="no_transfer_recorder">Không có ghi chép về truyền</string>
+    <string name="delete_download_record">Xóa ghi chép tải xuống</string>
+    <string name="delete_local_files_Q">Xóa các tệp địa phương?</string>
+    <string name="delete_upload_record">Delete upload record</string>
+    <string name="nonsupport_download_folder">Không hỗ trợ tải xuống thư mục</string>
+    <string name="download_path_prompt">Download path is: %1$s</string>
+    <string name="view_cloud_file_prompt">Cloud file need to download to view, download?</string>
+    
+    <string name="search_cloud_file">Tìm kiếm tệp đám mây</string>
+    <string name="search_cloud_setting_prompt">Tìm kiếm tệp đám mây</string>
+
+    <string name="cloud_login">Begin to use</string>
+    <string name="cloud_login_prompt">Upload files to the cloud, convenient and safe, go to upload now!</string>
+
+    <string name="pull_to_refresh_pull_label">Pull to refresh...</string>
+    <string name="pull_to_refresh_release_label">Release to refresh...</string>
+    <string name="pull_to_refresh_refreshing_label">Loading...</string>
+    <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
+    <string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+
+</resources>

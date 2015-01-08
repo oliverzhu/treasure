@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">فائل مینیجر</string>
+    <string name="added_favorite">پسندیدہ میں شامل کیا</string>
+    <string name="cancel">منسوخ کریں</string>
+    <string name="category_all">تمام</string>
+    <string name="category_apk">APKs</string>
+    <string name="category_document">دستاویز</string>
+    <string name="category_favorite">پسندیدگان</string>
+    <string name="category_music">موسیقی</string>
+    <string name="category_other">دیگر استعمال کردہ</string>
+    <string name="category_picture">تصاویر</string>
+    <string name="category_theme">مرکزی خیال</string>
+    <string name="category_video">ویڈیوز</string>
+    <string name="category_zip">زپس</string>
+    <string name="category_app_mm">ایپلیکیشن/ملٹی میڈیا</string>
+    <string name="confirm">ٹھیک ہے</string>
+    <string name="confirm_know">ٹھیک ہے</string>
+    <string name="enable_sd_card">تصویر ذخیرہ مصروف ہے۔</string>
+    <string name="error_info_cant_send_folder">فولڈر بھیجنے سے قاصر ہے</string>
+    <string name="fail_to_create_folder">فولڈر، %1$s بنانے میں ناکام ہو گیا</string>
+    <string name="fail_to_rename">فائل، %1$s نام تبدیل کرنے میں ناکام رہا</string>
+    <string name="file_info_canread">قابلِ مُطالِعہ</string>
+    <string name="file_info_canwrite">قابل لکھائی:</string>
+    <string name="file_info_ishidden">پوشیدہ:</string>
+    <string name="file_info_location">راستہ:</string>
+    <string name="file_info_modified">وقت:</string>
+    <string name="file_info_size">سائز:</string>
+    <string name="file_size">%d بائٹس</string>
+    <string name="instruction">اپنے FTP کلائنٹ میں درج ذیل پتہ درج کریں:</string>
+    <string name="instruction_pre">FTP سرور فعال کرنے کے لئے سروس شروع کریں</string>
+    <string name="menu_item_search">تلاش کریں</string>
+    <string name="menu_item_sort">چھانٹیں بلحاظ</string>
+    <string name="menu_item_sort_date">تاریخ</string>
+    <string name="menu_item_sort_name">نام</string>
+    <string name="menu_item_sort_size">سائز</string>
+    <string name="menu_item_sort_type">قسم</string>
+    <string name="new_folder_name">نیا فولڈر</string>
+    <string name="no">نہیں</string>
+    <string name="no_file">(خالی فولڈر)</string>
+    <string name="no_wifi">کوئی Wi-Fi نیٹ ورک نہیں</string>
+    <string name="no_wifi_hint">کوئی Wi-Fi نیٹ ورک نہیں ، Wi-Fi کی ترتیبات کی جانچ کرنے کے لئے دبائیں</string>
+    <string name="notif_server_starting">FTP سرور شروع ہوا</string>
+    <string name="notif_title">FTP سرور</string>
+    <string name="operation_cancel">منسوخ کریں</string>
+    <string name="operation_cancel_selectall">تمام غیرمنتخب کریں</string>
+    <string name="operation_copy">نقل کریں</string>
+    <string name="operation_copy_path">فائل راستہ کی نقل کریں</string>
+    <string name="operation_create_folder">نیا فولڈر</string>
+    <string name="operation_create_folder_message">فولڈر کا نام داخل کریں</string>
+    <string name="operation_delete">حذف کریں</string>
+    <string name="operation_delete_confirm_message">حذف کی تکمیل کریں؟</string>
+    <string name="operation_deleting">حذف کر رہا ہے...</string>
+    <string name="operation_favorite">پسندیدہ میں شامل کریں</string>
+    <string name="operation_hide_sys">مخفی فائلوں کو چھپائیں</string>
+    <string name="operation_info">تفصیلات</string>
+    <string name="operation_move">حرکت دیں</string>
+    <string name="operation_moving">حرکت دے رہا ہے...</string>
+    <string name="operation_paste">جوڑیں</string>
+    <string name="operation_pasting">جوڑ رہا ہے...</string>
+    <string name="operation_refresh">تازہ کریں</string>
+    <string name="operation_rename">نیا نام دیں</string>
+    <string name="operation_rename_message">ایک نیا نام داخل کریں</string>
+    <string name="operation_selectall">تمام منتخب کریں</string>
+    <string name="operation_send">بھیجیں</string>
+    <string name="operation_show_sys">مخفی فائلوں کو دکھائیں</string>
+    <string name="operation_unfavorite">پسندیدہ سے ہٹائیں</string>
+    <string name="removed_favorite">پسندیدہ سے ہٹا دیا</string>
+    <string name="sd_card_available">دستیاب جگہ %1$s</string>
+    <string name="sd_card_size">کل جگہ %1$s</string>
+    <string name="sd_folder">SD کارڈ</string>
+    <string name="start_server">سروس شروع کریں</string>
+    <string name="stop_server">سروس بند کریں</string>
+    <string name="storage_warning">بیرونی ذخیرہ دستیاب نہیں ہے یا پڑھا نہیں جا سکتا ہے</string>
+    <string name="tab_category">براؤز کریں</string>
+    <string name="tab_remote">ایف ٹی پی</string>
+    <string name="tab_sd">فائل</string>
+    <string name="wifi_state">WLAN حالت</string>
+    <string name="yes">جی ہاں</string>
+    <string name="dialog_select_type">فائل قسم منتخب کریں</string>
+    <string name="dialog_type_text">متن</string>
+    <string name="dialog_type_audio">آڈیو</string>
+    <string name="dialog_type_video">ویڈیو</string>
+    <string name="dialog_type_image">شبیہ</string>
+    <string name="favorite_photo">تصویر</string>
+    <string name="favorite_sdcard">SD کارڈ</string>
+    <string name="favorite_ringtone">رنگ ٹون</string>
+    <string name="multi_select_title">منتخب شدہ %1$s شے (اشیاء)</string>
+    <string name="menu_setting">ترجیحات</string>
+    <string name="menu_exit">اخراج کریں</string>
+    <string name="preference_title">عمومی ترتیبات</string>
+    <string name="pref_primary_folder">ہوم فولڈر</string>
+    <string name="pref_read_root">روٹ پڑھیں</string>
+    <string name="pref_show_real_path">حقیقی راستہ دکھائیں</string>
+    <string name="pref_primary_folder_summary">فولڈر کی موجودہ قدر جو اس وقت نمودار ہوتی ہے جب ایپلیکیشنن شروع ہوتی ہے وہ ہے %1$s</string>
+    <string name="pref_show_real_path_summary">نیویگیشن بار میں حقیقی راستہ دکھائیں</string>
+
+    <string name="default_search_text">فائلیں تلاش کریں</string>
+    <string name="search_empty">تلاش مندرجات خالی نہیں ہونا چاہئے۔</string>
+    <string name="search_setting_description">مقامی فائلیں اور فولڈر</string>
+    <string name="search_result">%2$d نتیجہ(نتائج) برائے \"%1$s\"</string>
+    <string name="search_text_empty">تلاش مندرجات خالی نہیں ہونا چاہئے۔</string>
+
+    <string name="phone_storage">فون کا ذخیرہ</string>
+    <string name="storage_sd_card">SD کارڈ</string>
+    <string name="usb_storage">بیرونی یو ایس بی ذخیرہ</string>
+    <string name="create_hidden_file">فائل مخفی ہو گی اگر اس کا نام \'.\' کے ساتھ شروع ہوتا ہے</string>
+    <string name="modify_hidden_file">فائل مخفی نہیں ہو گی اگر اس کا نام \'.\' کے ساتھ شروع نہیں ہوتا ہے</string>
+    <string name="file_name_too_long">ان پٹ نام کافی طویل ہے۔</string>
+    <string name="invalid_char_prompt">آپ کے ان پٹ غیردرست حرف (حروف) ہیں۔</string>
+    <string name="invalid_empty_name">فائل یا فولڈر کا نام خالی نہیں ہو سکتا ہے۔</string>
+
+    <string name="send_file">فائل بھیجیں</string>
+    <string name="msg_unable_open_file">اس فائل وضع کی معاونت نہیں کی جاتی۔</string>
+
+    <string name="fail_to_paste_file">فائل (فائلیں) ناکام جوڑیں، %1$s</string>
+    <string name="insufficient_memory">ناکافی جگہ۔</string>
+    <string name="file_exist">نام پہلے سے موجود ہے</string>
+    <string name="file_name_empty">فائل کا نام خالی ہے۔</string>
+    <string name="no_permission">کوئی اجازت نہیں۔</string>
+    <string name="files_loading">لوڈ کر رہا ہے...</string>
+    
+    <string name="cloud_storage">کلاؤڈ ذخیرہ</string>
+    <string name="operation_send_to_cloud">کلاؤڈ کو بھیجیں</string>
+    <string name="wait">براہ مہربانی انتظار کریں\u2026۔</string>
+    <string name="create_transfer_connection">کنکشن تشکیل دیں، براہ مہربانی انتظار کریں\u2026</string>
+    
+    <string name="menu_title">اختیار</string>
+    <string name="menu_item_more">More</string>
+    <string name="menu_refresh_str">تازہ کریں</string>
+    <string name="menu_create_file_str">فائل تخلیق کریں</string>
+    <string name="menu_upload_str">اپ لوڈ کریں</string>
+    <string name="menu_download_str">ڈاؤن لوڈ</string>
+    <string name="menu_delete_str">حذف کریں</string>
+    
+    <string name="operation_success">کامیابی</string>
+    <string name="no_network_eror">کوئی نیٹ ورک نہیں</string>
+    <string name="network_connect_error">نیٹ ورک نقص</string>
+    <string name="wait_network_response">نیٹ ورک جواب کے لئے منتظر</string>
+    <string name="task_queueing">ٹاسک قطار میں ہے، براہ مہربانی انتظار کریں!</string>
+    <string name="no_service_sdk">کوئی ایپلیکیشنن Onekey لاگ ان کی معاونت نہیں کرتی۔</string>
+    <string name="no_user_id">صارف معلومات حاصل کر رہا ہے</string>
+    <string name="user_logout">You are in logout status！</string>
+    <string name="get_file_list_fail">فائل فہرست حاصل نہیں کر سکتا</string>
+    <string name="get_user_info_error">صارف کی معلومات حاصل کرنا ناکام ہوا۔</string>
+    <string name="cloud_file_service_error">فائل سروس حاصل ناکام رہا۔</string>
+
+    <string name="cloud_kindly_prompt_title">Kindly reminder</string>
+    <string name="no_wifi_prompt">موجودہ نیٹ ورک Wi-Fi نہیں ہے، جاری رکھیں؟</string>
+    <string name="default_user">آپ ایک دیکھنے والے ہیں، فائل کھونا روکنے کے لیے لاگ ان کریں!</string>
+    <string name="hello_user">ہیلو، %1$s</string>
+    
+    <string name="transfer_list_title">منتقلی فہرست</string>
+    <string name="download_list">فہرست ڈاؤن لوڈ کریں</string>
+    <string name="upload_list">فہرست اپ لوڈ کریں</string>
+    <string name="uploading_list">فہرست اپ لوڈ کر رہا ہے (%1$s)</string>
+    <string name="uploaded_list">اپ لوڈ کردہ فہرست (%1$s)</string>
+    <string name="no_transfer_recorder">کوئی منتقلی کا ریکارڈ نہیں</string>
+    <string name="delete_download_record">ڈاؤن لوڈ کردہ ریکارڈ حذف کریں</string>
+    <string name="delete_local_files_Q">مقامی فائلوں کو حذف کریں؟</string>
+    <string name="delete_upload_record">Delete upload record</string>
+    <string name="nonsupport_download_folder">غیر معاون فولڈر ڈاؤن لوڈ کیے</string>
+    <string name="download_path_prompt">Download path is: %1$s</string>
+    <string name="view_cloud_file_prompt">Cloud file need to download to view, download?</string>
+    
+    <string name="search_cloud_file">کلاؤڈ فائلوں میں تلاش کریں</string>
+    <string name="search_cloud_setting_prompt">کلاؤڈ فائلوں میں تلاش کریں</string>
+
+    <string name="cloud_login">Begin to use</string>
+    <string name="cloud_login_prompt">Upload files to the cloud, convenient and safe, go to upload now!</string>
+
+    <string name="pull_to_refresh_pull_label">Pull to refresh...</string>
+    <string name="pull_to_refresh_release_label">Release to refresh...</string>
+    <string name="pull_to_refresh_refreshing_label">Loading...</string>
+    <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
+    <string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+
+</resources>

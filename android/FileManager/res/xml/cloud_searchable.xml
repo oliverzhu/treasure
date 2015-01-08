@@ -1,0 +1,14 @@
+
+<searchable xmlns:android="http://schemas.android.com/apk/res/android"
+    android:hint="@string/search_cloud_file"
+    android:includeInGlobalSearch="true"
+    android:label="@string/search_cloud_file"
+
+    android:searchSettingsDescription="@string/search_cloud_setting_prompt"
+    android:searchSuggestAuthority="com.ape.cloudfile.cacheProvider"
+    android:searchSuggestIntentAction="android.intent.action.VIEW"
+    android:searchSuggestPath="cloud/search"
+    android:imeOptions="actionSearch">
+
+<!--     android:searchSuggestSelection="name=?" -->
+</searchable>

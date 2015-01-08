@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Gestore dei file</string>
+    <string name="added_favorite">Aggiungi ai preferiti</string>
+    <string name="cancel">Cancella</string>
+    <string name="category_all">Tutti</string>
+    <string name="category_apk">APK</string>
+    <string name="category_document">Documenti</string>
+    <string name="category_favorite">Preferiti</string>
+    <string name="category_music">Musica</string>
+    <string name="category_other">Altri utilizzi</string>
+    <string name="category_picture">Immagini</string>
+    <string name="category_theme">Temi</string>
+    <string name="category_video">Video</string>
+    <string name="category_zip">Zip</string>
+    <string name="category_app_mm">Applicazioni / Multimedia</string>
+    <string name="confirm">OK</string>
+    <string name="confirm_know">OK</string>
+    <string name="enable_sd_card">Memoria del telefono occupata!</string>
+    <string name="error_info_cant_send_folder">Impossibile inviare la cartella</string>
+    <string name="fail_to_create_folder">Tentativo di creare una cartella non riuscito, %1$s</string>
+    <string name="fail_to_rename">Tentativo di rinominare il file non riuscito, %1$s</string>
+    <string name="file_info_canread">Leggibile:</string>
+    <string name="file_info_canwrite">Scrivibile:</string>
+    <string name="file_info_ishidden">Nascosto:</string>
+    <string name="file_info_location">Percorso:</string>
+    <string name="file_info_modified">Orario:</string>
+    <string name="file_info_size">Dimensione</string>
+    <string name="file_size">Bite %d</string>
+    <string name="instruction">Inserire il seguente indirizzo nel tuo FTP Client:</string>
+    <string name="instruction_pre">Avvia servizio per abilitare il server FTP</string>
+    <string name="menu_item_search">Cerca</string>
+    <string name="menu_item_sort">Classifica in base a </string>
+    <string name="menu_item_sort_date">Data</string>
+    <string name="menu_item_sort_name">Nome</string>
+    <string name="menu_item_sort_size">Dimensione</string>
+    <string name="menu_item_sort_type">Tipo</string>
+    <string name="new_folder_name">Nuova cartella</string>
+    <string name="no">No</string>
+    <string name="no_file">(Cartella vuota)</string>
+    <string name="no_wifi">Nessuna rete wifi</string>
+    <string name="no_wifi_hint">Nessuna rete wifi, premere per controllare le impostazioni wifi</string>
+    <string name="notif_server_starting">Server FTP avviato</string>
+    <string name="notif_title">Server FTP</string>
+    <string name="operation_cancel">Cancella</string>
+    <string name="operation_cancel_selectall">Deseleziona tutto</string>
+    <string name="operation_copy">Copia</string>
+    <string name="operation_copy_path">Copia il percorso del file</string>
+    <string name="operation_create_folder">Nuova cartella</string>
+    <string name="operation_create_folder_message">Inserisci nome del file</string>
+    <string name="operation_delete">Elimina</string>
+    <string name="operation_delete_confirm_message">Confermare l\'eliminazione?</string>
+    <string name="operation_deleting">Eliminazione in corso...</string>
+    <string name="operation_favorite">Aggiungi ai preferiti</string>
+    <string name="operation_hide_sys">Nascondi file nascosti</string>
+    <string name="operation_info">Dettagli</string>
+    <string name="operation_move">Trasferire</string>
+    <string name="operation_moving">Trasferimento in corso..</string>
+    <string name="operation_paste">Incolla</string>
+    <string name="operation_pasting">Incolla…</string>
+    <string name="operation_refresh">Riavviare</string>
+    <string name="operation_rename">Rinomina</string>
+    <string name="operation_rename_message">Inserisci un nuovo nome</string>
+    <string name="operation_selectall">Selezionare tutto</string>
+    <string name="operation_send">Invia</string>
+    <string name="operation_show_sys">Mostra file nascosti</string>
+    <string name="operation_unfavorite">Rimuovi dai Preferiti</string>
+    <string name="removed_favorite">Rimosso dai Preferiti</string>
+    <string name="sd_card_available">Spazio disponibile %1$s</string>
+    <string name="sd_card_size">Spazio complessivo %1$s</string>
+    <string name="sd_folder">Scheda SD</string>
+    <string name="start_server">Avvia servizio</string>
+    <string name="stop_server">Arresta servizio</string>
+    <string name="storage_warning">Memoria esterna non disponibile o non può essere letta</string>
+    <string name="tab_category">Naviga</string>
+    <string name="tab_remote">FTP</string>
+    <string name="tab_sd">File</string>
+    <string name="wifi_state">Status WLAN</string>
+    <string name="yes">Sì</string>
+    <string name="dialog_select_type">Selezionare tipo di file</string>
+    <string name="dialog_type_text">Testo</string>
+    <string name="dialog_type_audio">Audio</string>
+    <string name="dialog_type_video">Video</string>
+    <string name="dialog_type_image">Immagine</string>
+    <string name="favorite_photo">Foto</string>
+    <string name="favorite_sdcard">Scheda SD</string>
+    <string name="favorite_ringtone">Tono di suoneria</string>
+    <string name="multi_select_title">Oggetto (i) selezionati %1$s</string>
+    <string name="menu_setting">Preferenze</string>
+    <string name="menu_exit">Esci</string>
+    <string name="preference_title">Impostazioni generali</string>
+    <string name="pref_primary_folder">Cartella della home</string>
+    <string name="pref_read_root">Leggi radice</string>
+    <string name="pref_show_real_path">Mostra percorso reale</string>
+    <string name="pref_primary_folder_summary">Il valore attuale della cartella che appare quand l\'applicazione viene avviata è %1$s</string>
+    <string name="pref_show_real_path_summary">Mostra percorso reale nella barra di navigazione</string>
+
+    <string name="default_search_text">Cerca file</string>
+    <string name="search_empty">La ricerca contenuto non dovrebbe essere vuota.</string>
+    <string name="search_setting_description">File e cartelle locali</string>
+    <string name="search_result">%2$d risultato(i) per \"%1$s\"</string>
+    <string name="search_text_empty">Ricerca contenuti non dovrebbe essere vuota.</string>
+
+    <string name="phone_storage">Memoria del telefono</string>
+    <string name="storage_sd_card">Scheda SD</string>
+    <string name="usb_storage">Memoria USB esterna</string>
+    <string name="create_hidden_file">Il file verrà nascosto se il nome inizia con  \'.\'.</string>
+    <string name="modify_hidden_file">Il file non verrà nascosto se il nome non inizia con  \'.\'.</string>
+    <string name="file_name_too_long">Il nome inserito è troppo lungo.</string>
+    <string name="invalid_char_prompt">Hai inserito un carattere (i) non valido.</string>
+    <string name="invalid_empty_name">Il nome del file o della cartella non può essere vuoto.</string>
+
+    <string name="send_file">Invia file</string>
+    <string name="msg_unable_open_file">Il formato del file non è supportato.</string>
+
+    <string name="fail_to_paste_file">Il tentativo di incollare il (i) file è fallito%1$s</string>
+    <string name="insufficient_memory">Spazio insufficiente.</string>
+    <string name="file_exist">Nome già esistente.</string>
+    <string name="file_name_empty">Nome del file vuoto.</string>
+    <string name="no_permission">Nessun permesso.</string>
+    <string name="files_loading">Caricamento in corso..</string>
+    
+    <string name="cloud_storage">Archivazione Cloud</string>
+    <string name="operation_send_to_cloud">Inviare a Cloud</string>
+    <string name="wait">Si prega di attendere..</string>
+    <string name="create_transfer_connection">Creazione della connessione in corso, si prega di attendere \u2026</string>
+    
+    <string name="menu_title">Opzione</string>
+    <string name="menu_item_more">More</string>
+    <string name="menu_refresh_str">Aggiorna</string>
+    <string name="menu_create_file_str">Crea file</string>
+    <string name="menu_upload_str">Carica</string>
+    <string name="menu_download_str">Scarica</string>
+    <string name="menu_delete_str">Elimina</string>
+    
+    <string name="operation_success">Riuscito</string>
+    <string name="no_network_eror">Nessuna rete</string>
+    <string name="network_connect_error">Errore di rete</string>
+    <string name="wait_network_response">In attesa di una risposta della rete</string>
+    <string name="task_queueing">Task in coda, si prega di attendere!</string>
+    <string name="no_service_sdk">Nessuna applicazione supporta il login Onekey.</string>
+    <string name="no_user_id">Ricezione informazioni utente</string>
+    <string name="user_logout">You are in logout status！</string>
+    <string name="get_file_list_fail">Impossibile ottenere la lista dei file</string>
+    <string name="get_user_info_error">Tentativo di ottenimento informazioni utente fallito.</string>
+    <string name="cloud_file_service_error">Servizio file fallito.</string>
+
+    <string name="cloud_kindly_prompt_title">Kindly reminder</string>
+    <string name="no_wifi_prompt">La rete attuale non è wifi, continuare?</string>
+    <string name="default_user">Sei un visitatore, esegui il login per evitare che file vengano persi!</string>
+    <string name="hello_user">Ciao, %1$s</string>
+    
+    <string name="transfer_list_title">Lista trasferimenti</string>
+    <string name="download_list">Lista dei download</string>
+    <string name="upload_list">Lista dei file caricati</string>
+    <string name="uploading_list">Lista dei file che in cui caricamento è in corso (%1$s)</string>
+    <string name="uploaded_list">Lista dei file caricati (%1$s)</string>
+    <string name="no_transfer_recorder">Nessun trasferimento registrato</string>
+    <string name="delete_download_record">Elimina registrazione dei download</string>
+    <string name="delete_local_files_Q">Eliminare file locali?</string>
+    <string name="delete_upload_record">Delete upload record</string>
+    <string name="nonsupport_download_folder">Non supporta la cartella scaricata</string>
+    <string name="download_path_prompt">Download path is: %1$s</string>
+    <string name="view_cloud_file_prompt">Cloud file need to download to view, download?</string>
+    
+    <string name="search_cloud_file">Cerca file cloud</string>
+    <string name="search_cloud_setting_prompt">Cerca file cloud</string>
+
+    <string name="cloud_login">Begin to use</string>
+    <string name="cloud_login_prompt">Upload files to the cloud, convenient and safe, go to upload now!</string>
+
+    <string name="pull_to_refresh_pull_label">Pull to refresh...</string>
+    <string name="pull_to_refresh_release_label">Release to refresh...</string>
+    <string name="pull_to_refresh_refreshing_label">Loading...</string>
+    <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
+    <string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+
+</resources>

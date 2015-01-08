@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="FileManagerBase" parent="@android:style/Theme.Holo.Light">
+    </style>
+
+    <style name="FileNangerNoTitle" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="FileManagerTabTheme" parent="@style/FileManagerBase">
+        <item name="android:actionBarTabStyle">@style/FileManagerTabStyle</item>
+        <item name="android:actionBarStyle">@style/FileManagerBarStyle</item>
+        <item name="android:actionBarTabBarStyle">@style/FileManagerTabBarStyle</item>
+        <item name="android:actionBarTabTextStyle">@style/FileManagerTabText</item>
+        <item name="android:actionModeStyle">@style/FileManagerActionModeStyle</item>
+<!--         <item name="android:actionModeCloseButtonStyle">@style/FileManagerActionModeCloseButtonStyle</item> -->
+    </style>
+
+    <style name="FileManagerActionModeStyle">
+        <item name="android:background">@drawable/tinno_title_bg_holo_light</item>
+        <item name="android:backgroundSplit">@drawable/tinno_bottom_action_bar</item>
+        <item name="android:height">?android:attr/actionBarSize</item>
+        <item name="android:titleTextStyle">@android:style/TextAppearance.Medium</item>
+        <item name="android:subtitleTextStyle">@android:style/TextAppearance.Small</item>
+    </style>
+<!--     <style name="FileManagerActionModeCloseButtonStyle" parent="@android:style/Widget.Holo.Light.ActionButton.CloseMode"> -->
+<!--         <item name="android:background">@drawable/myos_button_bg</item> -->
+<!--         <item name="android:layout_marginLeft">@dimen/actionMode_btn_margin_left</item> -->
+<!--         <item name="android:layout_marginTop">@dimen/actionMode_btn_margin_top</item> -->
+<!--         <item name="android:layout_marginBottom">@dimen/actionMode_btn_margin_bottom</item> -->
+<!--         <item name="android:paddingLeft">0dip</item> -->
+<!--         <item name="android:paddingRight">0dip</item> -->
+<!--         <item name="android:minHeight">20dp</item> -->
+<!--         <item name="android:textAppearance">@android:style/TextAppearance</item> -->
+<!--         <item name="android:visibility">gone</item> -->
+<!--     </style> -->
+    <style name="FileManagerActionModeCloseText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">@dimen/actionMode_btn_text_size</item>
+    </style>
+
+    <style name="FileManagerTabStyle" parent="@style/FileManagerBase">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/action_tab_background</item>
+        <item name="android:backgroundStacked">@drawable/tinno_bottom_action_bar</item>
+    </style>
+    <style name="FileManagerTabBarStyle" parent="@style/FileManagerBase">
+<!--         <item name="android:showDividers">middle</item> -->
+<!--         <item name="android:divider">@drawable/tab_divider_line</item> -->
+<!--         <item name="android:dividerPadding">12dp</item> -->
+<!--         <item name="android:gravity">center</item> -->
+    </style>
+    <style name="FileManagerBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar">
+<!--         <item name="android:backgroundStacked">@drawable/tinno_bottom_action_bar</item> -->
+        <item name="android:backgroundSplit">@drawable/tinno_bottom_action_bar</item>
+    </style>
+    <style name="FileManagerTabText" parent="@android:style/Widget.Holo.ActionBar.TabText">
+        <item name="android:textColor">@color/tab_text_color</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/tab_text_size</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="ShadowStyle">
+        <item name="android:shadowColor">#6e6e6e</item>
+        <item name="android:shadowDx">0.5</item>
+        <item name="android:shadowDy">0.5</item>
+        <item name="android:shadowRadius">0.5</item>
+    </style>
+
+    <style name="DeepStyle">
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">-0.5</item>
+        <item name="android:shadowDy">-0.5</item>
+        <item name="android:shadowRadius">0.5</item>
+    </style>
+    <style name="OrangeStyle">
+        <item name="android:shadowColor">#742061</item>
+        <item name="android:shadowDx">-0.5</item>
+        <item name="android:shadowDy">-0.5</item>
+        <item name="android:shadowRadius">0.5</item>
+    </style>
+
+    <style name="Dialog_Fullscreen">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="GreenStyle">
+        <item name="android:shadowColor">#003300</item>
+        <item name="android:shadowDx">-0.5</item>
+        <item name="android:shadowDy">-0.5</item>
+        <item name="android:shadowRadius">0.5</item>
+    </style>
+
+    <style name="HomeButtonStytle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">10dip</item>
+    </style>
+
+    <style name="FileViewToolbarButtonStytle">
+        <item name="android:padding">10dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16dip</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="FileViewOperationButtonStytle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14dip</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/operation_button_background</item>
+    </style>
+
+    <style name="FileViewOperationMoveButtonStytle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18dip</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">5dip</item>
+        <item name="android:layout_marginRight">5dip</item>
+        <item name="android:background">@drawable/remote_button_bg</item>
+    </style>
+
+    <style name="CategoryButtonStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">@dimen/category_btn_left_gap</item>
+        <item name="android:layout_marginTop">@dimen/category_btn_top_gap</item>
+        <item name="android:layout_marginRight">@dimen/category_btn_right_gap</item>
+        <item name="android:layout_marginBottom">@dimen/category_btn_bottom_gap</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/category_button_background</item>
+    </style>
+    <style name="CategoryButtonIconStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginBottom">1dp</item>
+    </style>
+    <style name="CategoryButtonTextStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/category_btn_text_color</item>
+        <item name="android:textSize">@dimen/category_btn_text_size</item>
+    </style>
+    <style name="CategoryButtonCountTextStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/category_information_color</item>
+        <item name="android:textSize">@dimen/category_btn_count_size</item>
+    </style>
+        <style name="CategoryButtonSizeTextStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/category_information_color</item>
+        <item name="android:textSize">@dimen/category_btn_count_size</item>
+    </style>
+
+    <style name="InformationItemTitleStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">60dip</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">14dip</item>
+    </style>
+
+    <style name="InformationItemContentStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">14dip</item>
+        <item name="android:layout_marginLeft">5dip</item>
+    </style>
+    <style name="InformationItemStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:paddingLeft">5dip</item>
+        <item name="android:layout_marginBottom">5dip</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="InformationIconStyle">
+        <item name="android:layout_height">@dimen/category_legend_icon_h</item>
+        <item name="android:layout_width">@dimen/category_legend_icon_w</item>
+        <item name="android:layout_marginRight">@dimen/category_legend_icon_text_gap</item>
+    </style>
+    <style name="InformationTextStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/storage_information_text_size</item>
+        <item name="android:textColor">@color/storage_information_text_color</item>
+        <item name="android:drawablePadding">@dimen/information_text_drawablePadding</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+    <style name="CategoryLegendStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">left</item>
+        <item name="android:drawablePadding">5px</item>
+        <item name="android:textSize">10dip</item>
+        <item name="android:layout_marginLeft">2dip</item>
+    </style>
+    <style name="CategoryLegendStyleLand">
+        <item name="android:layout_height">0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">left</item>
+        <item name="android:drawablePadding">5px</item>
+        <item name="android:textSize">10dip</item>
+        <item name="android:layout_marginLeft">2dip</item>
+    </style>
+    <style name="InformationDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/popup_bg</item>
+    </style>
+    <style name="ActionButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/TextAppearance.ActionButton</item>
+    </style>
+
+    <style name="TextAppearance" parent="android:TextAppearance">
+    </style>
+
+    <style name="TextAppearance.ActionButton">
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="BottomButton" >
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmallInverse</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:shadowColor">#80ffffff</item>
+        <item name="android:shadowRadius">0.2</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/btn_bottom</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="BottomButton.Left">
+    </style>
+
+    <style name="BottomButton.Right">
+        <item name="android:background">@drawable/btn_bottom_last</item>
+    </style>
+
+    <style name="BottomButtonBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:background">@drawable/bottom_button_bar</item>
+    </style>
+    
+    <style name="FileManagerOperTheme" parent="@style/FileManagerBase">
+        <item name="android:actionBarStyle">@style/FileManagerOperActionBarStyle</item>
+    </style>
+
+    <style name="FileManagerOperActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:displayOptions"></item>
+    </style>
+    
+    <style name="FilePathTextStyle">
+        <item name="android:textColor">@color/path_text_color</item>
+        <item name="android:textSize">@dimen/path_text_size</item>
+    </style>
+
+    <style name="FileListErrorPromptTextStyle">
+        <item name="android:textColor">@color/file_list_error_color</item>
+        <item name="android:textSize">@dimen/list_error_prompt_text_size</item>
+    </style>
+
+    <style name="CloudFileListTitleTextStyle">
+        <item name="android:textColor">@color/cf_list_title_text_color</item>
+        <item name="android:textSize">@dimen/list_title_text_size</item>
+    </style>
+
+    <style name="FileListItemMainTextStyle">
+        <item name="android:textColor">@color/file_list_text_color</item>
+        <item name="android:textSize">@dimen/file_list_item_text_size</item>
+    </style>
+    <style name="FileListItemInfoTextStyle">
+        <item name="android:textColor">@color/file_list_info_text_color</item>
+        <item name="android:textSize">@dimen/file_list_item_info_text_size</item>
+    </style>
+
+    <style name="DialogTitleTextStyle">
+        <item name="android:textColor">@color/normal_text_color</item>
+        <item name="android:textSize">@dimen/dialog_title_text_size</item>
+    </style>
+    <style name="DialogContentTextStyle">
+        <item name="android:textColor">@color/normal_text_color</item>
+        <item name="android:textSize">@dimen/dialog_content_text_size</item>
+    </style>
+    <style name="DialogInformationTextStyle">
+        <item name="android:textColor">@color/normal_text_color</item>
+        <item name="android:textSize">@dimen/dialog_information_text_size</item>
+    </style>
+<!--     <style name="CloudFileTransferListPrompt"> -->
+<!--         <item name="android:layout_width">wrap_content</item> -->
+<!--         <item name="android:layout_height">wrap_content</item> -->
+<!--         <item name="android:textSize">12sp</item> -->
+<!--         <item name="android:textColor">@color/cf_transfer_list_prompt</item> -->
+<!--         <item name="android:layout_marginLeft">@dimen/file_list_item_icon_margin_left</item> -->
+<!--         <item name="android:layout_marginTop">@dimen/file_list_item_padding_top</item> -->
+<!--         <item name="android:background">@drawable/prompt_text_bg</item> -->
+<!--     </style> -->
+    
+    <style name="CloudPhotoControlTextStyle">
+        <item name="android:layout_marginTop">@dimen/cloud_photo_control_text_margin_top</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/cloud_photo_control_text_size</item>
+        <item name="android:textColor">@color/cloud_photo_control_text_color</item>
+    </style>
+</resources>

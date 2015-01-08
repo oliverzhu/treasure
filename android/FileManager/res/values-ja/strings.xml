@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">ファイル マネージャー</string>
+    <string name="added_favorite">お気に入りに追加した</string>
+    <string name="cancel">キャンセル</string>
+    <string name="category_all">すべて</string>
+    <string name="category_apk">APK</string>
+    <string name="category_document">ドキュメント</string>
+    <string name="category_favorite">お気に入り</string>
+    <string name="category_music">音楽</string>
+    <string name="category_other">他の使用</string>
+    <string name="category_picture">写真</string>
+    <string name="category_theme">テーマ</string>
+    <string name="category_video">ビデオ</string>
+    <string name="category_zip">Zips</string>
+    <string name="category_app_mm">アプリケーション/マルチメディア</string>
+    <string name="confirm">確認</string>
+    <string name="confirm_know">確認</string>
+    <string name="enable_sd_card">携帯電話ストレージが使用中です。</string>
+    <string name="error_info_cant_send_folder">フォルダーを送信できません。</string>
+    <string name="fail_to_create_folder">フォルダの作成が失敗しました、<xliff:g id="number">%1$s</xliff:g></string>
+    <string name="fail_to_rename">ファイル名の変更が失敗しました、<xliff:g id="number">%1$s</xliff:g></string>
+    <string name="file_info_canread">読取り可能：</string>
+    <string name="file_info_canwrite">書き込み可能：</string>
+    <string name="file_info_ishidden">非表示”</string>
+    <string name="file_info_location">パス：</string>
+    <string name="file_info_modified">時間：</string>
+    <string name="file_info_size">サイズ：</string>
+    <string name="file_size">%dバイト</string>
+    <string name="instruction">下記のアドレスをごFTPクライアントに入力します：</string>
+    <string name="instruction_pre">サービスをスタートし、FTPサーバーを有効にする</string>
+    <string name="menu_item_search">検索</string>
+    <string name="menu_item_sort">並べ替え</string>
+    <string name="menu_item_sort_date">日付</string>
+    <string name="menu_item_sort_name">名称</string>
+    <string name="menu_item_sort_size">サイズ</string>
+    <string name="menu_item_sort_type">タイプ</string>
+    <string name="new_folder_name">新規フォルダ</string>
+    <string name="no">いいえ</string>
+    <string name="no_file">(空フォルダ)</string>
+    <string name="no_wifi">Wi-Fi ネットワーク無し</string>
+    <string name="no_wifi_hint">Wi-Fi ネットワーク無し、押して WiFi の設定を確認する</string>
+    <string name="notif_server_starting">FTPサーバーがスタートされた</string>
+    <string name="notif_title">FTPサーバー</string>
+    <string name="operation_cancel">キャンセル</string>
+    <string name="operation_cancel_selectall">すべてを非選択状態にする</string>
+    <string name="operation_copy">コピー</string>
+    <string name="operation_copy_path">ファイルパスをコピーする</string>
+    <string name="operation_create_folder">新規フォルダ</string>
+    <string name="operation_create_folder_message">フォルダ名を入力する</string>
+    <string name="operation_delete">削除</string>
+    <string name="operation_delete_confirm_message">削除を確認しますか？</string>
+    <string name="operation_deleting">削除中...</string>
+    <string name="operation_favorite">お気に入りに追加する</string>
+    <string name="operation_hide_sys">隠しファイルを非表示にする</string>
+    <string name="operation_info">詳細情報</string>
+    <string name="operation_move">移動</string>
+    <string name="operation_moving">移動中…</string>
+    <string name="operation_paste">貼り付け</string>
+    <string name="operation_pasting">貼り付け中...</string>
+    <string name="operation_refresh">リフレッシュ</string>
+    <string name="operation_rename">名前変更</string>
+    <string name="operation_rename_message">新しい名称を入力する</string>
+    <string name="operation_selectall">すべて選択</string>
+    <string name="operation_send">送信</string>
+    <string name="operation_show_sys">隠しファイルを表示する</string>
+    <string name="operation_unfavorite">お気に入りから削除する</string>
+    <string name="removed_favorite">お気に入りから削除された</string>
+    <string name="sd_card_available">空き領域<xliff:g id="number">%1$s</xliff:g></string>
+    <string name="sd_card_size">総領域<xliff:g id="number">%1$s</xliff:g></string>
+    <string name="sd_folder">SDカード</string>
+    <string name="start_server">サービスを開始する</string>
+    <string name="stop_server">サービスを停止する</string>
+    <string name="storage_warning">外部ストレージが利用不可となり、又は読み取ることができない</string>
+    <string name="tab_category">ブラウズ</string>
+    <string name="tab_remote">FTP</string>
+    <string name="tab_sd">ファイル</string>
+    <string name="wifi_state">WLAN 状態</string>
+    <string name="yes">はい</string>
+    <string name="dialog_select_type">ファイルタイプを選択する</string>
+    <string name="dialog_type_text">テキスト</string>
+    <string name="dialog_type_audio">オーディオ</string>
+    <string name="dialog_type_video">ビデオ</string>
+    <string name="dialog_type_image">イメージ</string>
+    <string name="favorite_photo">写真</string>
+    <string name="favorite_sdcard">SDカード</string>
+    <string name="favorite_ringtone">着メロ</string>
+    <string name="multi_select_title"><xliff:g id="number">%1$s</xliff:g>個アイテム選択済み</string>
+    <string name="menu_setting">優先設定</string>
+    <string name="menu_exit">終了</string>
+    <string name="preference_title">一般設定</string>
+    <string name="pref_primary_folder">ホームフォルダ</string>
+    <string name="pref_read_root">ルートを読み取る</string>
+    <string name="pref_show_real_path">真実パスを表示する</string>
+    <string name="pref_primary_folder_summary">アプリケーションが<xliff:g id="number">%1$s</xliff:g>で開始する時に表示した現在フォルダ値</string>
+    <string name="pref_show_real_path_summary">ナビゲーションバーでレアルパスを表示する</string>
+
+    <string name="default_search_text">ファイル検索</string>
+    <string name="search_empty">検索内容は空にできません。</string>
+    <string name="search_setting_description">ローカルファイルとフォルダ</string>
+    <string name="search_result"><xliff:g id="number">%2$d</xliff:g> \"<xliff:g id="number">%1$s</xliff:g>\の結果"</string>
+    <string name="search_text_empty">検索内容は空にできません。</string>
+
+    <string name="phone_storage">携帯電話ストレージ</string>
+    <string name="storage_sd_card">SDカード</string>
+    <string name="usb_storage">外部USBストレージ</string>
+    <string name="create_hidden_file">ファイル名が \'.\'で始まるとファイルを非表示にする。</string>
+    <string name="modify_hidden_file">ファイル名が \'.\'で始まらないととファイルを非表示にしない。</string>
+    <string name="file_name_too_long">入力した名称が長い過ぎる。</string>
+    <string name="invalid_char_prompt">無効なキャラクターが入力された。</string>
+    <string name="invalid_empty_name">ファイルやフォルダ名が空きにできません。</string>
+
+    <string name="send_file">ファイル送信</string>
+    <string name="msg_unable_open_file">ファイル形式が対応されません。</string>
+
+    <string name="fail_to_paste_file">ファイル貼付け失敗<xliff:g id="number">%1$s</xliff:g></string>
+    <string name="insufficient_memory">領域不足。</string>
+    <string name="file_exist">名称はすでに存在します。</string>
+    <string name="file_name_empty">ファイル名が空きです。</string>
+    <string name="no_permission">権限がありません。</string>
+    <string name="files_loading">読み込み中...</string>
+    
+    <string name="cloud_storage">クラウドストレージ</string>
+    <string name="operation_send_to_cloud">クラウドに送る</string>
+    <string name="wait">お待ちください\u2026</string>
+    <string name="create_transfer_connection">接続作成中、お待ちください\u2026</string>
+    
+    <string name="menu_title">オプション</string>
+    <string name="menu_item_more">More</string>
+    <string name="menu_refresh_str">リフレッシュ</string>
+    <string name="menu_create_file_str">ファイル作成</string>
+    <string name="menu_upload_str">アップロード</string>
+    <string name="menu_download_str">ダウンロード</string>
+    <string name="menu_delete_str">削除</string>
+    
+    <string name="operation_success">成功</string>
+    <string name="no_network_eror">ネットワーク無し</string>
+    <string name="network_connect_error">ネットワークエラー</string>
+    <string name="wait_network_response">ネットワーク応答待ち中</string>
+    <string name="task_queueing">タスク待ち中、お待ちください！</string>
+    <string name="no_service_sdk">ワンキーログイン対応アプリケーションがありません。</string>
+    <string name="no_user_id">ユーザー情報取得中</string>
+    <string name="user_logout">You are in logout status！</string>
+    <string name="get_file_list_fail">ファイルリストを取得できない</string>
+    <string name="get_user_info_error">ユーザー情報の取得が失敗しました。</string>
+    <string name="cloud_file_service_error">ファイルサービスの取得が失敗しました。</string>
+
+    <string name="cloud_kindly_prompt_title">Kindly reminder</string>
+    <string name="no_wifi_prompt">現在のネットワークは WiFiではなくて、続行しますか？</string>
+    <string name="default_user">訪問者であるので、ファイルを紛失させないようにログインします！</string>
+    <string name="hello_user">こんにちは, <xliff:g id="number">%1$s</xliff:g></string>
+    
+    <string name="transfer_list_title">転送リスト</string>
+    <string name="download_list">ダウンロードリスト</string>
+    <string name="upload_list">アップロードリスト</string>
+    <string name="uploading_list">アップロード中リスト (<xliff:g id="number">%1$s</xliff:g>)</string>
+    <string name="uploaded_list">アップロード済みリスト (<xliff:g id="number">%1$s</xliff:g>)</string>
+    <string name="no_transfer_recorder">転送記録無し</string>
+    <string name="delete_download_record">ダウンロード記録の削除</string>
+    <string name="delete_local_files_Q">ローカルファイルを削除しますか？</string>
+    <string name="delete_upload_record">Delete upload record</string>
+    <string name="nonsupport_download_folder">フォルダのダウンロードに対応しない</string>
+    <string name="download_path_prompt">Download path is: <xliff:g id="number">%1$s</xliff:g></string>
+    <string name="view_cloud_file_prompt">Cloud file need to download to view, download?</string>
+    
+    <string name="search_cloud_file">クラウドファイルの検索</string>
+    <string name="search_cloud_setting_prompt">クラウドファイルの検索</string>
+
+    <string name="cloud_login">Begin to use</string>
+    <string name="cloud_login_prompt">Upload files to the cloud, convenient and safe, go to upload now!</string>
+
+    <string name="pull_to_refresh_pull_label">Pull to refresh...</string>
+    <string name="pull_to_refresh_release_label">Release to refresh...</string>
+    <string name="pull_to_refresh_refreshing_label">Loading...</string>
+    <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
+    <string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+
+</resources>

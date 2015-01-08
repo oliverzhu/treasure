@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">文檔管理</string>
+    <string name="added_favorite">已加入我的最愛</string>
+    <string name="cancel">取消</string>
+    <string name="category_all">所有</string>
+    <string name="category_apk">安裝包</string>
+    <string name="category_document">文檔</string>
+    <string name="category_favorite">我的最愛</string>
+    <string name="category_music">音樂</string>
+    <string name="category_other">其它佔用</string>
+    <string name="category_picture">圖片</string>
+    <string name="category_theme">主題</string>
+    <string name="category_video">視頻</string>
+    <string name="category_zip">壓縮包</string>
+    <string name="category_app_mm">應用/多媒體</string>
+    <string name="confirm">確定</string>
+    <string name="confirm_know">確定</string>
+    <string name="enable_sd_card">手機存儲正忙！</string>
+    <string name="error_info_cant_send_folder">不能發送資料夾</string>
+    <string name="fail_to_create_folder">創建資料夾失敗，%1$s</string>
+    <string name="fail_to_rename">重命名失敗，%1$s</string>
+    <string name="file_info_canread">可讀:</string>
+    <string name="file_info_canwrite">可寫:</string>
+    <string name="file_info_ishidden">隱藏:</string>
+    <string name="file_info_location">位置:</string>
+    <string name="file_info_modified">時間:</string>
+    <string name="file_info_size">大小:</string>
+    <string name="file_size">%d 位元組</string>
+    <string name="instruction">請在“我的電腦”位址欄中輸入：</string>
+    <string name="instruction_pre">啟動後可以從電腦端遠端系統管理手機檔</string>
+    <string name="menu_item_search">搜索</string>
+    <string name="menu_item_sort">排序</string>
+    <string name="menu_item_sort_date">時間</string>
+    <string name="menu_item_sort_name">名稱</string>
+    <string name="menu_item_sort_size">大小</string>
+    <string name="menu_item_sort_type">類型</string>
+    <string name="new_folder_name">新建資料夾</string>
+    <string name="no">否</string>
+    <string name="no_file">(資料夾是空的)</string>
+    <string name="no_wifi">無WiFi網路</string>
+    <string name="no_wifi_hint">無WiFi網路,點擊以查看WiFi設置</string>
+    <string name="notif_server_starting">遠端系統管理服務已啟動</string>
+    <string name="notif_title">遠端系統管理服務正在運行</string>
+    <string name="operation_cancel">取消</string>
+    <string name="operation_cancel_selectall">取消全選</string>
+    <string name="operation_copy">複製</string>
+    <string name="operation_copy_path">複製路徑</string>
+    <string name="operation_create_folder">新建資料夾</string>
+    <string name="operation_create_folder_message">請輸入資料夾名稱</string>
+    <string name="operation_delete">刪除</string>
+    <string name="operation_delete_confirm_message">確認刪除?</string>
+    <string name="operation_deleting">正在刪除...</string>
+    <string name="operation_favorite">收藏</string>
+    <string name="operation_hide_sys">不顯示隱藏檔</string>
+    <string name="operation_info">詳情</string>
+    <string name="operation_move">剪切</string>
+    <string name="operation_moving">正在移動...</string>
+    <string name="operation_paste">粘貼</string>
+    <string name="operation_pasting">正在複製...</string>
+    <string name="operation_refresh">刷新</string>
+    <string name="operation_rename">重命名</string>
+    <string name="operation_rename_message">請輸入新名稱</string>
+    <string name="operation_selectall">全選</string>
+    <string name="operation_send">分享</string>
+    <string name="operation_show_sys">顯示隱藏檔</string>
+    <string name="operation_unfavorite">取消收藏</string>
+    <string name="removed_favorite">已從我的最愛移除</string>
+    <string name="sd_card_available">可用空間 <xliff:g id="available_size">%1$s</xliff:g></string>
+    <string name="sd_card_size">總容量 <xliff:g id="total_size">%1$s</xliff:g></string>
+    <string name="sd_folder">SD卡</string>
+    <string name="start_server">啟動服務</string>
+    <string name="stop_server">停止服務</string>
+    <string name="storage_warning">外部存儲不可用.</string>
+    <string name="tab_category">分類流覽</string>
+    <string name="tab_remote">遠端系統管理</string>
+    <string name="tab_sd">文件管理</string>
+    <string name="wifi_state">WiFi狀態</string>
+    <string name="yes">是</string>
+    <string name="dialog_select_type">選擇檔案類型</string>
+    <string name="dialog_type_text">文本</string>
+    <string name="dialog_type_audio">音訊</string>
+    <string name="dialog_type_video">視頻</string>
+    <string name="dialog_type_image">圖像</string>
+    <string name="favorite_photo">照片</string>
+    <string name="favorite_sdcard">SD卡</string>
+    <string name="favorite_ringtone">鈴聲</string>
+    <string name="multi_select_title"><xliff:g id="number">%1$s</xliff:g> 已選擇</string>
+    <string name="menu_setting">設置</string>
+    <string name="menu_exit">退出</string>
+    <string name="preference_title">常規設置</string>
+    <string name="pref_primary_folder">主頁資料夾</string>
+    <string name="pref_read_root">讀取根目錄</string>
+    <string name="pref_show_real_path">顯示真實路徑</string>
+    <string name="pref_primary_folder_summary">程式啟動時顯示的資料夾，當前路徑為<xliff:g id="string">%1$s</xliff:g></string>
+    <string name="pref_show_real_path_summary">在巡覽列中顯示真實路徑</string>
+
+    <string name="default_search_text">搜索文件</string>
+    <string name="search_empty">搜索的內容不能為空。</string>
+    <string name="search_setting_description">本地檔和資料夾</string>
+    <string name="search_result">%2$d 個結果搜索自 \"%1$s\"</string>
+    <string name="search_text_empty">搜索內容不能為空.</string>
+
+    <string name="phone_storage">手機存儲</string>
+    <string name="storage_sd_card">SD 卡</string>
+    <string name="usb_storage">外部 USB 記憶體</string>
+    <string name="create_hidden_file">以\".\"開頭的文件將被隱藏。</string>
+    <string name="modify_hidden_file">不以\'.\'開頭的文件將不被隱藏。</string>
+    <string name="file_name_too_long">輸入的檔案名稱過長。</string>
+    <string name="invalid_char_prompt">您輸入了無效字元。</string>
+    <string name="invalid_empty_name">檔案名不能為空。</string>
+
+    <string name="send_file">發送文件</string>
+    <string name="msg_unable_open_file">檔案格式不支持。</string>
+
+    <string name="fail_to_paste_file">粘貼檔失敗, %1$s</string>
+    <string name="insufficient_memory">空間不足。</string>
+    <string name="file_exist">名字已經存在。</string>
+    <string name="file_name_empty">檔案名為空。</string>
+    <string name="no_permission">沒有許可權。</string>
+    <string name="files_loading">正在導入...</string>
+    
+    <string name="cloud_storage">雲盤</string>
+    <string name="operation_send_to_cloud">發送到雲</string>
+    <string name="wait">"請稍候..."</string>
+    <string name="create_transfer_connection">正在創建連接, 請稍候...</string>
+    
+    <string name="menu_title">選項</string>
+    <string name="menu_item_more">更多</string>
+    <string name="menu_refresh_str">刷新</string>
+    <string name="menu_create_file_str">新建文件</string>
+    <string name="menu_upload_str">上傳</string>
+    <string name="menu_download_str">下載</string>
+    <string name="menu_delete_str">刪除</string>
+    
+    <string name="operation_success">成功</string>
+    <string name="no_network_eror">無網路</string>
+    <string name="network_connect_error">網路錯誤</string>
+    <string name="wait_network_response">正在等待網路響應</string>
+    <string name="task_queueing">正在排隊，請稍候！</string>
+    <string name="no_service_sdk">沒有安裝一鍵登錄的應用</string>
+    <string name="no_user_id">正在獲取使用者資訊</string>
+    <string name="user_logout">You are in logout status！</string>
+    <string name="get_file_list_fail">獲取檔列表失敗</string>
+    <string name="get_user_info_error">獲取使用者資訊失敗</string>
+    <string name="cloud_file_service_error">檔服務分配失敗</string>
+    <string name="source_file_not_exist">源檔案不存在！</string>
+    <string name="cannot_download_file">不能下載檔案:<xliff:g id="number">%1$s</xliff:g></string>
+    <string name="cannot_upload_file">不能上傳檔案:<xliff:g id="number">%1$s</xliff:g></string>
+
+    <string name="cloud_kindly_prompt_title">溫馨提示</string>
+    <string name="no_wifi_prompt">當前不是WiFi網路，是否繼續？</string>
+    <string name="default_user">您是遊客，為防止檔丟失，請登陸!</string>
+    <string name="hello_user">您好, %1$s</string>
+    
+    <string name="transfer_list_title">傳輸列表</string>
+    <string name="download_list">下載列表</string>
+    <string name="upload_list">上傳列表</string>
+    <string name="downloading_list">正在下載 (%1$s)</string>
+    <string name="downloaded_list">下載完成 (%1$s)</string>
+    <string name="uploading_list">正在上傳 (%1$s)</string>
+    <string name="uploaded_list">上傳完成 (%1$s)</string>
+    <string name="no_transfer_recorder">還沒有傳輸記錄哦~</string>
+    <string name="delete_download_record">刪除下載記錄</string>
+    <string name="delete_local_files_Q">同時刪除本地檔?</string>
+    <string name="delete_upload_record">刪除上傳記錄</string>
+    <string name="nonsupport_download_folder">不支持資料夾下載</string>
+    <string name="download_path_prompt">下載的保存位置: %1$s</string>
+    <string name="view_cloud_file_prompt">檔案需要下載才能打開，是否下載？</string>
+    <string name="system_folder_delete_fail"><xliff:g id="number">%1$s</xliff:g>是系統資料夾，不能刪除</string>
+    <string name="add_to_download_repeat"><xliff:g id="number">%1$d</xliff:g>個文檔已經存在，不再重複下載</string>
+    
+    <string name="search_cloud_file">搜索雲文件</string>
+    <string name="search_cloud_setting_prompt">搜索雲上的文件</string>
+
+    <string name="cloud_login">開始使用</string>
+    <string name="cloud_login_prompt">把手機中的檔上傳到雲端，可以保證隨時使用和不丟失，現在就去上傳吧！</string>
+
+    <string name="pull_to_refresh_pull_label">下拉刷新...</string>
+    <string name="pull_to_refresh_release_label">鬆開手機刷新...</string>
+    <string name="pull_to_refresh_refreshing_label">導入中...</string>
+    <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
+    <string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+
+</resources>

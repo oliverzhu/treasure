@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="0dp"
+    android:background="@drawable/tinno_title_bg_holo_light"
+    android:gravity="center_vertical"
+    android:clickable="true"
+    android:orientation="horizontal" >
+
+	<Button
+	    android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/actionMode_btn_margin_top"
+        android:layout_marginBottom="@dimen/actionMode_btn_margin_bottom"
+        android:layout_marginLeft="@dimen/actionMode_btn_margin_left"
+        android:singleLine="true"
+        android:text="@string/cancel"
+        android:textSize="@dimen/actionMode_btn_text_size"
+        android:textColor="@color/normal_text_color"
+        android:background="@drawable/myos_button_bg"
+	    />
+
+    <TextView 
+        android:id="@+id/title_select_count"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:singleLine="true"
+        android:clickable="false"
+        android:textSize="@dimen/actionMode_title_text_size"
+        android:textColor="#000000"
+        />
+
+	<Button
+	    android:id="@+id/select_unselect_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/actionMode_btn_margin_top"
+        android:layout_marginBottom="@dimen/actionMode_btn_margin_bottom"
+        android:layout_marginRight="@dimen/actionMode_btn_margin_right"
+        android:singleLine="true"
+        android:text="@string/operation_selectall"
+        android:textSize="@dimen/actionMode_btn_text_size"
+        android:textColor="@color/normal_text_color"
+        android:background="@drawable/myos_button_bg"
+	    />
+</LinearLayout>

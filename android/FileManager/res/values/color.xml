@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="yellow">#FFF000</color>
+    <color name="gray">#A6A6A0</color>
+    <color name="orange">#ff9900</color>
+    <color name="deepcolor">#faaa5f</color>
+    <color name="shadowcolor">#333333</color>
+    <color name="naming">#ABABAB</color>
+    <color name="red">#FF0000</color>
+    <color name="background">#272727</color>
+    <color name="content_background">#fff6f6f6</color>
+    <color name="orange_yellow">#9b9ba0</color>
+
+    <color name="normal_text_color">#414141</color>
+    <color name="normal_focus_color">#0bada5</color>
+    <color name="normal_information_color">#787878</color>
+
+    <color name="tab_bar_title_color">@color/normal_text_color</color>
+    <color name="tab_bar_title_focus_color">@color/normal_focus_color</color>
+    <color name="category_btn_text_color">#000000</color>
+    <color name="category_information_color">@color/normal_information_color</color>
+
+    <drawable name="semi_black">#80000000</drawable>
+
+    <color name="remote_connect_text">#FF424242</color>
+    <color name="remote_disconnect_text">#FF901821</color>
+
+    <color name="path_bg_color">#fff6f6f6</color>
+    <color name="path_text_color">@color/normal_focus_color</color>
+    <color name="file_list_text_color">#000000</color>
+    <color name="file_list_info_text_color">@color/normal_information_color</color>
+    <color name="file_list_error_color">#5c5c5c</color>
+
+    <color name="storage_information_text_color">@color/normal_text_color</color>
+    <color name="no_sd_card_text_color">#888888</color>
+
+    <color name="cf_list_title_text_color">@color/normal_focus_color</color>
+    <color name="cf_transfer_list_prompt">@color/normal_information_color</color>
+
+    <color name="progress_unuse_gray">#d8d8d8</color>
+<!--     <color name="progress_bg_color">#ffb6b6b6</color> -->
+    <color name="progress_color">#0baca4</color>
+
+    <color name="cloud_photo_view_bg_color">#2D2D2D</color>
+    <color name="cloud_photo_control_text_color">#ffffff</color>
+</resources>
