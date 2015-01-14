@@ -36,11 +36,16 @@ public abstract class AbstractCheckNewVersionJob implements ThreadPool.Job<Upgra
 	public UpgradeInfo run(JobContext jc) {
 		TelephonyManager telephonyManager = (TelephonyManager) mContext
 				.getSystemService(Context.TELEPHONY_SERVICE);
-		String imei = "0000000000";
+		String imei = "";
 		try {
 			imei = telephonyManager.getDeviceId();
 		} catch (SecurityException e1) {
 			e1.printStackTrace();
+		}
+		
+		if(imei == null || imei.trim().length() == 0)
+		{
+			imei = "0000000000";
 		}
 		try {
 			if(imei != null && !"".equals(imei))

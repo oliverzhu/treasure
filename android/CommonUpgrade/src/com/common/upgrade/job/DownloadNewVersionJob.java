@@ -7,8 +7,10 @@ import android.app.DownloadManager;
 import android.app.DownloadManager.Request;
 import android.content.Context;
 import android.content.Intent;
+import android.database.Cursor;
 import android.net.Uri;
 import android.os.Environment;
+import android.widget.Toast;
 
 import com.common.upgrade.bean.UpgradeInfo;
 import com.common.upgrade.core.UpgradeManager;
@@ -36,6 +38,7 @@ public class DownloadNewVersionJob implements ThreadPool.Job<Void>{
 	@Override
 	public Void run(JobContext jc) {
 		try {
+			if(checkDownloadRunning()) return null;
 			if(checkApkExist())
 			{
 				Intent installApkIntent = new Intent();
@@ -108,7 +111,7 @@ public class DownloadNewVersionJob implements ThreadPool.Job<Void>{
 		
 		if(version != null 
 				&& version.trim().length() != 0 
-				&& version.equals(prefUpgradeInfo.getVersion()) 
+				&& version.equals(mUpgradeInfo.getVersion()) 
 				&& downloadPath != null 
 				&& downloadPath.trim().length() != 0)
 		{
@@ -122,6 +125,35 @@ public class DownloadNewVersionJob implements ThreadPool.Job<Void>{
 				}
 			}
 			
+		}
+		return false;
+	}
+	
+	@SuppressWarnings("static-access")
+	private boolean checkDownloadRunning()
+	{
+		UpgradeInfo prefUpgradeInfo = Preferences.getUpgradeInfo(mContext);
+		String version = prefUpgradeInfo.getVersion();
+		if(version != null 
+				&& version.trim().length() != 0 
+				&& version.equals(mUpgradeInfo.getVersion()) )
+		{
+			long downloadId = Preferences.getDownloadId(mContext);
+			if(downloadId != -1)
+			{
+				final DownloadManager downloadManager = (DownloadManager) mContext.getSystemService(mContext.DOWNLOAD_SERVICE);
+				DownloadManager.Query mDownloadQuery = new DownloadManager.Query();
+				mDownloadQuery.setFilterById(downloadId);
+				Cursor cursor = downloadManager.query(mDownloadQuery);
+				if(cursor != null && cursor.moveToFirst()){
+					int status = cursor.getInt(cursor.getColumnIndex(DownloadManager.COLUMN_STATUS));
+					if(status == DownloadManager.STATUS_RUNNING)
+					{
+						return true;
+					}
+				}
+
+			}
 		}
 		return false;
 	}
