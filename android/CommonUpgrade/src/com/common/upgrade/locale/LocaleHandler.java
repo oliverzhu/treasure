@@ -12,6 +12,7 @@ public abstract class LocaleHandler {
 	public abstract String getProgressDialogTitle();
 	public abstract String getProgressDialogMessage();
 	public abstract String getToastMessage();
+	public abstract String getToastNetErrorMessage();
 	
 	public void setUpgradeDescription(String value)
 	{

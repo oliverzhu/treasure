@@ -1,6 +1,5 @@
 package com.common.upgrade.core;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
@@ -21,6 +20,7 @@ import com.common.upgrade.job.CheckNewVersionJobWithClientUrl;
 import com.common.upgrade.job.CheckNewVersionJobWithoutClientUrl;
 import com.common.upgrade.job.DownloadNewVersionJob;
 import com.common.upgrade.locale.LocaleChina;
+import com.common.upgrade.locale.LocaleChinaTW;
 import com.common.upgrade.locale.LocaleChinese;
 import com.common.upgrade.locale.LocaleEnglish;
 import com.common.upgrade.locale.LocaleHandler;
@@ -57,11 +57,24 @@ public class UpgradeManager extends LocaleHandler implements UpgradeInterface{
 		{
 			UpgradeInfo upgradeInfo = future.get();
 			Message msg = mHandler.obtainMessage();
-			if(upgradeInfo != null && Boolean.parseBoolean(upgradeInfo.getResult()))
+			if(upgradeInfo != null)
 			{
-				mFuture = future;
-				msg.what = Constants.MSG_HAVA_NEW_VERSION;
-				msg.obj = upgradeInfo;
+				if(upgradeInfo.getErrorCode() != null)
+				{
+					if(upgradeInfo.getErrorCode().equals(Constants.ERROR_CODE_NET))
+					{
+						msg.what = Constants.MSG_NET_ERROR;
+					}
+				}
+				else if(Boolean.parseBoolean(upgradeInfo.getResult()))
+				{
+					mFuture = future;
+					msg.what = Constants.MSG_HAVA_NEW_VERSION;
+					msg.obj = upgradeInfo;
+				}else if(!Boolean.parseBoolean(upgradeInfo.getResult()))
+				{
+					msg.what = Constants.MSG_NO_NEW_VERSION;
+				}
 			}else
 			{
 				msg.what = Constants.MSG_NO_NEW_VERSION;
@@ -110,13 +123,21 @@ public class UpgradeManager extends LocaleHandler implements UpgradeInterface{
 			public void handleMessage(Message msg) {
 				switch (msg.what) {
 				case Constants.MSG_HAVA_NEW_VERSION:
-					ContextUtils.closeProgressDialog(mProgressDialog);
-					UpgradeInfo description = (UpgradeInfo) msg.obj;
-					showDialog(description);
+					try {
+						ContextUtils.closeProgressDialog(mProgressDialog);
+						UpgradeInfo description = (UpgradeInfo) msg.obj;
+						showDialog(description);
+					} catch (Exception e1) {
+						e1.printStackTrace();
+					}
 					break;
 				case Constants.MSG_NO_NEW_VERSION:
-					ContextUtils.closeProgressDialog(mProgressDialog);
-					ContextUtils.showToast(mContext, getToastMessage(), Toast.LENGTH_SHORT);
+					try {
+						ContextUtils.closeProgressDialog(mProgressDialog);
+						ContextUtils.showToast(mContext, getToastMessage(), Toast.LENGTH_SHORT);
+					} catch (Exception e) {
+						e.printStackTrace();
+					}
 					break;
 				case Constants.MSG_START_DOWNLOAD:
 					UpgradeInfo description1 = (UpgradeInfo) msg.obj;
@@ -127,7 +148,9 @@ public class UpgradeManager extends LocaleHandler implements UpgradeInterface{
 					Boolean result = (Boolean) msg.obj;
 					mAskForNewVersionFlagListener.checkNewVersion(result);
 					break;
-
+				case Constants.MSG_NET_ERROR:
+					ContextUtils.closeProgressDialog(mProgressDialog);
+					ContextUtils.showToast(mContext, getToastNetErrorMessage(), Toast.LENGTH_SHORT);
 				default:
 					break;
 				}
@@ -235,6 +258,7 @@ public class UpgradeManager extends LocaleHandler implements UpgradeInterface{
 	{
 		handlers = new HashMap<String, LocaleHandler>();
 		handlers.put(LocaleChinese.defaultLocale, new LocaleChinese());
+		handlers.put(LocaleChinaTW.defaultLocale, new LocaleChinaTW());
 		handlers.put(LocaleEnglish.defaultLocale, new LocaleEnglish());
 		handlers.put(Locale.CHINA.toString(), new LocaleChina());
 		handlers.put(Locale.US.toString(), new LocaleUS());
@@ -331,5 +355,11 @@ public class UpgradeManager extends LocaleHandler implements UpgradeInterface{
 	public String getToastMessage() {
 		LocaleHandler handler = lookupHandlerBy(getLocaleLanguage());
 		return handler.getToastMessage();
+	}
+
+	@Override
+	public String getToastNetErrorMessage() {
+		LocaleHandler handler = lookupHandlerBy(getLocaleLanguage());
+		return handler.getToastNetErrorMessage();
 	}
 }

@@ -10,6 +10,7 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.ProtocolException;
 import java.net.URL;
+import java.net.UnknownHostException;
 import java.util.Map;
 
 import org.apache.http.HttpResponse;
@@ -17,6 +18,7 @@ import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
+import org.apache.http.conn.ConnectTimeoutException;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.params.BasicHttpParams;
 import org.apache.http.params.HttpConnectionParams;
@@ -170,7 +172,7 @@ public class NetUtils {
 	 * post方式从服务器获取json数组
 	 * @return
 	 */
-	public static JSONArray getJSONArrayByPost(String uri)
+	public static JSONArray getJSONArrayByPost (String uri) throws ConnectTimeoutException,UnknownHostException
 	{
 		Log.i(TAG, "<getJSONArrayByPost> uri:" + uri, Log.APP);
 		StringBuilder builder = new StringBuilder();
@@ -199,11 +201,22 @@ public class NetUtils {
 			}
 			Log.i(TAG, "<getJSONArrayByPost> jsonString:" + jsonString, Log.DATA);
 			return new JSONArray(jsonString);
-		} catch (ClientProtocolException e) {
+		}catch(ConnectTimeoutException e)
+		{
+			throw new ConnectTimeoutException();
+		}
+		catch(UnknownHostException e)
+		{
+			throw new UnknownHostException();
+		}
+		catch (ClientProtocolException e) 
+		{
 			e.printStackTrace();
-		} catch (IOException e) {
+		} catch (IOException e) 
+		{
 			e.printStackTrace();
-		} catch (Exception e) {
+		} catch (Exception e) 
+		{
 			e.printStackTrace();
 		}
 		return null;

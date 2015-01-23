@@ -1,9 +1,9 @@
 package com.common.upgrade.utils;
 
-import com.common.upgrade.bean.UpgradeInfo;
-
 import android.content.Context;
 import android.content.SharedPreferences;
+
+import com.common.upgrade.bean.UpgradeInfo;
 
 /**
  * 
@@ -19,6 +19,7 @@ public class Preferences {
 	protected static final String KEY_DESCRIPTION  = "description";
 	protected static final String KEY_DOWNLOAD_SIZE  = "downloadSize";
 	protected static final String KEY_DOWNLOAD_PATH  = "download_path";
+	protected static final String KEY_DOWNLOAD_STATUS  = "download_status";
 	
 	public static void setDownloadId(Context context,long downloadId)
     {
@@ -85,5 +86,21 @@ public class Preferences {
     	SharedPreferences.Editor editor = pref.edit();
     	editor.clear();
     	editor.commit();
+    }
+    
+    public static void setDownloadStatus(Context context,int downloadId)
+    {
+    	SharedPreferences pref = 
+    			context.getSharedPreferences(PREFERENCES_NAME, Context.MODE_APPEND);
+    	SharedPreferences.Editor editor=pref.edit();
+    	editor.putInt(KEY_DOWNLOAD_STATUS, downloadId);
+    	editor.commit();
+    }
+    
+    public static int getDownloadStatus(Context context)
+    {
+    	SharedPreferences pref = 
+    			context.getSharedPreferences(PREFERENCES_NAME, Context.MODE_APPEND);
+    	return pref.getInt(KEY_DOWNLOAD_STATUS, -1);
     }
 }

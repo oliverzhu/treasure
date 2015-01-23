@@ -22,4 +22,9 @@ public class LocaleEnglish extends LocaleHandler {
 		return "Is the latest version";
 	}
 
+	@Override
+	public String getToastNetErrorMessage() {
+		return "Net Error";
+	}
+
 }

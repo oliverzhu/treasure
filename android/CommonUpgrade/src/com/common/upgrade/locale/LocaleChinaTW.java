@@ -5,22 +5,22 @@ package com.common.upgrade.locale;
  * @author jianwen.zhu
  * @since 2014/10/29
  */
-public class LocaleChinese extends LocaleHandler {
-	public static final String defaultLocale = "zh";
-	
+public class LocaleChinaTW extends LocaleChinese {
+	public static final String defaultLocale = "zh_TW";
+
 	@Override
 	public String getDialogTitle() {
-		return "发现新版本，是否升级？";
+		return "發現新版本，是否升級？";
 	}
 
 	@Override
 	public String getProgressDialogTitle() {
-		return "检查更新";
+		return "檢查更新";
 	}
 
 	@Override
 	public String getProgressDialogMessage() {
-		return "正在检查...";
+		return "正在檢查...";
 	}
 
 	@Override
@@ -30,6 +30,10 @@ public class LocaleChinese extends LocaleHandler {
 
 	@Override
 	public String getToastNetErrorMessage() {
-		return "网络异常";
+		return "網路異常";
 	}
+	
+	
+	
+
 }

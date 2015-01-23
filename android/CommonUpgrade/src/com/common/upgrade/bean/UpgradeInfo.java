@@ -41,6 +41,8 @@ public class UpgradeInfo implements Parcelable{
 	
 	private List<LanguageDescriptionInfo>  languagesDescriptionInfos;
 	
+	private String errorCode;
+	
 	
 	public static final Parcelable.Creator<UpgradeInfo> CREATOR = new Creator<UpgradeInfo>() {
 
@@ -70,6 +72,7 @@ public class UpgradeInfo implements Parcelable{
 		downloadSize = in.readLong();
 		result = in.readString();
 		mustUpdate = in.readString();
+		errorCode = in.readString();
 	}
 
 	@Override
@@ -89,6 +92,7 @@ public class UpgradeInfo implements Parcelable{
 		dest.writeLong(downloadSize);
 		dest.writeString(result);
 		dest.writeString(mustUpdate);
+		dest.writeString(errorCode);
 	}
 
 	public int getId() {
@@ -183,5 +187,13 @@ public class UpgradeInfo implements Parcelable{
 	public void setLanguagesDescriptionInfos(
 			List<LanguageDescriptionInfo> languagesDescriptionInfos) {
 		this.languagesDescriptionInfos = languagesDescriptionInfos;
+	}
+
+	public String getErrorCode() {
+		return errorCode;
+	}
+
+	public void setErrorCode(String errorCode) {
+		this.errorCode = errorCode;
 	}
 }

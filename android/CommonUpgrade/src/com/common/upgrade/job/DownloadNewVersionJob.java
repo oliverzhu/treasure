@@ -10,11 +10,11 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Environment;
-import android.widget.Toast;
 
 import com.common.upgrade.bean.UpgradeInfo;
 import com.common.upgrade.core.UpgradeManager;
 import com.common.upgrade.utils.Constants;
+import com.common.upgrade.utils.Log;
 import com.common.upgrade.utils.Preferences;
 import com.common.upgrade.utils.thread.ThreadPool;
 import com.common.upgrade.utils.thread.ThreadPool.JobContext;
@@ -81,8 +81,9 @@ public class DownloadNewVersionJob implements ThreadPool.Job<Void>{
 				request.allowScanningByMediaScanner();
 				request.setShowRunningNotification(true);
 				request.setVisibleInDownloadsUi(true);
-				request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS + Constants.DOWNLOAD_FILE_PATH, apkName);
+				request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, apkName);
 				request.setTitle(UpgradeManager.mAppName);
+				request.setMimeType("application/vnd.android.package-archive");
 				
 		    	//id 保存起来跟之后的广播接收器作对比
 	        	long id = downloadManager.enqueue(request);
@@ -96,6 +97,7 @@ public class DownloadNewVersionJob implements ThreadPool.Job<Void>{
 	        	Preferences.removeAll(mContext);
 	        	Preferences.setDownloadId(mContext, id);
 	        	Preferences.setUpgradeInfo(mContext, mUpgradeInfo);
+	        	Preferences.setDownloadStatus(mContext, Constants.DOWNLOAD_STATUS_RUNNING);
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -134,9 +136,10 @@ public class DownloadNewVersionJob implements ThreadPool.Job<Void>{
 	{
 		UpgradeInfo prefUpgradeInfo = Preferences.getUpgradeInfo(mContext);
 		String version = prefUpgradeInfo.getVersion();
+		int downloadStatus = Preferences.getDownloadStatus(mContext);
 		if(version != null 
 				&& version.trim().length() != 0 
-				&& version.equals(mUpgradeInfo.getVersion()) )
+				&& version.equals(mUpgradeInfo.getVersion()))
 		{
 			long downloadId = Preferences.getDownloadId(mContext);
 			if(downloadId != -1)
@@ -147,7 +150,8 @@ public class DownloadNewVersionJob implements ThreadPool.Job<Void>{
 				Cursor cursor = downloadManager.query(mDownloadQuery);
 				if(cursor != null && cursor.moveToFirst()){
 					int status = cursor.getInt(cursor.getColumnIndex(DownloadManager.COLUMN_STATUS));
-					if(status == DownloadManager.STATUS_RUNNING)
+					if(status == DownloadManager.STATUS_RUNNING 
+							|| downloadStatus == Constants.DOWNLOAD_STATUS_RUNNING)
 					{
 						return true;
 					}
