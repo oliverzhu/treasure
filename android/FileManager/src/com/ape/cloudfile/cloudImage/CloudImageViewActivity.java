@@ -543,5 +543,11 @@ public class CloudImageViewActivity extends CloudFileOperationActivity
         {
             finish();
         }
+
+        @Override
+        public void storageMount()
+        {
+            
+        }
     };
 }

@@ -45,7 +45,7 @@
     <string name="operation_cancel">Cancelar</string>
     <string name="operation_cancel_selectall">Cancelar seleccion de todo</string>
     <string name="operation_copy">Copiar</string>
-    <string name="operation_copy_path">Copiar sendero de archivo</string>
+    <string name="operation_copy_path">Copiar ruta del archivo</string>
     <string name="operation_create_folder">Nueva carpeta</string>
     <string name="operation_create_folder_message">Ingresar nombre de carpeta</string>
     <string name="operation_delete">Borrar</string>

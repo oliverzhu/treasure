@@ -190,7 +190,13 @@ public class FileViewInteractionHub implements IOperationProgressListener {
     public void onFinish() {
         Log.i(LOG_TAG, "onFinish, progressDialog:" + progressDialog);
         if (progressDialog != null) {
-            progressDialog.dismiss();
+            try
+            {
+                progressDialog.dismiss();
+            } catch (Exception e)
+            {
+                Log.e(LOG_TAG, "progressDialog.dismiss, e:" + e);
+            }
             progressDialog = null;
         }
 
@@ -215,7 +221,9 @@ public class FileViewInteractionHub implements IOperationProgressListener {
 
     public boolean isInSelection() {
         //return mCheckedFileNameList.size() > 0;
-        return ((FileExplorerTabActivity) mContext).getActionMode() != null;
+        FileExplorerTabActivity activity = ((FileExplorerTabActivity) mContext);
+        return (activity.getActionMode() != null
+                && activity.getActionModeCallback() == mActionModeCallback);
     }
 
     public boolean isMoveState() { // move and copy state
@@ -950,7 +958,8 @@ public class FileViewInteractionHub implements IOperationProgressListener {
         public boolean onItemLongClick(AdapterView<?> parent,
                 View view, int position, long id)
         {
-            if (isInSelection() || isMoveState() || Util.getTinnoRootPath().equals(mCurrentPath))
+            if (isInSelection() || isMoveState() || Util.getTinnoRootPath().equals(mCurrentPath)
+                    || mCurrentMode == Mode.Pick)
                 return false;
 
             ActionMode actionMode = ((FileExplorerTabActivity) mContext).getActionMode();

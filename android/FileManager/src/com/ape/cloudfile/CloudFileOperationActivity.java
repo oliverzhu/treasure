@@ -49,7 +49,12 @@ public abstract class CloudFileOperationActivity extends Activity implements Ope
     {
         if (mProgressDialog != null)
         {
-            mProgressDialog.dismiss();
+            try
+            {
+                mProgressDialog.dismiss();
+            } catch (Exception e)
+            {
+            }
             mProgressDialog = null;
         }
     }

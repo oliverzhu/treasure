@@ -37,6 +37,11 @@ public class CloudFileService extends CloudClientService{
         return sCloudFileSerivce;
     }
 
+    public Context getContext()
+    {
+        return mContext;
+    }
+
     public void setUserId(String userId) {
         this.mUserId = userId;
     }

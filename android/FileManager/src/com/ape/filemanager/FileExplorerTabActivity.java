@@ -66,6 +66,7 @@ public class FileExplorerTabActivity extends Activity implements IActionTabListe
     private MountPointManager mMountPointManager;
 
     private UpgradeManager upgradeManger;
+    private boolean mIsDestoryed = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -111,12 +112,12 @@ public class FileExplorerTabActivity extends Activity implements IActionTabListe
             tabIndex = Util.CATEGORY_TAB_INDEX; //For market require.
 //          tabIndex = PreferenceManager.getDefaultSharedPreferences(this)
 //                  .getInt(INSTANCESTATE_TAB, Util.CATEGORY_TAB_INDEX);
+            mHandler.sendEmptyMessageDelayed(MSG_UPDATE_VERSION, 3000);
         }
         mTagPagerIndicator.setCurrentItem(tabIndex);
 
         upgradeManger = UpgradeManager.newInstance(this, getApplicationInfo().packageName, 
                 getString(R.string.app_name));
-        mHandler.sendEmptyMessageDelayed(MSG_UPDATE_VERSION, 3000);
     }
 
     private ViewPager.OnPageChangeListener mPageChangeListener = new ViewPager.OnPageChangeListener()
@@ -254,6 +255,8 @@ public class FileExplorerTabActivity extends Activity implements IActionTabListe
     @Override
     protected void onDestroy()
     {
+        MyLog.i(TAG, "onDestroy.");
+        mIsDestoryed = true;
         mHandler.removeMessages(MSG_UPDATE_VERSION);
         super.onDestroy();
     }
@@ -415,7 +418,8 @@ public class FileExplorerTabActivity extends Activity implements IActionTabListe
                         @Override
                         public void checkNewVersion(boolean result)
                         {
-                            if (result)
+                            MyLog.i(TAG, "MSG_UPDATE_VERSION, mIsDestoryed:" + mIsDestoryed);
+                            if (result && !mIsDestoryed)
                             {
                                 upgradeManger.askForNewVersion();
                             }

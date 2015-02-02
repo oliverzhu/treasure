@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <style name="FileManagerBase" parent="@android:style/Theme.Holo.Light">
+    <style name="FileManagerBase">
     </style>
 
-    <style name="FileNangerNoTitle" parent="@android:style/Theme.Holo.Light">
+    <style name="FileNangerNoTitle">
         <item name="android:windowNoTitle">true</item>
     </style>
 
@@ -265,15 +265,20 @@
         <item name="android:background">@drawable/bottom_button_bar</item>
     </style>
     
-    <style name="FileManagerOperTheme" parent="@style/FileManagerBase">
+    <style name="FileManagerOperTheme">
         <item name="android:actionBarStyle">@style/FileManagerOperActionBarStyle</item>
     </style>
 
-    <style name="FileManagerOperActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+    <style name="FileManagerOperActionBarStyle">
         <item name="android:background">#FFFFFF</item>
         <item name="android:displayOptions"></item>
     </style>
     
+    <style name="DropdownNavigationItemTextStyle">
+        <item name="android:textColor">@color/dropdown_text_color</item>
+        <item name="android:textSize">@dimen/downdown_item_text_size</item>
+    </style>
+
     <style name="FilePathTextStyle">
         <item name="android:textColor">@color/path_text_color</item>
         <item name="android:textSize">@dimen/path_text_size</item>

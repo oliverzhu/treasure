@@ -27,7 +27,7 @@ import com.cloud.client.file.MissionObject;
 
 public class CloudFileListItem<T>
 {
-//    private static final float DEFAULT_ICON_ALPHA = 1f;
+    //    private static final float DEFAULT_ICON_ALPHA = 1f;
 //    private static final float HIDE_ICON_ALPHA = 0.3f;
     private Context mContext;
     private CloudFileListAdapter<T> mAdapter;
@@ -115,18 +115,16 @@ public class CloudFileListItem<T>
         TextView timeText = (TextView) view.findViewById(R.id.modified_time);
         TextView sizeText = (TextView) view.findViewById(R.id.file_size);
         RoundProgressBar progressBar = (RoundProgressBar) view.findViewById(R.id.roundProgressBar);
-        //mAdapter.removeProgressBarInfo(progressBar);
+        mAdapter.removeProgressBarInfo(progressBar, mission);
         if (mission.isFinished())
         {
             long time = mission.getLastTime();
-            if (time > 0)
+            if (time <= 0)
             {
-                timeText.setText(Util.formatDateString(mContext, time));
-                timeText.setVisibility(View.VISIBLE);
-            } else
-            {
-                timeText.setVisibility(View.INVISIBLE);
+                time = fileInfo.ModifiedDate;
             }
+            timeText.setText(Util.formatDateString(mContext, time));
+            timeText.setVisibility(View.VISIBLE);
             
             //CloudFile size.
             String sizeStr = Util.convertStorage(fileInfo.fileSize);
@@ -137,7 +135,7 @@ public class CloudFileListItem<T>
             progressBar.setTag(R.id.tag_sizeview, null);
         } else
         {
-            timeText.setVisibility(View.INVISIBLE);
+            timeText.setVisibility(View.GONE);
             
             StringBuilder fileSize = new StringBuilder();
             fileSize.append(Util.convertStorage(mission.getTransferredLength()));

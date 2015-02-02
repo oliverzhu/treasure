@@ -69,7 +69,7 @@ public class RunnableBase implements Runnable
         mLocalPath = mission.getLocalFile();
         mCloudPath = mission.getKey();
     }
-    
+
     @Override
     public void run()
     {
@@ -179,5 +179,44 @@ public class RunnableBase implements Runnable
 
     public final Status getStatus() {
         return mStatus;
+    }
+
+    @Override
+    public int hashCode()
+    {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result
+                + ((mCloudPath == null) ? 0 : mCloudPath.hashCode());
+        return result;
+    }
+
+    @Override
+    public boolean equals(Object obj)
+    {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        RunnableBase other = (RunnableBase) obj;
+        if (mCloudPath == null)
+        {
+            if (other.mCloudPath != null)
+                return false;
+        } else if (!mCloudPath.equals(other.mCloudPath))
+            return false;
+        return true;
+    }
+
+    public RunableListener getListener()
+    {
+        return mListener;
+    }
+
+    public void setListener(RunableListener listener)
+    {
+        mListener = listener;
     }
 }

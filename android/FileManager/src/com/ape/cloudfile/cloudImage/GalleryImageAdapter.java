@@ -116,6 +116,7 @@ public class GalleryImageAdapter extends BaseAdapter
     }
 
     private HashMap<String, Bitmap> mBitmapCacheMap = new HashMap<String, Bitmap>();
+    private static final int MAX_CACHE_SIZE = 100;
     private Bitmap getFileBitmap(String path)
     {
         Bitmap retBitmap;
@@ -124,6 +125,11 @@ public class GalleryImageAdapter extends BaseAdapter
 
         if (retBitmap == null)
         {
+            if (mBitmapCacheMap.size() > MAX_CACHE_SIZE)
+            {
+                mBitmapCacheMap.clear(); // to forbit memeory error.
+            }
+
             retBitmap = BitmapFactory.decodeFile(path);
             mBitmapCacheMap.put(path, retBitmap);
         }

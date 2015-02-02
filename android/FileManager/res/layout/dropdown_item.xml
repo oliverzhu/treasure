@@ -29,7 +29,7 @@
             android:layout_height="88px"
             android:singleLine="true"
             android:gravity="center_vertical"
-            android:textAppearance="?android:attr/textAppearanceSmall" />
+            style="@style/DropdownNavigationItemTextStyle" />
 
     </LinearLayout>
 

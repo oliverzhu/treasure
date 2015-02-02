@@ -570,4 +570,17 @@ public final class MountPointManager
 			return false;
 		}
 	}
+
+    public String getInternalMountPath()
+    {
+        for (MountPoint mp : mMountPathList)
+        {
+            if (!mp.mIsExternal)
+            {
+                return mp.mPath;
+            }
+        }
+
+        return null;
+    }
 }

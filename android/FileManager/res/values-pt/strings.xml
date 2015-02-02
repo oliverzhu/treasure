@@ -49,7 +49,7 @@
     <string name="operation_copy_path">Via de copiar arquivo</string>
     <string name="operation_create_folder">Nova pasta</string>
     <string name="operation_create_folder_message">Entre o nome de pasta</string>
-    <string name="operation_delete">Deletar</string>
+    <string name="operation_delete">Eliminar</string>
     <string name="operation_delete_confirm_message">Confirmar Deleção?</string>
     <string name="operation_deleting">Deletando...</string>
     <string name="operation_favorite">Adicionar para Favoritos</string>
@@ -76,7 +76,7 @@
     <string name="tab_category">Explorar</string>
     <string name="tab_remote">FTP</string>
     <string name="tab_sd">Arquivo</string>
-    <string name="wifi_state">WLAN Estado</string>
+    <string name="wifi_state">Estado Wi-Fi</string>
     <string name="yes">Sim</string>
     <string name="dialog_select_type">Selecionar tipo de arquivo</string>
     <string name="dialog_type_text">Texto</string>

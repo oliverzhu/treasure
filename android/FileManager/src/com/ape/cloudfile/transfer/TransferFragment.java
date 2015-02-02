@@ -140,6 +140,10 @@ public abstract class TransferFragment extends Fragment
         {
             mTransferAdapter.exit();
         }
+        if (mTransferService != null)
+        {
+            mTransferService.unregisterTransferUiListener(mTransferListener, getTransferType());
+        }
         MyLog.i(TAG, "onDestroy");
     }
 
@@ -351,11 +355,11 @@ public abstract class TransferFragment extends Fragment
     }
     
     @Override
-    public void removeProgressBarInfo(RoundProgressBar bar)
+    public void removeProgressBarInfo(RoundProgressBar bar, MissionObject mission)
     {
         if (mTransferService != null)
         {
-            mTransferService.removeTransferProgressBar(bar, getTransferType());
+            mTransferService.removeTransferProgressBar(bar, mission, getTransferType());
         }
     }
     
@@ -406,11 +410,16 @@ public abstract class TransferFragment extends Fragment
         {
             if (progressDialog != null)
             {
-                progressDialog.dismiss();
+                try
+                {
+                    progressDialog.dismiss();
+                } catch (Exception e)
+                {
+                }
                 progressDialog = null;
             }
             //mHandler.sendEmptyMessage(CloudFileUtil.MSG_REFRESH_LIST);
-            refreshList();
+            //refreshList(); //update list by TransferUiListener;
             ActionMode mode = mActivity.getActionMode();
             if (mode != null)
             {

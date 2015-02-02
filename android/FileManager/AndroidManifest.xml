@@ -20,12 +20,13 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ape.filemanager"
-    android:versionCode="1014"
-    android:versionName="1.0.14" >
+    android:versionCode="1021"
+    android:versionName="1.0.21" >
 
     <uses-sdk android:minSdkVersion="16"  
         android:targetSdkVersion="17" />
 
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -42,9 +43,7 @@
     <application
         android:icon="@drawable/app_filemanager"
         android:label="@string/app_name"
-        android:theme="@style/FileManagerBase"
-        android:supportsRtl="true"
-        >
+        android:theme="@style/FileManagerBase">
         <activity
             android:name="com.ape.filemanager.FileManagerMainActivity"
             android:theme="@style/FileNangerNoTitle"
@@ -130,7 +129,6 @@
             android:label="@string/app_name"
             android:launchMode="singleTask"
             android:name="com.ape.filemanager.search.FileManagerSearchActivity"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             android:screenOrientation="nosensor">
             <!-- FileManagerOperTheme -->
             <intent-filter >
@@ -172,7 +170,6 @@
             android:label="@string/cloud_storage"
             android:launchMode="singleTask"
             android:name="com.ape.cloudfile.cloudSearch.CloudFileSearchActivity"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             android:screenOrientation="nosensor">
             <!-- FileManagerOperTheme -->
             <intent-filter >
@@ -192,6 +189,12 @@
             android:readPermission="com.ape.cloudfile.cache.READ_DATABASE"
             android:writePermission="com.ape.cloudfile.cache.WRITE_DATABASE" />
 
+        <receiver android:name="com.common.upgrade.receiver.DownloadCompleteReveiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+                <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED"/>
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

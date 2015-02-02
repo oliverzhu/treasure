@@ -72,7 +72,7 @@ public class FileManagerSearchActivity extends Activity implements
     {
         super.onCreate(savedInstanceState);
 
-        setTheme(R.style.FileManagerOperTheme);
+        //setTheme(R.style.FileManagerOperTheme);
         setContentView(R.layout.search_main);
         mResultView = (TextView) findViewById(R.id.search_result);
         mSearchBg = (ImageView) findViewById(R.id.search_bg);

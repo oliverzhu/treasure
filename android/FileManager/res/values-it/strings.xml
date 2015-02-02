@@ -76,7 +76,7 @@
     <string name="tab_category">Naviga</string>
     <string name="tab_remote">FTP</string>
     <string name="tab_sd">File</string>
-    <string name="wifi_state">Status WLAN</string>
+    <string name="wifi_state">Stato WLAN</string>
     <string name="yes">Sì</string>
     <string name="dialog_select_type">Selezionare tipo di file</string>
     <string name="dialog_type_text">Testo</string>

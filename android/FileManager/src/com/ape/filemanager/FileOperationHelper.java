@@ -275,6 +275,7 @@ public class FileOperationHelper {
         }
 
         File file = new File(f.filePath);
+        boolean isDir = file.isDirectory();
         String newPath = Util.makePath(Util.getPathFromFilepath(f.filePath), newName);
         
         File newFile = new File(newPath);
@@ -285,8 +286,12 @@ public class FileOperationHelper {
         try {
             boolean ret = file.renameTo(new File(newPath));
             if (ret) {
-                //mMediaProviderHelper.updateInMediaStore(newPath, f.filePath);
-                mMediaProviderHelper.handleMediaScan();
+                if (isDir) {
+                    mMediaProviderHelper.handleMediaScan();
+                }
+                else {
+                    mMediaProviderHelper.updateInMediaStore(newPath, f.filePath);
+                }
                 return OperationEventListener.ERROR_CODE_SUCCESS;
 //                if (needScan) {
 //                    mOperationListener.onFileChanged(f.filePath);
@@ -389,6 +394,25 @@ public class FileOperationHelper {
         {
             File file = new File(f.filePath);
             String newPath = Util.makePath(dest, f.fileName);
+
+            int i = 1;
+            File newFile = new File(newPath);
+            while (newFile.exists())
+            {
+                String destName;
+                if (file.isDirectory())
+                {
+                    destName = f.fileName;
+                    newPath = Util.makePath(dest, destName + " " + i++);
+                } else
+                {
+                    destName = Util.getNameFromFilename(file.getName()) + " " + i++ + "."
+                            + Util.getExtFromFilename(file.getName());
+                    newPath = Util.makePath(dest, destName);
+                }
+                newFile = new File(newPath);
+            }
+
             boolean renameResult = false;
             if (f.filePath.equals(newPath))
             {

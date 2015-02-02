@@ -181,6 +181,7 @@ public class CloudUserInfomation
             switch (msg.what)
             {
                 case MSG_TO_GET_USER_KEY:
+                    MyLog.i(TAG, "before mCloudSdkService.getUserKey().");
                     if (mCloudSdkService != null)
                     {
                         try

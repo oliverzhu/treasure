@@ -219,7 +219,7 @@ public class CloudFileActivity extends Fragment implements IBackPressedListener
         public boolean onItemLongClick(AdapterView<?> parent, View view,
                 int position, long id)
         {
-            if (mListDisplayMode == ListDisplayMode.uploadMode)
+            if (mListDisplayMode == ListDisplayMode.uploadMode || mIsLoadingFileList)
                 return false;
 
             ActionMode mode = mActivity.getActionMode();
@@ -353,7 +353,7 @@ public class CloudFileActivity extends Fragment implements IBackPressedListener
         super.onResume();
 
         mIsHasReferSDK = checkReferSDK();
-        
+
         if (mTransferService != null && mTransferService.isNetWorkConnect())
         {
             CloudUserInfomation userInfo = mTransferService.getUserInfomation();
@@ -564,7 +564,7 @@ public class CloudFileActivity extends Fragment implements IBackPressedListener
 
     private void onClickMenuSort()
     {
-        PopupMenu popMenu = new PopupMenu(mActivity, mBottomActionBar);
+        PopupMenu popMenu = new PopupMenu(mActivity, mBottomActionBar.getPopupMenuAncherView());
 
         Menu sortMenu = popMenu.getMenu();
         sortMenu.add(0, MENU_SORT_NAME, 0, R.string.menu_item_sort_name).setOnMenuItemClickListener(mMenuItemClickListener);
@@ -837,7 +837,7 @@ public class CloudFileActivity extends Fragment implements IBackPressedListener
     {
         if (mActivity != null && mActivity.isMyOsOptionMenuStyle())
         {
-            return (mActivity.getActionMode() != null);
+            return (mActivity.getActionMode() != null && mActivity.getActionModeCallback() == mActionModeCallback);
         } else
         {
             return (mUploadBtnView.getVisibility() != View.VISIBLE);
@@ -850,7 +850,7 @@ public class CloudFileActivity extends Fragment implements IBackPressedListener
     }
     
     @Override
-    public void removeProgressBarInfo(RoundProgressBar bar)
+    public void removeProgressBarInfo(RoundProgressBar bar, MissionObject mission)
     {
     }
 
@@ -861,13 +861,8 @@ public class CloudFileActivity extends Fragment implements IBackPressedListener
         onPrepareButtomActionBar();
     }
 
-    private void updateUI()
+    private ErrorStatusType checkUserInforError()
     {
-        if (!isAdded() || mTransferService == null)
-        {
-            return;
-        }
-
         boolean sdCardReady = Util.isSDCardReady();
         ErrorStatusType type = ErrorStatusType.ok;
 
@@ -885,12 +880,24 @@ public class CloudFileActivity extends Fragment implements IBackPressedListener
             type = ErrorStatusType.user_logout;
         else if (!mTransferService.isUserInfomationValid())
             type = ErrorStatusType.user_infor_error;
+        
+        return type;
+    }
 
+    private void updateUI()
+    {
+        if (!isAdded() || mTransferService == null)
+        {
+            return;
+        }
+
+        ErrorStatusType type = checkUserInforError();
         showErrorInformation(type);
         //updateNavigationPane();
 
         if (type == ErrorStatusType.ok)
         {
+            MyLog.i(TAG, "updateUI, mNeedRefreshWhenEntry:" + mNeedRefreshWhenEntry);
             if (mNeedRefreshWhenEntry)
             {
                 refreshFileList(mCurrentPath);
@@ -939,7 +946,14 @@ public class CloudFileActivity extends Fragment implements IBackPressedListener
             }
             if (userInfo.getUsedSpace() >= 0)
             {
-                information.append("   ").append(Util.convertStorage(userInfo.getUsedSpace()));
+                String usedString = null;
+                if (userInfo.getUsedSpace() > userInfo.getMaxSpace() - CloudFileUtil.MIN_ROUND_OFF)
+                {
+                    usedString = Util.convertStorage(userInfo.getUsedSpace() - CloudFileUtil.MIN_ROUND_OFF);
+                } else {
+                    usedString = Util.convertStorage(userInfo.getUsedSpace());
+                }
+                information.append("   ").append(usedString);
                 information.append("/");
                 information.append(Util.convertStorage(CloudFileUtil.MAX_DEFAULT_USER_CLOUD_SPACE));
             }
@@ -1039,6 +1053,12 @@ public class CloudFileActivity extends Fragment implements IBackPressedListener
             mNavigationBar.setVisibility(View.GONE);
             mFileListView.setVisibility(View.GONE);
             showEmptyView(false);
+
+            ActionMode mode = mActivity.getActionMode();
+            if (mode != null && mActivity.getActionModeCallback() == mActionModeCallback)
+            {
+                mode.finish();
+            }
         }
     }
 
@@ -1058,13 +1078,20 @@ public class CloudFileActivity extends Fragment implements IBackPressedListener
     {
         if (mProgressDialog != null)
         {
-            mProgressDialog.dismiss();
+            try
+            {
+                mProgressDialog.dismiss();
+            } catch (Exception e)
+            {
+                MyLog.e(TAG, "dismissProgressDialog, error: " + e);
+            }
             mProgressDialog = null;
         }
     }
 
     public void refreshFileList(String dir)
     {
+        MyLog.i(TAG, "refreshFileList, dir:" + dir);
         if (mCloudFileService != null && mTransferService != null && mTransferService.isNetWorkConnect())
         {
             mCloudFileOperator.doListFiles(new ListFileListener(), dir, false);
@@ -1073,6 +1100,7 @@ public class CloudFileActivity extends Fragment implements IBackPressedListener
 
     private void listFile(String dir)
     {
+        MyLog.i(TAG, "listFile, dir:" + dir);
         if (mCloudFileService != null && mTransferService != null && mTransferService.isNetWorkConnect())
         {
             mCloudFileOperator.doListFiles(new ListFileListener(), dir, true);
@@ -1474,7 +1502,10 @@ public class CloudFileActivity extends Fragment implements IBackPressedListener
 
             mProgress.removeCallbacks(mDelayDisplay);
             mProgress.setVisibility(View.GONE);
-            if (result == OperationEventListener.ERROR_CODE_SUCCESS)
+            if (checkUserInforError() != ErrorStatusType.ok)
+            {
+                mFileListView.setVisibility(View.GONE);
+            } else if (result == OperationEventListener.ERROR_CODE_SUCCESS)
             {
                 mFileNameList.clear();
                 if (mList != null)
@@ -1628,7 +1659,13 @@ public class CloudFileActivity extends Fragment implements IBackPressedListener
             
             if (myProgress != null)
             {
-                myProgress.dismiss();
+                try
+                {
+                    myProgress.dismiss();
+                } catch (Exception e)
+                {
+                    MyLog.e(TAG, "myProgress.dismiss, e:" + e);
+                }
                 myProgress = null;
             }
             sendMsgToUpdateUi();
@@ -1710,7 +1747,9 @@ public class CloudFileActivity extends Fragment implements IBackPressedListener
         {
             if (checkAndPromptBeforeOperation())
             {
-                refreshFileList(mCurrentPath);
+                MyLog.i(TAG, "mPullRefreshListener, before refreshFileList");
+                if (!mIsLoadingFileList)
+                    refreshFileList(mCurrentPath);
             } else
             {
                 mHandler.sendEmptyMessage(CloudFileUtil.MSG_REFRESHED_LIST);
@@ -1819,6 +1858,12 @@ public class CloudFileActivity extends Fragment implements IBackPressedListener
 
         @Override
         public void storageUnmount()
+        {
+            sendMsgToUpdateUi();
+        }
+
+        @Override
+        public void storageMount()
         {
             sendMsgToUpdateUi();
         }

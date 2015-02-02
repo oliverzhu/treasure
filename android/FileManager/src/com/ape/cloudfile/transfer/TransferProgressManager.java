@@ -62,16 +62,15 @@ public class TransferProgressManager
         if (holder != null)
         {
             holder.progressBar = progressBar;
-            //holder.task = task;
         } else
         {
             holder = new TransferHolder(mission, progressBar, task);
             mTaskMap.put(mission.getLocalFile(), holder);
-        }
-        
-        if (task != null)
-        {
-            mTaskPool.execute(task);
+
+            if (task != null)
+            {
+                mTaskPool.execute(task);
+            }
         }
 
         MyLog.i(TAG, "addOrUpdateMission, taskMap:" + mTaskMap);
@@ -83,6 +82,7 @@ public class TransferProgressManager
         if (holder != null)
         {
             holder.progressBar = progressBar;
+            holder.mission = mission;
         }
     }
     

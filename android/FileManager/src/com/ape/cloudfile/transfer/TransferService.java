@@ -287,7 +287,9 @@ public class TransferService extends Service
     {
         boolean retVal = true;
         CloudFileService tools = CloudFileService.getInstance(mContext);
-        
+
+        long beginTime = System.currentTimeMillis();
+
         if (type == TransferType.download)
         {
             int repeatCount = 0;
@@ -302,8 +304,7 @@ public class TransferService extends Service
 
             for (String srcFile : srcList)
             {
-                MissionObject missionInList = transferDao.getDownLoadRecord(mUserKey, srcFile);
-                if (missionInList != null && mDownloadingList.contains(missionInList))
+                if (transferDao.isDownloadRecordExist(mUserKey, srcFile))
                 {
                     continue;
                 }
@@ -338,7 +339,7 @@ public class TransferService extends Service
                 }
 
                 MissionObject mission = tools.initDownload(srcFile, destFile);
-                if (mInit && mission != null && !mDownloadingList.contains(missionInList))
+                if (mInit && mission != null)
                 {
                     mDownloadingList.add(mission);
                 }
@@ -383,6 +384,8 @@ public class TransferService extends Service
             }
         }
 
+        long dur = System.currentTimeMillis() - beginTime;
+        MyLog.d(TAG, "addTransferMission, dur:" + dur + ", type:" + type);
         return retVal;
     }
 
@@ -468,7 +471,7 @@ public class TransferService extends Service
             return;
         }
 
-        MyLog.d("addOrUpdateTransfer, file:" + mission.getLocalFile()+", progressBar:" + progressBar);
+        MyLog.d(TAG, "addOrUpdateTransfer, file:" + mission.getLocalFile()+", progressBar:" + progressBar);
 
         TransferProgressManager manager;
         if (type == TransferType.upload)
@@ -487,7 +490,8 @@ public class TransferService extends Service
         } else
         {
             RunnableBase runnable = manager.getRunnable(mission.getLocalFile());
-            
+
+            MyLog.i(TAG, "addOrUpdateTransfer, runnable:" + runnable);
             if (runnable == null)
             {
                 runnable = createRunnable(mission, type);
@@ -580,7 +584,7 @@ public class TransferService extends Service
         }
     }
     
-    public boolean removeTransferProgressBar(RoundProgressBar progressBar, TransferType type)
+    public boolean removeTransferProgressBar(RoundProgressBar progressBar, MissionObject mission, TransferType type)
     {
         boolean retVal = false;
         Object obj = progressBar.getTag();
@@ -599,7 +603,8 @@ public class TransferService extends Service
 
         if (obj != null && obj.getClass() == MissionObject.class)
         {
-            String path = ((MissionObject) obj).getLocalFile();
+            String path = mission.getLocalFile();
+            MyLog.i(TAG, "removeTransferProgressBar, before, dismissProgressBar path:" + path);
             retVal = manager.dismissProgressBar(path);
         }
 
@@ -633,6 +638,13 @@ public class TransferService extends Service
             
             MediaStoreHelper helper = new MediaStoreHelper(mContext);
             mDeleteMediaStoreHelper = new DeleteMediaStoreHelper(helper);
+        }
+
+        @Override
+        protected void onPostExecute(Integer result)
+        {
+            super.onPostExecute(result);
+            notifyTransferUi(type, TransferUiNotifyType.transferListChanged);
         }
 
         @Override
@@ -788,17 +800,18 @@ public class TransferService extends Service
             {
                 mission.setTransferredLength(progress);
                 mission.setFileLength(total);
-            }
-            if (bar != null)
-            {
-                if (bar.getProgressStatus() != ProgressStatus.progress && !mission.isPaused())
+
+                if (bar != null && mission.equals(bar.getTag()))
                 {
-                    bar.setProgressStatus(ProgressStatus.progress);
+                    if (bar.getProgressStatus() != ProgressStatus.progress && !mission.isPaused())
+                    {
+                        bar.setProgressStatus(ProgressStatus.progress);
+                    }
+                    setProgressFromTag(bar);
                 }
-                setProgressFromTag(bar);
             }
 
-            MyLog.d("test", "publishProgress, file:" + filePath + ", progressBar:" + bar);
+            MyLog.d(TAG, "publishProgress, file:" + filePath + ", progressBar:" + bar);
         }
 
         @Override
@@ -835,11 +848,7 @@ public class TransferService extends Service
                     removeFromTransferring(transferring, index);
                     deleteUnfinishedMission(mission, type);
 
-                    TransferUiListener listener = getTransferUiListener(type);
-                    if (listener != null)
-                    {
-                        listener.transferListChanged();
-                    }
+                    notifyTransferUi(type, TransferUiNotifyType.transferListChanged);
 
                     promptSourceFileNotExist(filePath);
                     if (bar != null)
@@ -871,11 +880,7 @@ public class TransferService extends Service
                         myMission.setFinished(true);
                         //transferred.add(0, myMission);
                         addToTransferred(transferred, 0, myMission);
-                        TransferUiListener listener = getTransferUiListener(type);
-                        if (listener != null)
-                        {
-                            listener.transferListChanged();
-                        }
+                        notifyTransferUi(type, TransferUiNotifyType.transferListChanged);
                     }
                     if (bar != null)
                     {
@@ -915,7 +920,7 @@ public class TransferService extends Service
     {
         synchronized (transferring)
         {
-            if (index < transferring.size())
+            if (index >= 0 && index < transferring.size())
                 return transferring.remove(index);
             else
                 return null;
@@ -974,42 +979,71 @@ public class TransferService extends Service
         
         return retVal;
     }
-    
+
+    // to notified ui update interface, begin.
     public interface TransferUiListener
     {
         void transferListChanged();
     }
+
+    private enum TransferUiNotifyType
+    {
+        transferListChanged
+    }
     
-    private TransferUiListener mUploadUiListener;
-    private TransferUiListener mDownloadUiListener;
+    private ArrayList<TransferUiListener> mUploadUiListenerList = new ArrayList<TransferService.TransferUiListener>();
+    private ArrayList<TransferUiListener> mDownloadUiListenerList = new ArrayList<TransferService.TransferUiListener>();
     
     public void registerTransferUiListener(TransferUiListener listener, TransferType type)
     {
         if (type == TransferType.download)
         {
-            mDownloadUiListener = listener;
+            mDownloadUiListenerList.add(listener);
         } else
         {
-            mUploadUiListener = listener;
+            mUploadUiListenerList.add(listener);
         }
     }
     
-    public void unregisterTransferUiListener()
-    {
-        mDownloadUiListener = null;
-        mUploadUiListener = null;
-    }
-    
-    private TransferUiListener getTransferUiListener(TransferType type)
+    public void unregisterTransferUiListener(TransferUiListener listener, TransferType type)
     {
         if (type == TransferType.download)
         {
-            return mDownloadUiListener;
+            mDownloadUiListenerList.remove(listener);
         } else
         {
-            return mUploadUiListener;
+            mUploadUiListenerList.remove(listener);
         }
     }
+    
+    public void notifyTransferUi(TransferType type, TransferUiNotifyType notifyType)
+    {
+        ArrayList<TransferUiListener> listenerList;
+        if (type == TransferType.download)
+        {
+            listenerList = mDownloadUiListenerList;
+        } else
+        {
+            listenerList = mUploadUiListenerList;
+        }
+        for (TransferUiListener listener : listenerList)
+        {
+            if (listener == null)
+            {
+                continue;
+            }
+            switch (notifyType)
+            {
+                case transferListChanged:
+                    listener.transferListChanged();
+                    break;
+
+                default:
+                    break;
+            }
+        }
+    }
+    // to notified ui update interface, end.
 
     // ServerInforListener is used to communication with activities, begin
     private enum InformationType
@@ -1021,26 +1055,29 @@ public class TransferService extends Service
         userLogout,
         networkConnect,
         networkDisconnect,
-        storageUnmount
+        storageUnmount,
+        storageMount
     }
 
     public interface ServiceInforListener
     {
         public void userInformationFinish();
-        
+
         public void userKeyFinish();
 
         public void userInformationChanged();
-        
+
         public void userInformationError(int errorCode);
-        
+
         public boolean userLogout();
-        
+
         public void networkConnect();
-        
+
         public void networkDisconnect();
-        
+
         public void storageUnmount();
+
+        public void storageMount();
     }
     
     private ArrayList<ServiceInforListener> mServiceInforListenerList = new ArrayList<ServiceInforListener>();
@@ -1116,6 +1153,11 @@ public class TransferService extends Service
 
                 case storageUnmount:
                     listener.storageUnmount();
+                    result = true;
+                    break;
+
+                case storageMount:
+                    listener.storageMount();
                     result = true;
                     break;
             }
@@ -1207,6 +1249,7 @@ public class TransferService extends Service
                 {
                     resumeAllTask();
                 }
+                notifyServerInfoListener(InformationType.storageMount, null);
             } else if (action.equals(Intent.ACTION_MEDIA_UNMOUNTED))
             {
                 notifyServerInfoListener(InformationType.storageUnmount, null);
@@ -1222,26 +1265,26 @@ public class TransferService extends Service
     
     public void resumeTasks(TransferType type)
     {
-        TransferUiListener listener;
+        ArrayList<TransferUiListener> listenerList;
         ArrayList<MissionObject> transferringList;
         TransferProgressManager manager;
         
         if (type == TransferType.download)
         {
-            listener = mDownloadUiListener;
+            listenerList = mDownloadUiListenerList;
             transferringList = mDownloadingList;
             manager = mDownloadManager;
         } else
         {
-            listener = mUploadUiListener;
+            listenerList = mUploadUiListenerList;
             transferringList = mUploadingList;
             manager = mUploadManager;
         }
         
-        if (listener != null)
+        if (listenerList.size() > 0)
         {
             if (transferringList.size() > 0)
-                listener.transferListChanged();
+                notifyTransferUi(type, TransferUiNotifyType.transferListChanged);
         } else
         {
             for (MissionObject mission : transferringList)

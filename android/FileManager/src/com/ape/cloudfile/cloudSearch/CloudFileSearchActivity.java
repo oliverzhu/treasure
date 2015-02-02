@@ -76,7 +76,7 @@ public class CloudFileSearchActivity extends CloudFileOperationActivity implemen
     {
         super.onCreate(savedInstanceState);
 
-        setTheme(R.style.FileManagerOperTheme);
+        //setTheme(R.style.FileManagerOperTheme);
         setContentView(R.layout.search_main);
         
         mResultView = (TextView) findViewById(R.id.search_result);
@@ -469,7 +469,7 @@ public class CloudFileSearchActivity extends CloudFileOperationActivity implemen
         }
 
         @Override
-        public void removeProgressBarInfo(RoundProgressBar bar)
+        public void removeProgressBarInfo(RoundProgressBar bar, MissionObject mission)
         {
             
         }

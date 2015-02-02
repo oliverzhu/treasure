@@ -33,10 +33,10 @@
         android:title="@string/menu_item_search"
         android:icon="@drawable/fm_search"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/search_bar_height"
         android:layout_weight="1"
-        android:layout_gravity="center_vertical"
-        android:iconifiedByDefault="true"
+        android:iconifiedByDefault="false"
         android:focusable="false"
+        android:paddingTop="0dp"
         />
 </LinearLayout>

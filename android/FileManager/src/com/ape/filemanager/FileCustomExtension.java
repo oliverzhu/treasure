@@ -16,7 +16,7 @@ import android.util.Xml;
 
 public class FileCustomExtension
 {
-    private static final String XML_FILE_NAME = "/system/media/FileCustomExtension.xml";
+    private static final String XML_FILE_NAME = "/system/etc/FileCustomExtension.xml";
     private static final String TAG_EXTENSION = "extension";
     private static final String ELEMENT_MIME = "mimeType";
 

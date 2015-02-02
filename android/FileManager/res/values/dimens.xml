@@ -2,6 +2,7 @@
 <resources>
     <dimen name="title_icon_height">36dp</dimen>
     <dimen name="tab_bar_height">44dp</dimen>
+    <dimen name="search_bar_height">40dp</dimen>
     <dimen name="tab_text_size">14sp</dimen>
     <dimen name="actionMode_btn_margin_top">6dp</dimen>
     <dimen name="actionMode_btn_margin_bottom">6dp</dimen>
@@ -50,6 +51,7 @@
     <dimen name="path_text_size">12sp</dimen>
     <dimen name="list_title_text_size">12sp</dimen>
     <dimen name="list_error_prompt_text_size">12sp</dimen>
+    <dimen name="downdown_item_text_size">12sp</dimen>
 
     <dimen name="file_list_divider_height">0.7dp</dimen>
     <dimen name="file_list_item_height">64dp</dimen>

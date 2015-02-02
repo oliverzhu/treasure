@@ -33,6 +33,7 @@
     <color name="file_list_text_color">#000000</color>
     <color name="file_list_info_text_color">@color/normal_information_color</color>
     <color name="file_list_error_color">#5c5c5c</color>
+    <color name="dropdown_text_color">#000000</color>
 
     <color name="storage_information_text_color">@color/normal_text_color</color>
     <color name="no_sd_card_text_color">#888888</color>

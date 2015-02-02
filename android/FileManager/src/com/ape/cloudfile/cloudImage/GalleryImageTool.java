@@ -12,6 +12,7 @@ import android.graphics.Matrix;
 
 import com.ape.cloudfile.CloudFileService;
 import com.ape.cloudfile.CloudFileUtil;
+import com.ape.cloudfile.accessDAO.CloudTransferListDAO;
 import com.ape.filemanager.MyLog;
 import com.ape.filemanager.Util;
 import com.cloud.client.CloudUtil;
@@ -79,6 +80,10 @@ public class GalleryImageTool
         mErrorCode = thumbResult.getResultCode();
         if (mErrorCode != CloudUtil.CLOUDCLIENT_RESULT_OK && mErrorCode != CloudUtil.CLOUD_FILE_FILE_EXIST)
         {
+            if (mErrorCode == CloudUtil.CLOUD_FILE_NO_UPLOADID_RETURN)
+            {
+                CloudTransferListDAO.getInstance(mCloudTool.getContext()).deleteUploadRecordByKey(mCloudTool.getUserId(), cloudThumbPath);
+            }
             return false;
         }
         try
@@ -208,7 +213,7 @@ public class GalleryImageTool
         opts.inSampleSize = scale;
         Bitmap sampleBitmap = BitmapFactory.decodeFile(filePath, opts);
 
-        if (opts.outWidth == -1 || opts.outHeight == -1)
+        if (opts.outWidth <= 0 || opts.outHeight <= 0)
         {
             return null;
         }

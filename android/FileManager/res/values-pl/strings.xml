@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Menedżer plików</string>
+    <string name="added_favorite">Dodano do ulubionych</string>
+    <string name="cancel">Anuluj</string>
+    <string name="category_all">Wszystko</string>
+    <string name="category_apk">APK</string>
+    <string name="category_document">Dokumenty</string>
+    <string name="category_favorite">Ulubione</string>
+    <string name="category_music">Muzyka</string>
+    <string name="category_other">Inne używane</string>
+    <string name="category_picture">Obrazy</string>
+    <string name="category_theme">Motywy</string>
+    <string name="category_video">Wideo</string>
+    <string name="category_zip">Zip</string>
+    <string name="category_app_mm">Aplikacja/Multimedia</string>
+    <string name="confirm">OK</string>
+    <string name="confirm_know">OK</string>
+    <string name="enable_sd_card">Pamięć telefonu jest zajęta.</string>
+    <string name="error_info_cant_send_folder">Nie można wysłać folderu</string>
+    <string name="fail_to_create_folder">Nie można utworzyć folderu, <xliff:g id="number">%1$s</xliff:g></string>
+    <string name="fail_to_rename">Nie można zmienić nazwy pliku, <xliff:g id="number">%1$s</xliff:g></string>
+    <string name="file_info_canread">Do odczytu:</string>
+    <string name="file_info_canwrite">Do zapisu:</string>
+    <string name="file_info_ishidden">Ukryte:</string>
+    <string name="file_info_location">Ścieżka:</string>
+    <string name="file_info_modified">Zmodyfikowano:</string>
+    <string name="file_info_size">Rozmiar:</string>
+    <string name="file_size">%d bajtów</string>
+    <string name="instruction">Wprowadź następujący adres do swojego klienta FTP:</string>
+    <string name="instruction_pre">Włącz usługę, aby aktywować serwer FTP</string>
+    <string name="menu_item_search">Szukaj</string>
+    <string name="menu_item_sort">Sortuj wg.</string>
+    <string name="menu_item_sort_date">Data</string>
+    <string name="menu_item_sort_name">Nazwa</string>
+    <string name="menu_item_sort_size">Rozmiar</string>
+    <string name="menu_item_sort_type">Rodzaj</string>
+    <string name="new_folder_name">Nowy folder</string>
+    <string name="no">Nie</string>
+    <string name="no_file">(Pusty folder)</string>
+    <string name="no_wifi">Brak sieci Wi-Fi</string>
+    <string name="no_wifi_hint">Brak sieci Wi-Fi, naciśnij, żeby sprawdzić ustawienia Wi-Fi</string>
+    <string name="notif_server_starting">Aktywny serwer FTP</string>
+    <string name="notif_title">Serwer FTP</string>
+    <string name="operation_cancel">Anuluj</string>
+    <string name="operation_cancel_selectall">Odznacz wszystko</string>
+    <string name="operation_copy">Kopiuj</string>
+    <string name="operation_copy_path">Kopiuj ścieżkę pliku</string>
+    <string name="operation_create_folder">Nowy folder</string>
+    <string name="operation_create_folder_message">Wprowadź nazwę folderu</string>
+    <string name="operation_delete">Usuń</string>
+    <string name="operation_delete_confirm_message">Czy usunąć?</string>
+    <string name="operation_deleting">Usuwanie…</string>
+    <string name="operation_favorite">Dodaj do ulubionych</string>
+    <string name="operation_hide_sys">Ukryj ukryte pliki</string>
+    <string name="operation_info">Szczegóły</string>
+    <string name="operation_move">Przenieś</string>
+    <string name="operation_moving">Przenoszenie…</string>
+    <string name="operation_paste">Wklej</string>
+    <string name="operation_pasting">Wklejanie…</string>
+    <string name="operation_refresh">Odśwież</string>
+    <string name="operation_rename">Zmień nazwę</string>
+    <string name="operation_rename_message">Wprowadź nową nazwę</string>
+    <string name="operation_selectall">Zaznacz wszystko</string>
+    <string name="operation_send">Wyślij</string>
+    <string name="operation_show_sys">Pokaż ukryte pliki</string>
+    <string name="operation_unfavorite">Usuń z ulubionych</string>
+    <string name="removed_favorite">Usunięto z ulubionych</string>
+    <string name="sd_card_available">Dostępne  <xliff:g id="available_size">%1$s</xliff:g></string>
+    <string name="sd_card_size">Dostępna pamięć <xliff:g id="total_size">%1$s</xliff:g></string>
+    <string name="sd_folder">Karta SD</string>
+    <string name="start_server">Uruchom usługę</string>
+    <string name="stop_server">Zatrzymaj usługę</string>
+    <string name="storage_warning">Zewnętrzna pamięć niedostępna lub brak odczytu</string>
+    <string name="tab_category">Przeglądaj</string>
+    <string name="tab_remote">FTP</string>
+    <string name="tab_sd">Plik</string>
+    <string name="wifi_state">Stan WLAN</string>
+    <string name="yes">Tak</string>
+    <string name="dialog_select_type">Wybierz rodzaj pliku</string>
+    <string name="dialog_type_text">Tekst</string>
+    <string name="dialog_type_audio">Audio</string>
+    <string name="dialog_type_video">Wideo</string>
+    <string name="dialog_type_image">Obraz</string>
+    <string name="favorite_photo">Zdjęcie</string>
+    <string name="favorite_sdcard">Karta SD</string>
+    <string name="favorite_ringtone">Dzwonek</string>
+    <string name="multi_select_title"><xliff:g id="number">%1$s</xliff:g> wybrano</string>
+    <string name="menu_setting">Preferencje</string>
+    <string name="menu_exit">Wyjdź</string>
+    <string name="preference_title">Ogólne ustawienia</string>
+    <string name="pref_primary_folder">Folder domowy</string>
+    <string name="pref_read_root">Czytaj katalog główny</string>
+    <string name="pref_show_real_path">Wyświetl rzeczywistą ścieżkę</string>
+    <string name="pref_primary_folder_summary">Bieżąca wartość folderu, który pojawia się po włączeniu aplikacji, wynosi <xliff:g id="number">%1$s</xliff:g></string>
+    <string name="pref_show_real_path_summary">Pokaż rzeczywistą ścieżkę w pasku nawigacyjnym</string>
+
+    <string name="default_search_text">Szukaj plików</string>
+    <string name="search_empty">Treść wyszukiwania nie powinna być pusta.</string>
+    <string name="search_setting_description">Lokalne pliki i foldery</string>
+    <string name="search_result"><xliff:g id="number">%2$d</xliff:g> wynik(i) dla \"<xliff:g id="number">%1$s</xliff:g>\"</string>
+    <string name="search_text_empty">Treści wyszukiwania nie powinny być puste.</string>
+
+    <string name="phone_storage">Pamięć telefonu</string>
+    <string name="storage_sd_card">Karta SD</string>
+    <string name="usb_storage">Zewnętrza pamięć USB</string>
+    <string name="create_hidden_file">Plik zostanie ukryty, jeśli jego nazwa zaczyna się na \'.\'.</string>
+    <string name="modify_hidden_file">Plik nie zostanie ukryty, jeśli jego nazwa nie zaczyna się na \'.\'.</string>
+    <string name="file_name_too_long">Wprowadzona nazwa jest za długa.</string>
+    <string name="invalid_char_prompt">Wprowadzono nieprawidłowy znak(i).</string>
+    <string name="invalid_empty_name">Nazwa pliku/folderu nie może być pusta.</string>
+
+    <string name="send_file">Wyślij plik</string>
+    <string name="msg_unable_open_file">Nieobsługiwany format pliku.</string>
+
+    <string name="fail_to_paste_file">Nie można wkleić pliku(ów), <xliff:g id="number">%1$s</xliff:g></string>
+    <string name="insufficient_memory">brak miejsca.</string>
+    <string name="file_exist">nazwa już istnieje.</string>
+    <string name="file_name_empty">nazwa pliku jest pusta.</string>
+    <string name="no_permission">brak pozwolenia.</string>
+    <string name="files_loading">Wczytywanie...</string>
+    
+    <string name="cloud_storage">Przechowywanie w chmurze</string>
+    <string name="operation_send_to_cloud">Do chmury</string>
+    <string name="wait">Zaczekaj\u2026</string>
+    <string name="create_transfer_connection">Nawiązywanie połączenia, zaczekaj\u2026</string>
+    
+    <string name="menu_title">Opcja</string>
+    <string name="menu_item_more">Więcej</string>
+    <string name="menu_refresh_str">Odśwież</string>
+    <string name="menu_create_file_str">Stwórz plik</string>
+    <string name="menu_upload_str">Prześlij</string>
+    <string name="menu_download_str">Pobierz</string>
+    <string name="menu_delete_str">Usuń</string>
+    
+    <string name="operation_success">Zakończono pomyślnie</string>
+    <string name="no_network_eror">Brak sieci</string>
+    <string name="network_connect_error">Błąd sieci</string>
+    <string name="wait_network_response">Czeka na odpowiedź sieci</string>
+    <string name="task_queueing">Zadanie w kolejce, czekaj!</string>
+    <string name="no_service_sdk">Brak aplikacji obsługujących login Onekey.</string>
+    <string name="no_user_id">Pobieranie informacji użytkownika</string>
+    <string name="user_logout">You are in logout status！</string>
+    <string name="get_file_list_fail">Nie można pobrać listy plików</string>
+    <string name="get_user_info_error">Nie można pobrać informacji użytkownika.</string>
+    <string name="cloud_file_service_error">Nie można pobrać usługi plików.</string>
+    <string name="source_file_not_exist">Plik źródłowy nie istnieje!</string>
+    <string name="cannot_download_file">Nie można pobrać pliku:<xliff:g id="number">%1$s</xliff:g></string>
+    <string name="cannot_upload_file">Nie można przesłać pliku:<xliff:g id="number">%1$s</xliff:g></string>
+
+    <string name="cloud_kindly_prompt_title">Przypomnienie</string>
+    <string name="no_wifi_prompt">Używana sieć nie jest siecią WiFi, kontynuować?</string>
+    <string name="default_user">Jesteś gościem, zaloguj się, żeby zapobiec utracie pliku!</string>
+    <string name="hello_user">Witaj, <xliff:g id="number">%1$s</xliff:g></string>
+
+    <string name="transfer_list_title">Lista transferu</string>
+    <string name="download_list">Lista pobierania</string>
+    <string name="upload_list">Lista przesyłania</string>
+    <string name="downloading_list">Pobieranie listy(<xliff:g id="number">%1$s</xliff:g>)</string>
+    <string name="downloaded_list">Pobrano listę(<xliff:g id="number">%1$s</xliff:g>)</string>
+    <string name="uploading_list">Przesyłanie listy (<xliff:g id="number">%1$s</xliff:g>)</string>
+    <string name="uploaded_list">Przesłano listę (<xliff:g id="number">%1$s</xliff:g>)</string>
+    <string name="no_transfer_recorder">Brak rejestru transferu</string>
+    <string name="delete_download_record">Usuń listę pobrania</string>
+    <string name="delete_local_files_Q">Usuń lokalne pliki</string>
+    <string name="delete_upload_record">Usuń rejestr przesłania</string>
+    <string name="nonsupport_download_folder">Brak obsługi pobierania folderu</string>
+    <string name="download_path_prompt">Ścieżka pobierania: <xliff:g id="number">%1$s</xliff:g></string>
+    <string name="view_cloud_file_prompt">Należy pobrać plik z chmury, aby go wyświetlić; pobrać?</string>
+    <string name="system_folder_delete_fail"><xliff:g id="number">%1$s</xliff:g> to folder systemowy, nie można usunąć.</string>
+    <string name="add_to_download_repeat"><xliff:g id="number">%1$d</xliff:g> plik istnieje, nie pobieraj ponownie</string>
+    
+    <string name="search_cloud_file">Szukaj pliku w chmurze</string>
+    <string name="search_cloud_setting_prompt">Szukaj pliku w chmurze</string>
+
+    <string name="cloud_login">Zacznij używać</string>
+    <string name="cloud_login_prompt">Prześlij pliki do chmury wygodnie i bezpiecznie, przejdź do przesyłania!</string>
+
+    <string name="pull_to_refresh_pull_label">Przesuń, żeby odświeżyć...</string>
+    <string name="pull_to_refresh_release_label">Puść, aby odświeżyć…</string>
+    <string name="pull_to_refresh_refreshing_label">Wczytywanie...</string>
+    <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
+    <string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+    
+</resources>

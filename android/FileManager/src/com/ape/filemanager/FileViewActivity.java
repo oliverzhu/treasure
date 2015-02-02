@@ -250,7 +250,9 @@ public class FileViewActivity extends Fragment implements
         @Override
         public void onRefresh(PullToRefreshBase<ListView> refreshView)
         {
-            mFileViewInteractionHub.onOperationReferesh();
+            MyLog.i(LOG_TAG, "mPullRefreshListener, mIsLoading:" + mIsLoading);
+            if (!mIsLoading)
+                mFileViewInteractionHub.onOperationReferesh();
         }
     };
 
@@ -390,6 +392,7 @@ public class FileViewActivity extends Fragment implements
             return false;
         }
         
+        MyLog.i(LOG_TAG, "onRefreshFileList, mIsLoading:" + mIsLoading);
         if (!mFileViewInteractionHub.isInProgress() && !mIsLoading)
         {
             ListFilesTask listTask = new ListFilesTask(path, sort);

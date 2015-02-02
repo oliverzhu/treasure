@@ -68,6 +68,7 @@ public class InformationDialog extends AlertDialog {
         if (mFileInfo.IsDir)
         {
             icon.setImageResource(R.drawable.folder);
+            asyncGetSize();
         } else
         {
             String extFromFilename = Util.getExtFromFilename(mFileInfo.filePath);

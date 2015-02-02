@@ -2,6 +2,7 @@ package com.ape.cloudfile;
 
 import java.io.File;
 
+import com.ape.filemanager.MountPointManager;
 import com.ape.filemanager.Util;
 
 import android.content.Context;
@@ -69,6 +70,7 @@ public class CloudFileUtil
     
     public static final int MAX_TRANSFER_TASK = 2;
     public static final long MAX_DEFAULT_USER_CLOUD_SPACE = 2*1024*1024*1024l;
+    public static final long MIN_ROUND_OFF = 52*1024*1024l;
 
 
     public static String getLocalCachePath(String cloudPath)
@@ -100,7 +102,8 @@ public class CloudFileUtil
     
     public static String getDownloadPath()
     {
-        String sdPath = Environment.getExternalStorageDirectory().getPath();
+        //String sdPath = Environment.getExternalStorageDirectory().getPath();
+        String sdPath = MountPointManager.getInstance().getInternalMountPath();
         return sdPath + DOWNLOAD_PATH_SUFFIX;
     }
 

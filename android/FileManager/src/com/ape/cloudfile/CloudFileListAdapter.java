@@ -41,7 +41,7 @@ public class CloudFileListAdapter<T> extends BaseAdapter
         
         void setProgressBarInfo(RoundProgressBar bar, MissionObject mission);
         
-        void removeProgressBarInfo(RoundProgressBar bar);
+        void removeProgressBarInfo(RoundProgressBar bar, MissionObject mission);
         
         void onActionModeFinished();
     }
@@ -252,11 +252,11 @@ public class CloudFileListAdapter<T> extends BaseAdapter
         }
     }
     
-    public void removeProgressBarInfo(RoundProgressBar bar)
+    public void removeProgressBarInfo(RoundProgressBar bar, MissionObject mission)
     {
         if (mOperationListener != null)
         {
-            mOperationListener.removeProgressBarInfo(bar);
+            mOperationListener.removeProgressBarInfo(bar, mission);
         }
     }
     

@@ -41,6 +41,7 @@ public class TaskListFiles extends TaskCloudFileBase
             return OperationEventListener.ERROR_CODE_SUCCESS;
         }
 
+        MyLog.i(TAG, "doInBackground, before listDirectory, mCloudPath:" + mCloudPath);
         CloudFileResult result = CloudFileService.getInstance(mContext).listDirectory(mCloudPath);
         ret = handleServerResult(result);
         

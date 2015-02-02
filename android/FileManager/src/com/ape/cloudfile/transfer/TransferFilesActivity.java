@@ -243,7 +243,7 @@ public class TransferFilesActivity extends Activity implements IActionTabListene
         
         if (mTransferService != null)
         {
-            mTransferService.unregisterTransferUiListener();
+            //mTransferService.unregisterTransferUiListener();
             mTransferService.unregisterServerInforListerner(mServiceListener);
             mTransferService.activityExit();
 //            if (!mTransferService.isUnFinished())
@@ -421,6 +421,12 @@ public class TransferFilesActivity extends Activity implements IActionTabListene
         public void storageUnmount()
         {
             TransferFilesActivity.this.finish();
+        }
+
+        @Override
+        public void storageMount()
+        {
+            
         }
 
         @Override

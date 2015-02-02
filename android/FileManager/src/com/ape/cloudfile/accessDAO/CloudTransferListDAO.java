@@ -114,4 +114,29 @@ public class CloudTransferListDAO
 
         return object;
     }
+
+    public boolean isDownloadRecordExist(String userKey, String fileKey)
+    {
+        boolean retVal = false;
+        StringBuffer selection = new StringBuffer();
+        String[] selectionArgs = null;
+
+        selection.append(Download._USER_ID).append(" =? and ");
+        selection.append(Download.FIELD_KEY).append(" =? ");
+        selectionArgs = new String[] {userKey, fileKey};
+
+        Cursor cursor = mDB.query(DOWNLOAD_TABLE_NAME,
+                new String[]{Download._ID},
+                selection.toString(), selectionArgs, null, null, null);
+        if (cursor != null)
+        {
+            if (cursor.getCount() > 0)
+            {
+                retVal = true;
+            }
+            cursor.close();
+        }
+
+        return retVal;
+    }
 }

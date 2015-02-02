@@ -598,7 +598,7 @@ public class FileCategoryActivityMyOS extends Fragment implements IFileInteracti
         @Override
         public void onReceive(Context context, Intent intent) {
             String action = intent.getAction();
-            Log.v(LOG_TAG, "received broadcast: " + action.toString());
+            Log.v(LOG_TAG, "received broadcast: " + action.toString() + ", data:"+ intent.getData());
             if (action.equals(Intent.ACTION_MEDIA_MOUNTED)
                     || action.equals(Intent.ACTION_MEDIA_UNMOUNTED))
             {

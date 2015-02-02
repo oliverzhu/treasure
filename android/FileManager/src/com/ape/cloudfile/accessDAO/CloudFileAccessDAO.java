@@ -128,7 +128,7 @@ public class CloudFileAccessDAO
         return list;
     }
     
-    public long insert(CloudFile file)
+    public synchronized long insert(CloudFile file)
     {
         long result = 0;
 
